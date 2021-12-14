@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* common */
+body {min-width: 320px; font-size: 16px; letter-spacing: -.05em; background-color: #ffffff;}
+body * {font-family: 'Noto Sans KR', Helvetica, Arial, sans-serif;}
+a {text-decoration: none;}
+button {padding: 0; background: none; border: none; cursor: pointer;}
+
+header {background-color: rgba(0,0,0,.6);}
+
+footer {background-color: #37393b;}

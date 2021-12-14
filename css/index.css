@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+/* body {background: url(../../../02_design/durian.png) no-repeat center top;}
+body * {opacity: .9;} */
+
+body {background-image: url(../img/bg-main-01.jpg); background-repeat: no-repeat; background-attachment: fixed;}
