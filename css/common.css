@@ -6,6 +6,55 @@ body * {font-family: 'Noto Sans KR', Helvetica, Arial, sans-serif;}
 a {text-decoration: none;}
 button {padding: 0; background: none; border: none; cursor: pointer;}
 
-header {background-color: rgba(0,0,0,.6);}
+.center-wrap {max-width: 1296px; padding: 0 1rem; margin: 0 auto;}
 
-footer {background-color: #37393b;}
+header {position: relative; width: 100%; height: 5.313rem; background-color: #ffffff;}
+h1 {position: absolute; top: 0; left: 30px; width: 198px; height: 100%; display: flex; align-items: center; }
+h1 a {width: 198px; height: 45px; background-image: url(../img/logo-researcharum-198x45-01.png); background-repeat: no-repeat; background-position: center;}
+h1 span {display: block; overflow: hidden; width: 0; height: 0;}
+header .gnb {position: absolute; top: 0; left: 448px; height: 100%;}
+header .gnb {height: 100%;}
+header .gnb ul {height: 100%; display: flex; justify-content: space-between; align-items: center;}
+header .gnb li+li {margin-left: 2.625rem;}
+header .gnb a {display: block; box-sizing: border-box; padding: 1rem 0; color: #666666; font-weight: 500; font-size: 1.125rem; border-bottom: 0 solid rgba(255, 255, 255, 0);}
+header .gnb a:hover {color: #111111; border-bottom-width: 3px; transition: 1s;}
+header .gnb a.on {color: #111111; border-bottom: 3px solid #ff4545;}
+header .depth-sub {position: absolute; top: 5.313rem; left: 0; width: 100%; background-color: #ffffff; box-sizing: border-box; padding: 2.875rem 1rem 2.875rem 448px;}
+header .depth-sub .depth-01 {display: flex;}
+header .depth-sub h2 {opacity: 0;}
+header .depth-sub .depth-01>li+li {margin-left: 2.625rem;}
+header .depth-sub .depth-02>li {margin-top: 1.875rem;}
+header .depth-sub .depth-02>li>a {color: #333333; font-weight: 400; font-size: 1rem; text-transform: uppercase;}
+header .btn-wrap {position: absolute; top: 0; right: 30px; height: 100%; display: flex; justify-content: space-between; align-items: center;}
+header .btn-wrap button path, header .btn-wrap button circle, header .btn-wrap button line {stroke: #333333;}
+header .btn-wrap button + button {margin-left: 1.625rem;}
+#btn-search {width: 25px; height: 25px;}
+#btn-user {width: 25px; height: 25px;}
+#btn-menu {width: 1.5rem; height: 1.375rem; display: flex; flex-direction: column; justify-content: space-between;}
+#btn-menu i {width: 100%; height: 2px; background-color: #333333;}
+
+#search-area {display: none;}
+
+footer {background-color: #37393b; padding: 3.625rem 0;}
+footer::after {content: ''; display: block; clear: both;}
+footer .sitemap {margin-bottom: 5.875rem;}
+footer .sitemap .depth-01::after {content: ''; display: block; clear: both;}
+footer .sitemap .depth-01>li {float: left; width: calc(100% / 6);}
+footer .sitemap .depth-02 li {margin-top: 1.875rem;}
+footer .sitemap .depth-03 li {margin-top: 1rem; margin-left: 1rem;}
+footer .sitemap .depth-01>li>a {color: #ffffff; font-weight: 400; font-size: 1rem;}
+footer .sitemap .depth-02>li>a {color: #999999; font-weight: 200; font-size: .938rem;}
+footer .sitemap .depth-03>li>a {color: #999999; font-weight: 200; font-size: .938rem;}
+.fnb-wrap {float: left;}
+.fnb::after {content: ''; display: block; clear: both;}
+.fnb li {float: left;}
+.fnb li + li {margin-left: 2.5rem;}
+.fnb a {color: #ffffff; font-weight: 400; font-size: .875rem;}
+address {margin-top: 2.25rem; color: #999999; font-weight: 200; font-size: .875rem; line-height: 1.375rem; word-break: keep-all; max-width: 30rem;}
+address li {display: inline;}
+address li + li {margin-left: .5rem;}
+address li + li::before {content: '/'; margin-right: .5rem;}
+address p {margin-top: 1rem;}
+.family-link-wrap {float: right;}
+.family-link-wrap button {width: 2.125rem; height: 2.125rem;}
+.family-link-wrap button + button {margin-left: 1rem;}

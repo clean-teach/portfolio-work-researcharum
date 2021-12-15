@@ -4,3 +4,11 @@
 body * {opacity: .9;} */
 
 body {background-image: url(../img/bg-main-01.jpg); background-repeat: no-repeat; background-attachment: fixed;}
+
+/* header {background-color: rgba(0,0,0,.6);}
+h1 a {background-image: url(../img/logo-researcharum-198x45-ffffff.png);}
+header .gnb .depth-main a {color: #fffefe;}
+header .btn-wrap button path, header .btn-wrap button circle, header .btn-wrap button line {stroke: #fffefe;}
+#btn-menu i {background-color: #ffffff;} */
+
+section {height: 60vh;}
