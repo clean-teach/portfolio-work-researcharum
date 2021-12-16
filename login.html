@@ -7,7 +7,7 @@
     <title>리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <header>
@@ -98,46 +98,32 @@
         </div>
     </header>
 
-    <section id="section-main-banner">
-        <h2>리서치알음 메인 배너</h2>
-        <div class="slider" id="slider1">
-            <div class="banner banner-01">
-                <div class="wrapper">
-                    <h3>리서치 알음의 새로워진 유료회원 서비스</h3>
-                    <p><span>ARUM Big DATA</span><br />빅데이터 기반 리포트 활용의 기준점</p>
-                    <p>1회 99,000원 결제시<br /><span>정보 무제한 열람</span></p>
-                    <div class="link-area">
-                        <a href="" class="btn-detail" title="자세히 보기" >자세히 보기<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="17px"><defs><linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%"><stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="1" /><stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="1" /></linearGradient></defs><path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round" stroke-linejoin="round" fill="none"d="M2.000,14.000 L8.000,8.000 L2.000,2.000 "/></svg></a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="banner banner-02">
-                <div class="wrapper">
-                    <h3>국내유일 <span>글로벌</span> 중고마켓!</h3>
-                    <p class="cont">일본 NO1 중고명품 플랫폼 독점제휴</p>
-                    <p class="sub">첫번째 "일본 중고명품 직구 경매"</p>
-                    <div class="link-area">
-                        <span class="comming">Coming Soon</span>
-                    </div>
-                </div>
-            </div> -->
+    <section id="login-area">
+        <h2>로그인</h2>
+        <form action="">
+            <label for="">아이디</label><input type="text" id="" placeholder="아이디를 입력해 주세요" required autofocus>
+            <label for="">비밀번호</label><input type="password" id="" placeholder="비밀번호를 입력해 주세요" required>
+            <button type="submit">로그인</button>
+        </form>
+        <div class="btn-sns-area">
+            <button type="button" class="btn-naver" title="네이버 아이디로 로그인">네이버 로그인</button>
+            <button type="button" class="btn-kakao" title="카카오 아이디로 로그인">카카오 로그인</button>
         </div>
-    </section>
-
-    <section>
-        <h2><span>Small cap</span> Research</h2>
-        <ul class="card-list">
-            <li class="card">
-                <div class="top">
-                    <div class="writer">알음 유투브</div>
-                    <div class="date">2021-08-28</div>
-                </div>
-                <div class="tit"><a href="">올해 첫 흑자전환, 기초 생명과학 장비업체 추천하는 리스트</a></div>
-                <div class="bottom">
-                    <div class="code">이녹스(088390. KQ)</div>
-                </div>
-            </li>
-        </ul>
+        <div class="btn-info-user-area">
+            <ul>
+                <li><a href="" title="페이지 이동">아이디 찾기</a></li>
+                <li><a href="" title="페이지 이동">비밀번호 찾기</a></li>
+                <li><a href="" title="페이지 이동">회원가입</a></li>
+            </ul>
+        </div>
+        <div class="guide-area">
+            <p class="tit">리서치알음은 시가총액 5,000억원 이하의 중소형주를 커버합니다.</p>
+            <p class="sub">정기회원을 가입하시면 알음리포트 무제한 열람 하실 수 있습니다.</p>
+            <div class="btn-area">
+                <button type="button" title="새 탭으로 열기">알음서비스 알아보기</button>
+                <button type="button" title="새 탭으로 열기">정기회원가입 방법</button>
+            </div>
+        </div>
     </section>
 
     <footer>

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {background-color: #f2f2f2; padding-top: 5.313rem;}
+
+#login-area {background-color: #ffffff; max-width: 672px; margin: 2.25rem auto; padding: 2.25rem 2rem; text-align: center;}
+#login-area h2 {color: #111111; font-weight: bold; font-size: 2.625rem;}
+#login-area form {margin-top: 5rem;}
+#login-area label {display: none;}
+#login-area input {width: 100%; height: 3.25rem; box-sizing: border-box; padding: 0 1rem; border: 1px solid #d6d6d6; font-weight: 300; font-size: .875rem;}
+#login-area input:focus {outline-color: #ff4545;}
+#login-area [type=password] {border-top: none;}
+#login-area [type=submit] {margin-top: 1.875rem; width: 100%; height: 4.375rem; background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 1.25rem; border-radius: .5rem;}
+#login-area .btn-sns-area {margin-top: 2.5rem; border-top: 1px solid #dddddd; padding-top: 2.5rem; display: flex; justify-content: space-between;}
+#login-area .btn-sns-area button {width: 48.8%; height: 4.375rem; border-radius: .5rem; font-weight: 500; font-size: 1.125rem;}
+.btn-naver {background-color: #2db400; color: #ffffff;}
+.btn-kakao {background-color: #ffea0f; color: #3b1e1e;}
+#login-area .btn-info-user-area ul {display: flex; justify-content: space-around;}
+#login-area .btn-info-user-area li + li {border-left: 1px solid #;}
+#login-area .btn-info-user-area a {color: #;}

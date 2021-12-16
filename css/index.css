@@ -5,10 +5,27 @@ body * {opacity: .9;} */
 
 body {background-image: url(../img/bg-main-01.jpg); background-repeat: no-repeat; background-attachment: fixed;}
 
-/* header {background-color: rgba(0,0,0,.6);}
+header {background-color: rgba(0,0,0,.6); border-bottom-color: rgba(0,0,0,.6);}
 h1 a {background-image: url(../img/logo-researcharum-198x45-ffffff.png);}
-header .gnb .depth-main a {color: #fffefe;}
+header .gnb a {color: #fffefe;}
+header .gnb a:hover {color: #ffffff;}
+header .gnb a.on {color: #ffffff;}
 header .btn-wrap button path, header .btn-wrap button circle, header .btn-wrap button line {stroke: #fffefe;}
-#btn-menu i {background-color: #ffffff;} */
+#btn-menu i {background-color: #ffffff;}
+header.on {background-color: #ffffff; border-bottom-color: #ffffff;}
+header.on h1 a {background-image: url(../img/logo-researcharum-198x45-01.png);}
+header.on .gnb a {color: #666666;}
+header.on .btn-wrap button path, header.on .btn-wrap button circle, header.on .btn-wrap button line {stroke: #333333;}
+header.on #btn-menu i {background-color: #333333;}
 
-section {height: 60vh;}
+#section-main-banner {width: 100%; height: 100vh;}
+#section-main-banner h2 {width: 0; height: 0; overflow: hidden;}
+.slider {height: 100%; overflow: hidden;}
+.banner {min-height: 100%; box-sizing: border-box; padding-top: 5.313rem;}
+.banner-01 {background: url(../img/bg-main-banner-01.jpg) no-repeat center; background-size: cover;}
+.banner-01 .wrapper {max-width: 1296px; padding: 0 1rem; margin: 0 auto;}
+.banner-01 h3 {color: #ffffff; font-weight: bold; font-size: 4.375rem; line-height: 5.6rem; letter-spacing: -.25rem; word-break: keep-all; padding-top: 10.5rem; max-width: 44rem;}
+.banner-01 p {color: #ffffff; font-weight: 200; font-size: 1.25rem; line-height: 1.75rem; letter-spacing: -.025rem; margin-top: 1.125rem;}
+.banner-01 p span {color: #ffee8d; font-weight: 400; font-size: 1.5rem;}
+.banner-01 .btn-detail {display: flex; justify-content: center; align-items: center; width: 10.75rem; height: 3.125rem; color: #ffffff; font-weight: 400; font-size: 1.125rem; border: 1px solid rgba(255, 255, 255, .3); border-radius: .4rem; margin-top: 2rem;}
+.banner-01 .btn-detail svg {margin-left: .4rem;}
