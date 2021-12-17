@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>리서치아름</title>
+    <title>아이디 찾기 | 리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/find-id-pw.css">
 </head>
 <body>
     <header>
@@ -98,31 +98,27 @@
         </div>
     </header>
 
-    <section id="login-area">
-        <h2>로그인</h2>
-        <form action="">
-            <label for="">아이디</label><input type="text" id="" placeholder="아이디를 입력해 주세요" required autofocus>
-            <label for="">비밀번호</label><input type="password" id="" placeholder="비밀번호를 입력해 주세요" required>
-            <button type="submit">로그인</button>
-        </form>
-        <div class="btn-sns-area">
-            <button type="button" class="btn-naver" title="네이버 아이디로 로그인">네이버 로그인</button>
-            <button type="button" class="btn-kakao" title="카카오 아이디로 로그인">카카오 로그인</button>
+    <section class="find-id-pw-area">
+        <h2>아이디 찾기</h2>
+        <!-- 아이디 찾기 -->
+        <div class="input-area">
+            <p class="sub">아이디 찾기를 위해서는 본인인증이 필요합니다.</p>
+            <form action="">
+                <label for="input-user-name">성명</label><input type="text" id="input-user-name" placeholder="성명을 입력해 주세요" required autofocus>
+                <label for="input-user-phone">휴대폰번호</label><input type="tel" id="input-user-phone" placeholder="휴대폰번호를 &quot;_&quot;없이 숫자만 입력해주세요" required>
+                <button type="submit" class="btn-primary">아이디 찾기</button>
+            </form>
         </div>
-        <div class="btn-info-user-area">
-            <ul>
-                <li><a href="" title="페이지 이동">아이디 찾기</a></li>
-                <li><a href="" title="페이지 이동">비밀번호 찾기</a></li>
-                <li><a href="" title="페이지 이동">회원가입</a></li>
-            </ul>
+        <!-- 아이디 찾기 결과 -->
+        <div class="result-area">
+            <p class="result"><span class="id">MONOCR</span></p>
+            <p class="sub">가입일 : 2021-11-30</p>
+            <button type="button" title="페이지 이동" class="btn-primary" onclick="location.href='login.html'">로그인</button>
         </div>
-        <div class="guide-area">
-            <p class="tit">리서치알음은 시가총액 5,000억원 이하의 중소형주를 커버합니다.</p>
-            <p class="sub">정기회원을 가입하시면 알음리포트 무제한 열람 하실 수 있습니다.</p>
-            <div class="btn-area">
-                <button type="button" title="새 탭으로 열기">알음서비스 알아보기</button>
-                <button type="button" title="새 탭으로 열기">정기회원가입 방법</button>
-            </div>
+        <!-- 아이디 찾기 결과 없음 -->
+        <div class="no-result-area">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132"><title>없음</title><path d="M65,8a58,58,0,0,1,41,99A58,58,0,1,1,24,25,57.59,57.59,0,0,1,65,8m0-8a66,66,0,1,0,46.67,19.33A65.79,65.79,0,0,0,65,0Z" transform="translate(1)" style="fill:#ff4545"/><line x1="111.96" y1="19.33" x2="19.33" y2="111.96" style="fill:none;stroke:#ff4545;stroke-miterlimit:10;stroke-width:8px"/></svg>
+            <p>등록된 아이디가 없습니다.</p>
         </div>
     </section>
 
@@ -214,6 +210,6 @@
         </div>
     </footer>
 
-<script src="js/common.js"></script>
+<script src="../js/common.js"></script>
 </body>
 </html>

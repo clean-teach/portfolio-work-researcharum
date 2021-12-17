@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {background-color: #f2f2f2; padding-top: 5.313rem;}
+
+.find-id-pw-area {background-color: #ffffff; max-width: 672px; margin: 3.75rem auto 6.25rem; padding: 2.25rem 2rem 3.75rem; text-align: center;}
+.find-id-pw-area h2 {color: #111111; font-weight: bold; font-size: 2.625rem;}
+.find-id-pw-area .input-area .sub {color: #666666; font-weight: 200; font-size: 1rem; margin-top: 1rem;}
+.find-id-pw-area .input-area form {margin-top: 2.875rem;}
+.find-id-pw-area .input-area label {display: none;}
+.find-id-pw-area .input-area input {width: 100%; height: 3.25rem; box-sizing: border-box; padding: 0 1rem; border: 1px solid #d6d6d6; font-weight: 300; font-size: .875rem;}
+.find-id-pw-area .input-area input ~ input {border-top: none;}
+.find-id-pw-area .input-area .btn-primary {margin-top: 1.875rem;}
+
+.find-id-pw-area .result-area .result {color: #333333; font-weight: 300; font-size: 1.25rem; line-height: 1.875rem; margin-top: 5rem;}
+.find-id-pw-area .result-area .result .id {font-weight: 500;}
+.find-id-pw-area .result-area .result .pw {color: #ff4545; font-weight: 500;}
+.find-id-pw-area .result-area .sub {color: #999999; font-weight: 300; font-size: .938rem; margin-top: 1rem;}
+.find-id-pw-area .result-area .btn-primary {margin-top: 5rem;}
+
+.find-id-pw-area .no-result-area {padding-bottom: 2rem;}
+.find-id-pw-area .no-result-area svg {width: 8.125rem; height: 8.125rem; margin-top: 4rem;}
+.find-id-pw-area .no-result-area p {color: #666666; font-weight: 500; font-size: 1rem; margin-top: 1rem;}
+
+/* .find-id-pw-area .input-area {display: none;} */
+.find-id-pw-area .result-area {display: none;}
+.find-id-pw-area .no-result-area {display: none;}

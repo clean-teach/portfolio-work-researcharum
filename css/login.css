@@ -2,18 +2,27 @@
 
 body {background-color: #f2f2f2; padding-top: 5.313rem;}
 
-#login-area {background-color: #ffffff; max-width: 672px; margin: 2.25rem auto; padding: 2.25rem 2rem; text-align: center;}
+#login-area {background-color: #ffffff; max-width: 672px; margin: 2.25rem auto 6.25rem;; padding: 2.25rem 2rem; text-align: center;}
 #login-area h2 {color: #111111; font-weight: bold; font-size: 2.625rem;}
 #login-area form {margin-top: 5rem;}
 #login-area label {display: none;}
 #login-area input {width: 100%; height: 3.25rem; box-sizing: border-box; padding: 0 1rem; border: 1px solid #d6d6d6; font-weight: 300; font-size: .875rem;}
-#login-area input:focus {outline-color: #ff4545;}
-#login-area [type=password] {border-top: none;}
-#login-area [type=submit] {margin-top: 1.875rem; width: 100%; height: 4.375rem; background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 1.25rem; border-radius: .5rem;}
-#login-area .btn-sns-area {margin-top: 2.5rem; border-top: 1px solid #dddddd; padding-top: 2.5rem; display: flex; justify-content: space-between;}
-#login-area .btn-sns-area button {width: 48.8%; height: 4.375rem; border-radius: .5rem; font-weight: 500; font-size: 1.125rem;}
+#login-area ~ input {border-top: none;}
+.btn-primary {margin-top: 1.875rem;}
+#login-area .btn-sns-area button {width: 48.8%; height: 4.375rem; border-radius: .5rem; font-weight: 500; font-size: 1.125rem; display: flex; justify-content: center; align-items: center;}
+    #login-area .btn-sns-area button::before {content: ''; display: inline-block; background-repeat: no-repeat; background-size: contain; margin-right: .75rem;}
 .btn-naver {background-color: #2db400; color: #ffffff;}
+    .btn-naver::before {width: 32px; height: 28px; background-image: url(../img/symbol-naver.svg); margin-right: .75rem;}
 .btn-kakao {background-color: #ffea0f; color: #3b1e1e;}
+    .btn-kakao::before {width: 34px; height: 31px; background-image: url(../img/symbol-kakao.svg); margin-right: .625rem;}
+#login-area .btn-info-user-area {margin-top: 1.75rem;}
 #login-area .btn-info-user-area ul {display: flex; justify-content: space-around;}
-#login-area .btn-info-user-area li + li {border-left: 1px solid #;}
-#login-area .btn-info-user-area a {color: #;}
+#login-area .btn-info-user-area li {width: 33.333%;}
+#login-area .btn-info-user-area li + li {border-left: 1px solid #d1d1d1;}
+#login-area .btn-info-user-area a {color: #666666;}
+#login-area .guide-area {margin-top: 5.375rem;}
+#login-area .guide-area .tit {color: #333333; font-weight: 500; font-size: 1.5rem;}
+#login-area .guide-area .sub {margin-top: 1rem; color: #333333; font-weight: 200; font-size: 1.125rem;}
+#login-area .guide-area .btn-area {margin-top: 2.5rem;}
+#login-area .guide-area .btn-area button {background-color: #1765ad; color: #ffffff; font-weight: 300; font-size: 1rem; width: 12.5rem; height: 2.875rem; border-radius: .25rem;}
+#login-area .guide-area .btn-area button+button {margin-left: 1rem;}
