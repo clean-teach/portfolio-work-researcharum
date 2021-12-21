@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입 | 리서치아름</title>
+    <title>마이페이지 | 리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/join.css">
+    <link rel="stylesheet" href="../css/mypage.css">
 </head>
 <body>
     <header>
@@ -98,43 +98,115 @@
         </div>
     </header>
 
-    <section id="join-area">
-        <h2>회원가입</h2>
+    <section id="mypage-area">
+        <h2>마이페이지</h2>
         <div class="tab">
             <ul>
-                <li class="on">약관동의</li>
-                <li>정보입력</li>
-                <li>가입완료</li>
+                <li><button type="button" title="" onclick="location.href='my-info.html'">회원정보</button></li>
+                <li class="on"><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
+                <li><button type="button" title="" onclick="location.href='my-inquire.html'">문의내역</button></li>
+                <li><button type="button" title="" onclick="location.href='my-recommender.html'">추천인현황</button></li>
+                <li><button type="button" title="" onclick="location.href='my-deposit.html'">예치금현황</button></li>
             </ul>
         </div>
-        <!-- 약관동의 -->
-        <div class="step-agree-area">
-            <h3>약관동의</h3>
-            <form action="">
-                <input type="checkbox" id="check-complete-agree" class="checkbox-type-01"><label for="check-complete-agree">전체동의함</label>
-                <ul>
-                    <li>
-                        <h4>이용약관 (필수)</h4>
-                        <iframe src="" frameborder="0"></iframe>
-                        <div class="check-area">
-                            <input type="checkbox" id="radio-agree-01-agree" class="checkbox-type-02"><label for="radio-agree-01-agree">동의함</label>
-                            <!-- <input type="radio" name="agree-01" id="radio-agree-01-non" class="checkbox-type-02"><label for="radio-agree-01-non">동의하지 않음</label> -->
-                        </div>
-                    </li>
-                    <li>
-                        <h4>개인정보의 수집 / 이용목적 및 항목 (필수)</h4>
-                        <iframe src="" frameborder="0"></iframe>
-                        <div class="check-area">
-                            <input type="checkbox" id="radio-agree-02-agree" class="checkbox-type-02"><label for="radio-agree-02-agree">동의함</label>
-                            <!-- <input type="radio" name="agree-02" id="radio-agree-02-non" class="checkbox-type-02"><label for="radio-agree-02-non">동의하지 않음</label> -->
-                        </div>
-                    </li>
-                </ul>
-                <div class="primary-btn-area">
-                    <button type="button" title="메인 페이지로 이동" class="btn-gray" onclick="location.href='../index.html'">취소</button>
-                    <button type="button" title="" class="btn-color" onclick="location.href='join-input.html'">본인인증</button>
+        
+        <div class="payment-details-area">
+            <h3>결제내역</h3>
+            <p class="guide"><span class="date">2021-12-30</span>일까지 이용 가능합니다. <br />해지하지 않으실 경우 만료일에 자동 결제됩니다.</p>
+            <div class="page-info-wrap">
+                <div class="total">전체 <span class="num">35</span>건</div>
+                <div class="page-num">페이지 <span class="current">1</span>/32</div>
+            </div>
+            <table>
+                <caption>결제내역</caption>
+                <thead>
+                    <tr>
+                        <th>날짜</th>
+                        <th>금액</th>
+                        <th>승인번호</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2020-07-17</td>
+                        <td>19,800원</td>
+                        <td>20211112900051059416421</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="primary-btn-area">
+                <button type="button" title="" class="btn-gray" onclick="confirm('정기구독을 해지 하시겠습니까?')">멤버쉽구독해지하기</button>
+                <div class="pagination">
+                    <button type="button" title="처음" class="btn-page-first"></button>
+                    <button type="button" title="이전" class="btn-page-prev"></button>
+                    <ul class="num">
+                        <li><button type="button" title="" class="on">1</button></li>
+                        <li><button type="button" title="">2</button></li>
+                        <li><button type="button" title="">3</button></li>
+                        <li><button type="button" title="">4</button></li>
+                        <li><button type="button" title="">5</button></li>
+                    </ul>
+                    <button type="button" title="다음" class="btn-page-next"></button>
+                    <button type="button" title="마지막" class="btn-page-last"></button>
                 </div>
-            </form>
+                <button type="button" title="" class="btn-color" onclick="location.href='my-chang-pay-method.html'">결제수단변경</button>
+            </div>
         </div>
     </section>
 

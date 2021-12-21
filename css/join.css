@@ -2,14 +2,9 @@
 
 body {background-color: #f2f2f2; padding-top: 5.313rem;}
 
-.join-area {background-color: #ffffff; max-width: 672px; padding: 2.75rem 2rem; margin: 3.75rem auto 6.25rem;}
-.join-area>h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
-.join-area>h2+.sub {text-align: center; color: #666666; font-weight: 300; font-size: 1rem; margin-top: 1.125rem;}
-.join-area .primary-btn-area {margin-top: 2.375rem; text-align: center;}
-.join-area .primary-btn-area button {width: 5.5rem; height: 2rem; border-radius: .25rem; font-weight: 300; font-size: .875rem;}
-.join-area .primary-btn-area button+button {margin-left: 1rem;}
-.primary-btn-area .btn-gray {background-color: #525252; color: #ffffff;}
-.primary-btn-area .btn-color {background-color: #ff4545; color: #ffffff;}
+#join-area {background-color: #ffffff; max-width: 672px; padding: 2.75rem 2rem; margin: 3.75rem auto 6.25rem;}
+#join-area>h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
+#join-area>h2+.sub {text-align: center; color: #666666; font-weight: 300; font-size: 1rem; margin-top: 1.125rem;}
 
 .tab {margin-top: 3.5rem;}
 

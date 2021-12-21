@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입 | 리서치아름</title>
+    <title>마이페이지 | 리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/join.css">
+    <link rel="stylesheet" href="../css/mypage.css">
 </head>
 <body>
     <header>
@@ -98,43 +98,51 @@
         </div>
     </header>
 
-    <section id="join-area">
-        <h2>회원가입</h2>
+    <section id="mypage-area">
+        <h2>마이페이지</h2>
         <div class="tab">
             <ul>
-                <li class="on">약관동의</li>
-                <li>정보입력</li>
-                <li>가입완료</li>
+                <li class="on"><button type="button" title="" onclick="location.href='my-info.html'">회원정보</button></li>
+                <li><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
+                <li><button type="button" title="" onclick="location.href='my-inquire.html'">문의내역</button></li>
+                <li><button type="button" title="" onclick="location.href='my-recommender.html'">추천인현황</button></li>
+                <li><button type="button" title="" onclick="location.href='my-deposit.html'">예치금현황</button></li>
             </ul>
         </div>
-        <!-- 약관동의 -->
-        <div class="step-agree-area">
-            <h3>약관동의</h3>
-            <form action="">
-                <input type="checkbox" id="check-complete-agree" class="checkbox-type-01"><label for="check-complete-agree">전체동의함</label>
-                <ul>
-                    <li>
-                        <h4>이용약관 (필수)</h4>
-                        <iframe src="" frameborder="0"></iframe>
-                        <div class="check-area">
-                            <input type="checkbox" id="radio-agree-01-agree" class="checkbox-type-02"><label for="radio-agree-01-agree">동의함</label>
-                            <!-- <input type="radio" name="agree-01" id="radio-agree-01-non" class="checkbox-type-02"><label for="radio-agree-01-non">동의하지 않음</label> -->
-                        </div>
-                    </li>
-                    <li>
-                        <h4>개인정보의 수집 / 이용목적 및 항목 (필수)</h4>
-                        <iframe src="" frameborder="0"></iframe>
-                        <div class="check-area">
-                            <input type="checkbox" id="radio-agree-02-agree" class="checkbox-type-02"><label for="radio-agree-02-agree">동의함</label>
-                            <!-- <input type="radio" name="agree-02" id="radio-agree-02-non" class="checkbox-type-02"><label for="radio-agree-02-non">동의하지 않음</label> -->
-                        </div>
-                    </li>
-                </ul>
-                <div class="primary-btn-area">
-                    <button type="button" title="메인 페이지로 이동" class="btn-gray" onclick="location.href='../index.html'">취소</button>
-                    <button type="button" title="" class="btn-color" onclick="location.href='join-input.html'">본인인증</button>
-                </div>
-            </form>
+        
+        <div class="member-info-area">
+            <h3>회원정보</h3>
+            <table>
+                <caption>회원정보</caption>
+                <tr>
+                    <th>이름</th>
+                    <td>문종민</td>
+                </tr>
+                <tr>
+                    <th>휴대폰번호</th>
+                    <td>01012345678</td>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td>monocr</td>
+                </tr>
+                <tr>
+                    <th>닉네임</th>
+                    <td>모노크롬</td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td>jay@monocr.com</td>
+                </tr>
+                <tr>
+                    <th>추천인</th>
+                    <td>지정근</td>
+                </tr>
+            </table>
+            <div class="primary-btn-area">
+                <button type="button" title="메인 페이지로 이동" class="btn-gray" onclick="location.href='my-info-input.html'">정보변경</button>
+                <button type="button" title="" class="btn-color" onclick="confirm('회원 탈퇴를 하시면 모든 서비스 이용이 중지됩니다.')">회원탈퇴</button>
+            </div>
         </div>
     </section>
 

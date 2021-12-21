@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {padding-top: 5.313rem;}
+
+#mypage-area {max-width: 1296px; padding: 0 1rem; margin: 6.5rem auto;}
+#mypage-area>h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
+#mypage-area .tab {margin-top: 3.5rem;}
+
+.member-info-area {margin-top: 3.875rem;}
+.member-info-area h3 {display: none;}
+.member-info-area table {width: 100%; border-top: 1px solid #787878;}
+.member-info-area th, .member-info-area td {height: 4.375rem; vertical-align: middle; text-align: left; border-bottom: 1px solid #dddddd;}
+.member-info-area th {width: 11.875rem; box-sizing: border-box; padding-left: 1.5rem; color: #666666; font-weight: 300; font-size: 1rem;}
+.member-info-area td {padding: 0 1.5rem; color: #333333; font-weight: 500; font-size: .938rem;}
+
+.member-info-input-area {margin-top: 3.875rem;}
+.member-info-input-area h3 {display: none;}
+.member-info-input-area table {width: 100%; border-top: 1px solid #787878;}
+.member-info-input-area th, .member-info-input-area td {height: 4.375rem; vertical-align: middle; text-align: left; border-bottom: 1px solid #dddddd;}
+.member-info-input-area th {width: 11.875rem; box-sizing: border-box; padding-left: 1.5rem; color: #333333; font-weight: 500; font-size: 1rem;}
+.member-info-input-area td {padding: 0 1.5rem; color: #333333; font-weight: 500; font-size: .938rem;}
+.member-info-input-area input {width: 100%; height: 2.5rem; box-sizing: border-box; border: 1px solid #d6d6d6; padding: 0 1rem; color: #333333; font-weight: 500; font-size: .938rem;}
+
+.payment-details-area h3 {display: none;}
+.payment-details-area h3+.guide {color: #333333; font-weight: 400; font-size: 1.25rem; line-height: 1.875rem; text-align: center; margin-top: 3rem;}
+.payment-details-area h3+.guide .date {color: #ff4545; font-weight: 500;}
+.page-info-wrap {margin-top: 3rem; display: flex; justify-content: space-between; color: #666666; font-weight: 500; font-size: .938rem;}
+.page-info-wrap span {color: #ff4545; letter-spacing: .025rem;}
+.payment-details-area table {width: 100%; border-top: 2px solid #585858; margin-top: 1.25rem;}
+.payment-details-area th, .payment-details-area td {text-align: center; vertical-align: middle; height: 3.25rem;}
+.payment-details-area th {background-color: #f6f6f6; color: #333333; font-weight: 500; font-size: .938rem; border-bottom: 1px solid #787878;}
+.payment-details-area td {color: #666666; font-weight: 300; font-size: .875rem; border-bottom: 1px solid #dddddd; width: 25%;}
+.payment-details-area tr:hover td {background-color: #f7f7f7;}
+.payment-details-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}
+
+.change-payment-method-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
+.change-payment-method-area h3 {text-align: center; color: #333333; font-weight: 500; font-size: 1.5rem;}
+.change-payment-method-area table {width: 100%; border-top: 1px solid #dfdfdf; margin-top: 2.5rem;}
+.change-payment-method-area th, .change-payment-method-area td {border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; vertical-align: middle; text-align: left;}
+.change-payment-method-area th {min-width: 10rem; font-weight: 500; font-size: 1.125rem; color: #333333; box-sizing: border-box; padding-left: 1.5rem;}
+.change-payment-method-area .guide th {background-color: #1765ad; color: #ffffff; font-weight: 500; font-size: 1.25rem; width: 10rem; height: 3.125rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; padding-left: 1.25rem; border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; border-top-right-radius: 1.563rem; border-bottom-right-radius: 1.563rem; margin-top: 2.5rem;}
+.change-payment-method-area .guide th::after {content: ''; display: inline-block; background-color: #ffffff; width: .625rem; height: .625rem; border-radius: 100%; margin-right: .625rem;}
+.change-payment-method-area .guide td {padding: 2.5rem 0;}
+.change-payment-method-area .guide li {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.875rem; margin-top: .75rem; margin-left: 1.25rem; max-width: 22rem;}
+.change-payment-method-area .guide li::before {content: '- ';}
+.change-payment-method-area .pay-method td {height: 4.5rem; text-align: right;}
+.change-payment-method-area td label ~ label {margin-left: 2.25rem;}
