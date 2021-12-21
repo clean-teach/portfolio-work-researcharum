@@ -7,7 +7,7 @@
     <title>회원가입 | 리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/find-id-pw.css">
+    <link rel="stylesheet" href="../css/join.css">
 </head>
 <body>
     <header>
@@ -102,83 +102,23 @@
         <h2>회원가입</h2>
         <div class="tab">
             <ul>
-                <li class="on">약관동의</li>
+                <li>약관동의</li>
                 <li>정보입력</li>
-                <li>가입완료</li>
+                <li class="on">가입완료</li>
             </ul>
         </div>
-        <!-- 약관동의 -->
-        <div class="agree-area">
-            <h3>약관동의</h3>
-            <form action="">
-                <input type="checkbox" id="check-complete-agree"><label for="check-complete-agree">전체동의함</label>
-                <ul>
-                    <li>
-                        <h4>이용약관 (필수)</h4>
-                        <iframe src="" frameborder="0"></iframe>
-                        <input type="radio" name="agree-01" id="radio-agree-01-agree"><label for="radio-agree-01-agree">동의함</label>
-                        <input type="radio" name="agree-01" id="radio-agree-01-non"><label for="radio-agree-01-non">동의하지 않음</label>
-                    </li>
-                    <li>
-                        <h4>개인정보의 수집 / 이용목적 및 항목 (필수)</h4>
-                        <iframe src="" frameborder="0"></iframe>
-                        <input type="radio" name="agree-02" id="radio-agree-02-agree"><label for="radio-agree-02-agree">동의함</label>
-                        <input type="radio" name="agree-02" id="radio-agree-02-non"><label for="radio-agree-02-non">동의하지 않음</label>
-                    </li>
-                </ul>
-                <button type="button" title="" class="btn-gray">취소</button>
-                <button type="submit" title="" class="btn-color">본인인증</button>
-            </form>
-        </div>
-        <!-- 정보입력 -->
-        <div class="input-area">
-            <h3>정보입력</h3>
-            <form action="">
-                <table>
-                    <caption>정보입력</caption>
-                    <tr>
-                        <th>이름</th>
-                        <td>문종민</td>
-                    </tr>
-                    <tr>
-                        <th>휴대폰 번호</th>
-                        <td>01012345678</td>
-                    </tr>
-                    <tr>
-                        <th><label for=""></label></th>
-                        <td><input type="text" id="" placeholder="" required autofocus></td>
-                    </tr>
-                    <tr>
-                        <th><label for=""></label></th>
-                        <td><input type="password" id="" placeholder="" required></td>
-                    </tr>
-                    <tr>
-                        <th><label for=""></label></th>
-                        <td><input type="password" id="" placeholder="" required></td>
-                    </tr>
-                    <tr>
-                        <th><label for=""></label></th>
-                        <td><input type="text" id="" placeholder="" required></td>
-                    </tr>
-                    <tr>
-                        <th><label for=""></label></th>
-                        <td><input type="email" id="" placeholder=""></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td>
-                            <label for=""></label><select name="" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                            <div class="search-bar">
-                                <label for=""></label><input type="email" id="" placeholder="">
-                                <button type="button"></button>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+        <!-- 가입완료 -->
+        <div class="step-complete-area">
+            <p class="tit"><span class="id">monocr</span>님 <br/><span class="color">가입이 완료</span>되었습니다.</p>
+            <div class="researcharum-guide-area">
+                <p class="tit">리서치알음은 시가총액 5,000억원 이하의 중소형주를 커버합니다.</p>
+                <p class="sub">정기회원을 가입하시면 알음리포트 무제한 열람 하실 수 있습니다.</p>
+                <div class="btn-area">
+                    <button type="button" title="새 탭으로 열기">알음서비스 알아보기</button>
+                    <button type="button" title="새 탭으로 열기">정기회원가입 방법</button>
+                </div>
+            </div>
+            <button type="button" title="" class="btn-primary" onclick="location.href='join-membership.html'">멤버십회원 가입하기</button>
         </div>
     </section>
 
