@@ -8,30 +8,24 @@ body {padding-top: 5.313rem;}
 
 .member-info-area {margin-top: 3.875rem;}
 .member-info-area h3 {display: none;}
-.member-info-area table {width: 100%; border-top: 1px solid #787878;}
-.member-info-area th, .member-info-area td {height: 4.375rem; vertical-align: middle; text-align: left; border-bottom: 1px solid #dddddd;}
 .member-info-area th {width: 11.875rem; box-sizing: border-box; padding-left: 1.5rem; color: #666666; font-weight: 300; font-size: 1rem;}
-.member-info-area td {padding: 0 1.5rem; color: #333333; font-weight: 500; font-size: .938rem;}
+.member-info-area td {padding: 0 1.5rem; color: #333333; font-size: .938rem;}
 
 .member-info-input-area {margin-top: 3.875rem;}
 .member-info-input-area h3 {display: none;}
-.member-info-input-area table {width: 100%; border-top: 1px solid #787878;}
-.member-info-input-area th, .member-info-input-area td {height: 4.375rem; vertical-align: middle; text-align: left; border-bottom: 1px solid #dddddd;}
-.member-info-input-area th {width: 11.875rem; box-sizing: border-box; padding-left: 1.5rem; color: #333333; font-weight: 500; font-size: 1rem;}
-.member-info-input-area td {padding: 0 1.5rem; color: #333333; font-weight: 500; font-size: .938rem;}
+.member-info-input-area th {width: 11.875rem; box-sizing: border-box; padding-left: 1.5rem; color: #333333;}
+.member-info-input-area td {padding: 0 1.5rem; color: #333333; font-size: .938rem;}
 .member-info-input-area input {width: 100%; height: 2.5rem; box-sizing: border-box; border: 1px solid #d6d6d6; padding: 0 1rem; color: #333333; font-weight: 500; font-size: .938rem;}
 
-.payment-details-area h3 {display: none;}
-.payment-details-area h3+.guide {color: #333333; font-weight: 400; font-size: 1.25rem; line-height: 1.875rem; text-align: center; margin-top: 3rem;}
-.payment-details-area h3+.guide .date {color: #ff4545; font-weight: 500;}
+.payment-history-area h3 {display: none;}
+.payment-history-area h3+.guide {color: #333333; font-weight: 400; font-size: 1.25rem; line-height: 1.875rem; text-align: center; margin-top: 3rem;}
+.payment-history-area h3+.guide .date {color: #ff4545; font-weight: 500;}
 .page-info-wrap {margin-top: 3rem; display: flex; justify-content: space-between; color: #666666; font-weight: 500; font-size: .938rem;}
 .page-info-wrap span {color: #ff4545; letter-spacing: .025rem;}
-.payment-details-area table {width: 100%; border-top: 2px solid #585858; margin-top: 1.25rem;}
-.payment-details-area th, .payment-details-area td {text-align: center; vertical-align: middle; height: 3.25rem;}
-.payment-details-area th {background-color: #f6f6f6; color: #333333; font-weight: 500; font-size: .938rem; border-bottom: 1px solid #787878;}
-.payment-details-area td {color: #666666; font-weight: 300; font-size: .875rem; border-bottom: 1px solid #dddddd; width: 25%;}
-.payment-details-area tr:hover td {background-color: #f7f7f7;}
-.payment-details-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}
+.payment-history-area table {margin-top: 1.25rem;}
+.payment-history-area td {width: 25%;}
+.payment-history-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}
+.payment-history-area .primary-btn-area .pagination {margin-top: 0;}
 
 .change-payment-method-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
 .change-payment-method-area h3 {text-align: center; color: #333333; font-weight: 500; font-size: 1.5rem;}
@@ -41,7 +35,80 @@ body {padding-top: 5.313rem;}
 .change-payment-method-area .guide th {background-color: #1765ad; color: #ffffff; font-weight: 500; font-size: 1.25rem; width: 10rem; height: 3.125rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; padding-left: 1.25rem; border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; border-top-right-radius: 1.563rem; border-bottom-right-radius: 1.563rem; margin-top: 2.5rem;}
 .change-payment-method-area .guide th::after {content: ''; display: inline-block; background-color: #ffffff; width: .625rem; height: .625rem; border-radius: 100%; margin-right: .625rem;}
 .change-payment-method-area .guide td {padding: 2.5rem 0;}
-.change-payment-method-area .guide li {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.875rem; margin-top: .75rem; margin-left: 1.25rem; max-width: 22rem;}
+.change-payment-method-area .guide li {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.875rem; margin-left: 1.25rem; max-width: 22rem;}
 .change-payment-method-area .guide li::before {content: '- ';}
 .change-payment-method-area .pay-method td {height: 4.5rem; text-align: right;}
 .change-payment-method-area td label ~ label {margin-left: 2.25rem;}
+
+.question-history-area h3 {display: none;}
+.question-history-area table {margin-top: 1.25rem; table-layout: fixed;}
+.question-history-area th:nth-child(1) {width: 75%;}
+.question-history-area td {padding: 0 2.5rem;}
+.question-history-area td.tit {text-align: left;}
+.question-history-area td.date {letter-spacing: .025rem;}
+.question-history-area td.state {color: #999999;}
+.question-history-area .complete td.state {color: #666666; font-weight: 500;}
+.question-history-area .complete td.state::after {content: ''; display: inline-block; width: .875rem; height: .875rem; background: url(../img/icon-anggle-bottom-1px-999999.svg) no-repeat bottom; background-size: contain; margin-left: .5rem;}
+.question-history-area .complete.on td.state::after {background-image: url(../img/icon-anggle-top-2px-666666.svg); background-position: bottom;}
+.question-history-area .accordion-cover {cursor: auto;}
+.question-history-area .accordion-cover.complete {cursor: pointer;}
+.accordion-cover.on td, .accordion-view td {background-color: #f7f7f7;}
+.accordion-view td {text-align: left; padding: 1.5rem 2.5rem;}
+.question-history-area .accordion-view h4 {display: none;}
+.question-history-area .question, .question-history-area .answer {position: relative; padding-left: 2.25rem;}
+.question-history-area .answer {margin-top: 1.25rem;}
+.question-history-area .question::before, .question-history-area .answer::before {color: #ffffff; width: 1.5rem; height: 1.5rem; border-radius: 100%; display: flex; justify-content: center; align-items: center; position: absolute; top: 0; left: 0;}
+.question-history-area .question::before {content: 'Q'; background-color: #939393;}
+.question-history-area .answer::before {content: 'A'; background-color: #ff4545;}
+
+.recommender-list-area h3 {display: none;}
+.recommender-list-area table {margin-top: 1.25rem;}
+.recommender-list-area table a {color: #666666;}
+.recommender-list-area table a:hover {text-decoration: underline;}
+
+.recommender-view-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
+.recommender-view-area h3 {text-align: center; color: #333333; font-weight: 500; font-size: 1.5rem;}
+.recommender-view-area .recommender-info {margin-top: 2.5rem;}
+.recommender-view-area .recommender-info th, .recommender-view-area .recommender-info td {height: 4.5rem;}
+.recommender-view-area .recommender-info td {letter-spacing: .025rem;}
+.recommender-view-area .payment-history {margin-top: 1.25rem;}
+.recommender-view-area .payment-history td {letter-spacing: .05rem;}
+
+.deposit-history-area h3 {display: none;}
+.deposit-history-area .total-info {background-color: #1765ad; color: #ffffff; margin-top: 3.75rem; width: 100%; height: 6.25rem; border-radius: .5rem; display: flex; justify-content: space-between; align-items: center;}
+.deposit-history-area .total-info .balance {padding-left: 1.75rem; font-weight: 300; font-size: 1.5rem; padding-bottom: .4rem;}
+.deposit-history-area .total-info .balance img {width: 2.25rem; margin-right: 1rem; margin-bottom: -.4rem;}
+.deposit-history-area .total-info .balance span {font-size: 2rem;}
+.deposit-history-area .total-info .balance .num {font-weight: bold; letter-spacing: .05rem; margin-left: .4rem;}
+.deposit-history-area .total-info .btn-wrap {border-left: 1px solid #0b4982; width: 6.875rem; height: 100%; padding: 0 1.5rem; display: flex; flex-direction: column; justify-content: space-evenly;}
+.deposit-history-area .total-info .btn-wrap button {display: block; color: #ffffff; font-weight: 500; font-size: 1rem; text-align: justify; width: 100%; display: flex; justify-content: space-between; align-items: center;}
+.deposit-history-area .total-info .btn-wrap button svg {width: .5rem;}
+.deposit-history-area table {margin-top: 1.25rem;}
+.deposit-history-area table .memo {text-align: left;}
+
+.deposit-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
+.deposit-area h3 {text-align: center; color: #333333; font-weight: 500; font-size: 1.5rem;}
+.deposit-area table {width: 100%; border-top: 1px solid #dfdfdf; margin-top: 2.5rem;}
+.deposit-area th, .deposit-area td {border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; height: 4.5rem; vertical-align: middle; text-align: left;}
+.deposit-area th {min-width: 7.25rem; font-weight: 500; font-size: 1.125rem; color: #333333; box-sizing: border-box; padding-left: 1.5rem;}
+.deposit-area .pay-method td {text-align: right;}
+.deposit-area td input {height: 3.125rem; font-size: .875rem;}
+.deposit-area td label ~ label {margin-left: 2.25rem;}
+
+.withdraw-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
+.withdraw-area h3 {text-align: center; color: #333333; font-weight: 500; font-size: 1.5rem;}
+.withdraw-area table {width: 100%; margin-top: 2.5rem;}
+.withdraw-area th, .withdraw-area td {border-top: 1px solid #dfdfdf; border-top: 1px solid #dfdfdf; height: 4.5rem; vertical-align: middle; text-align: left;}
+.withdraw-area th {min-width: 8.75rem; font-weight: 500; font-size: 1.125rem; color: #333333; box-sizing: border-box; padding-left: 1.5rem;}
+.withdraw-area .num {font-size: 1rem; letter-spacing: .025rem; color: #333333;}
+.withdraw-area td input {height: 3.125rem; font-size: .875rem;}
+.withdraw-area .actual-amount td {text-align: right;}
+.withdraw-area .actual-amount input {width: calc(100% - 10rem);}
+.withdraw-area .actual-amount .txt {display: inline-block; width: 10rem;}
+.withdraw-area .resident-registration label {display: none;}
+.withdraw-area .resident-registration input {width: 45%;}
+.withdraw-area .resident-registration .hyphen {margin: 0 3%;}
+.withdraw-area .account label {display: none;}
+.withdraw-area .account input {width: 30%;}
+.withdraw-area .account input ~ input {margin-left: 1rem;}
+.withdraw-area .guide td {font-weight: 300; font-size: .875rem; line-height: 1.5rem; color: #999999;}

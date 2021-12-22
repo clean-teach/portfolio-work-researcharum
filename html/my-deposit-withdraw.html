@@ -103,40 +103,56 @@
         <div class="tab">
             <ul>
                 <li><button type="button" title="" onclick="location.href='my-info.html'">회원정보</button></li>
-                <li class="on"><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
+                <li><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
                 <li><button type="button" title="" onclick="location.href='my-question.html'">문의내역</button></li>
                 <li><button type="button" title="" onclick="location.href='my-recommender-list.html'">추천인현황</button></li>
-                <li><button type="button" title="" onclick="location.href='my-deposit-list.html'">예치금현황</button></li>
+                <li class="on"><button type="button" title="" onclick="location.href='my-deposit-list.html'">예치금현황</button></li>
             </ul>
         </div>
         
-        <div class="change-payment-method-area">
-            <h3>결제수단 변경</h3>
+        <div class="withdraw-area">
+            <h3>출금 신청</h3>
             <form action="">
                 <table>
-                    <caption>결제수단 변경</caption>
+                    <caption>예치금 충전</caption>
+                    <tr>
+                        <th>출금 가능액</th>
+                        <td class="num">723,000원</td>
+                    </tr>
+                    <tr>
+                        <th><label for="input-amount">출금신청</label></th>
+                        <td><input type="number" id="input-amount" placeholder="원단위 입력 (50,000원 이상 출금 가능)" required autofocus></td>
+                    </tr>
+                    <tr class="actual-amount">
+                        <th><label for="input-actual-amount">실출금액</label></th>
+                        <td><input type="number" id="inpu-actualt-amount" value="0" readonly><span class="txt">원 (10% 차감 후 출금)</span></td>
+                    </tr>
+                    <tr class="resident-registration">
+                        <th>주민등록번호</th>
+                        <td>
+                            <label for="input-resident-registration-01">주민등록번호 앞번호</label><input type="text" id="input-resident-registration-01" placeholder="" required>
+                            <span class="hyphen">-</span>
+                            <label for="input-resident-registration-02">주민등록번호 뒷번호</label><input type="text" id="input-resident-registration-02" placeholder="" required></td>
+                    </tr>
+                    <tr class="account">
+                        <th>계좌정보</th>
+                        <td>
+                            <label for="input-bank-name">은행명</label><input type="text" id="input-bank-name" placeholder="은행명" required>
+                            <label for="input-account-number">계좌번호</label><input type="text" id="input-account-number" placeholder="계좌번호" required>
+                            <label for="input-account-holder">예금주</label><input type="text" id="input-account-holder" placeholder="예금주" required>
+                        </td>
+                    </tr>
                     <tr class="guide">
                         <th>안내사항</th>
                         <td>
-                            <ul>
-                                <li>결제 수단을 변경합니다.</li>
-                                <li>신용카드 결제의 경우 실결제는 진행되지 않습니다.</li>
-                                <li>휴대폰 결제로 변경은 1개월 결제가 진행되면서 처리됩니다.</li>
-                                <li>휴대폰 결제로 변경할 경우 현재 잔여기간이 남아 있으시면 잔여기간후로 기간이 연장되어 결제 처리 됩니다.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr class="pay-method">
-                        <th>변경하실 결제수단</th>
-                        <td>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-01" class="checkbox-type-02" checked><label for="check-payment-option-01">카드 결제</label>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-02" class="checkbox-type-02"><label for="check-payment-option-02">휴대폰 결제</label>
+                            주민등록번호 수집은 세금신고목적으로 사용됩니다. <br />
+                            ※ 출금요청금액에서 수수료, 세금 등 기타 제비용 10%가 제외됩니다.
                         </td>
                     </tr>
                 </table>
                 <div class="primary-btn-area">
-                    <button type="button" title="이전 화면으로 이동" class="btn-gray" onclick="location.href='my-pay.html'">취소</button>
-                    <button type="button" title="" class="btn-color" onclick="confirm('결제수단을 변경 하시겠습니까 ?')">변경</button>
+                    <button type="button" title="이전 화면으로 이동" class="btn-gray" onclick="location.href='my-deposit-list.html'">취소</button>
+                    <button type="button" title="" class="btn-color" onclick="confirm('00,000원을 출금신청 하시겠습니까 ?')">출금</button>
                 </div>
             </form>
         </div>

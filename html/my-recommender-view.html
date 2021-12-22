@@ -103,42 +103,117 @@
         <div class="tab">
             <ul>
                 <li><button type="button" title="" onclick="location.href='my-info.html'">회원정보</button></li>
-                <li class="on"><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
+                <li><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
                 <li><button type="button" title="" onclick="location.href='my-question.html'">문의내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-recommender-list.html'">추천인현황</button></li>
+                <li class="on"><button type="button" title="" onclick="location.href='my-recommender-list.html'">추천인현황</button></li>
                 <li><button type="button" title="" onclick="location.href='my-deposit-list.html'">예치금현황</button></li>
             </ul>
         </div>
         
-        <div class="change-payment-method-area">
-            <h3>결제수단 변경</h3>
-            <form action="">
-                <table>
-                    <caption>결제수단 변경</caption>
-                    <tr class="guide">
-                        <th>안내사항</th>
-                        <td>
-                            <ul>
-                                <li>결제 수단을 변경합니다.</li>
-                                <li>신용카드 결제의 경우 실결제는 진행되지 않습니다.</li>
-                                <li>휴대폰 결제로 변경은 1개월 결제가 진행되면서 처리됩니다.</li>
-                                <li>휴대폰 결제로 변경할 경우 현재 잔여기간이 남아 있으시면 잔여기간후로 기간이 연장되어 결제 처리 됩니다.</li>
-                            </ul>
-                        </td>
+        <div class="recommender-view-area">
+            <h3>추천인 상세보기</h3>
+            <table class="recommender-info table-type-02">
+                <caption>추천인 상세보기</caption>
+                <tr>
+                    <th>아이디</th>
+                    <td>바람이**</td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td>문*민</td>
+                </tr>
+                <tr>
+                    <th>휴대폰번호</th>
+                    <td>010-****-5678</td>
+                </tr>
+                <tr>
+                    <th>누적적립금액</th>
+                    <td>128,500원</td>
+                </tr>
+                <tr>
+                    <th>누적결제횟수</th>
+                    <td>21</td>
+                </tr>
+            </table>
+            <div class="page-info-wrap">
+                <div class="total">전체 <span class="num">35</span>건</div>
+                <div class="page-num">페이지 <span class="current">1</span>/32</div>
+            </div>
+            <table class="payment-history table-type-01">
+                <caption>결제 내역</caption>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>결제금액</th>
+                        <th>결제일</th>
                     </tr>
-                    <tr class="pay-method">
-                        <th>변경하실 결제수단</th>
-                        <td>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-01" class="checkbox-type-02" checked><label for="check-payment-option-01">카드 결제</label>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-02" class="checkbox-type-02"><label for="check-payment-option-02">휴대폰 결제</label>
-                        </td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
                     </tr>
-                </table>
-                <div class="primary-btn-area">
-                    <button type="button" title="이전 화면으로 이동" class="btn-gray" onclick="location.href='my-pay.html'">취소</button>
-                    <button type="button" title="" class="btn-color" onclick="confirm('결제수단을 변경 하시겠습니까 ?')">변경</button>
-                </div>
-            </form>
+                    <tr>
+                        <td>2</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>19,800원</td>
+                        <td>2021-11-11 00:14:45</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button type="button" title="처음" class="btn-page-first"></button>
+                <button type="button" title="이전" class="btn-page-prev"></button>
+                <ul class="num">
+                    <li><button type="button" title="" class="on">1</button></li>
+                    <li><button type="button" title="">2</button></li>
+                    <li><button type="button" title="">3</button></li>
+                    <li><button type="button" title="">4</button></li>
+                    <li><button type="button" title="">5</button></li>
+                </ul>
+                <button type="button" title="다음" class="btn-page-next"></button>
+                <button type="button" title="마지막" class="btn-page-last"></button>
+            </div>
         </div>
     </section>
 

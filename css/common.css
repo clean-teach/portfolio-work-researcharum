@@ -4,13 +4,16 @@ body {min-width: 320px; font-size: 16px; letter-spacing: -.05em; background-colo
 body * {font-family: 'Noto Sans KR', Helvetica, Arial, sans-serif;}
 a {text-decoration: none;}
 button {padding: 0; background: none; border: none; cursor: pointer;}
-label {cursor: pointer;}
 caption {display: none;}
+label {cursor: pointer;}
+[type=text], [type=password], [type=email], [type=tel], [type=number] {width: 100%; height: 2.5rem; box-sizing: border-box; border: 1px solid #d6d6d6; padding: 0 1rem; color: #333333; font-weight: 500; font-size: .938rem;}
 [type=checkbox], [type=radio] {cursor: pointer;}
 ::placeholder {color: #999999;}
 
 
 /* common */
+.ellipsis {text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+
 .center-wrap {max-width: 1296px; padding: 0 1rem; margin: 0 auto;}
 .primary-btn-area {margin-top: 2.375rem; text-align: center;}
 .primary-btn-area>button {min-width: 5.5rem; height: 2rem; box-sizing: border-box; padding: 0 1.25rem; border-radius: .25rem; font-weight: 300; font-size: .875rem;}
@@ -30,6 +33,13 @@ caption {display: none;}
 .checkbox-type-02+label::before {top: 4px; left: 0; width: 16px; height: 16px; border: 1px solid #9f9f9f;}
 .checkbox-type-02:checked+label::after {top: 10px; left: 6px; width: 6px; height: 6px; background-color: #ff4545;}
 
+.researcharum-guide-area {text-align: center;}
+.researcharum-guide-area .tit {color: #333333; font-weight: 500; font-size: 1.5rem;}
+.researcharum-guide-area .sub {margin-top: 1rem; color: #333333; font-weight: 200; font-size: 1.125rem;}
+.researcharum-guide-area .btn-area {margin-top: 2.5rem;}
+.researcharum-guide-area .btn-area button {background-color: #1765ad; color: #ffffff; font-weight: 300; font-size: 1rem; width: 12.5rem; height: 2.875rem; border-radius: .25rem;}
+.researcharum-guide-area .btn-area button+button {margin-left: 1rem;}
+
 .tab {border: 1px solid #ff4545; border-radius: .5rem; text-align: center; font-weight: 500; font-size: 1rem; overflow: hidden;}
 .tab ul {display: flex;}
 .tab li + li {border-left: 1px solid #ff4545;}
@@ -38,14 +48,17 @@ caption {display: none;}
 .tab li.on {color: #ffffff; background-color: #ff4545;}
 .tab li.on button {color: #ffffff;}
 
-.researcharum-guide-area {text-align: center;}
-.researcharum-guide-area .tit {color: #333333; font-weight: 500; font-size: 1.5rem;}
-.researcharum-guide-area .sub {margin-top: 1rem; color: #333333; font-weight: 200; font-size: 1.125rem;}
-.researcharum-guide-area .btn-area {margin-top: 2.5rem;}
-.researcharum-guide-area .btn-area button {background-color: #1765ad; color: #ffffff; font-weight: 300; font-size: 1rem; width: 12.5rem; height: 2.875rem; border-radius: .25rem;}
-.researcharum-guide-area .btn-area button+button {margin-left: 1rem;}
+table.table-type-01 {width: 100%; border-top: 2px solid #585858;}
+.table-type-01 th, .table-type-01 td {text-align: center; vertical-align: middle; height: 3.25rem;}
+.table-type-01 th {background-color: #f6f6f6; color: #333333; font-weight: 500; font-size: .938rem; border-bottom: 1px solid #787878;}
+.table-type-01 td {color: #666666; font-weight: 300; font-size: .875rem; letter-spacing: .05rem; border-bottom: 1px solid #dddddd;}
+.table-type-01 tr:hover td {background-color: #f7f7f7;}
+table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
+.table-type-02 th, .table-type-02 td {border-bottom: 1px solid #dfdfdf; height: 4.375rem; vertical-align: middle; text-align: left; padding: 0 1rem; font-weight: 500; font-size: 1rem;}
+.table-type-02 th {color: #666666;}
+.table-type-02 td {color: #333333;}
 
-.pagination {display: flex; justify-content: center;}
+.pagination {display: flex; justify-content: center; margin-top: 2rem;}
 .pagination button {width: 2.125rem; height: 2.125rem;}
 .pagination>button {background-repeat: no-repeat; background-image: url(../img/sprite-btn-pagination.png); margin: 0 .5rem;}
 .pagination .btn-page-first {background-position: 0 center;}
@@ -57,6 +70,10 @@ caption {display: none;}
 .pagination li ~ li {margin-left: .75rem;}
 .pagination .num button {color: #333333; font-weight: 300; font-size: .875rem; display: flex; justify-content: center; align-items: center; border-radius: 100%;}
 .pagination .num button.on {background-color: #ffd5d5;}
+
+.accordion-cover {cursor: pointer;}
+.accordion-view {display: none;}
+.accordion-cover.on + .accordion-view {display: table-row;}
 
 
 /* header */

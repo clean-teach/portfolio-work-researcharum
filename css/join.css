@@ -32,10 +32,7 @@ input[type=text], input[type=password], input[type=email], select {border: 1px s
 .recommender-area .search-bar button path, .recommender-area .search-bar button circle, .recommender-area .search-bar button line {stroke: #333333;}
 
 .step-input-area .search-result {margin-top: 2.5rem;}
-.step-input-area .search-result table {width: 100%; border-top: 2px solid #585858;}
-.step-input-area .search-result th, .step-input-area .search-result td {vertical-align: middle; text-align: center; height: 3.5rem;}
-.step-input-area .search-result th {background-color: #f6f6f6; border-bottom: 1px solid #787878; font-weight: 500; font-size: .938rem; color: #333333;}
-.step-input-area .search-result td {border-bottom: 1px solid #dddddd; font-weight: 200; font-size: .875rem; color: #666666; letter-spacing: .05rem;}
+.step-input-area .search-result td {letter-spacing: .05rem;}
 .step-input-area .search-result td label {display: none;}
 
 .step-complete-area>.tit {font-weight: 300; font-size: 1.25rem; color: #333333; text-align: center; margin-top: 6.125rem;}
