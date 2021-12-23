@@ -16,7 +16,8 @@ label {cursor: pointer;}
 .mulit-line-ellipsis {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
 .center-wrap {max-width: 1296px; padding: 0 1rem; margin: 0 auto;}
-.primary-btn-area {margin-top: 2.375rem; text-align: center;}
+.primary-btn-area {position: relative; margin-top: 2.375rem; text-align: center;}
+.primary-btn-area .right {position: absolute; top: 0; right: 0;}
 .primary-btn-area>button {min-width: 5.5rem; height: 2rem; box-sizing: border-box; padding: 0 1.25rem; border-radius: .25rem; font-weight: 300; font-size: .875rem;}
 .primary-btn-area>button+button {margin-left: 1rem;}
 .btn-gray {background-color: #525252; color: #ffffff;}
@@ -49,15 +50,26 @@ label {cursor: pointer;}
 .tab li.on {color: #ffffff; background-color: #ff4545;}
 .tab li.on button {color: #ffffff;}
 
-table.table-type-01 {width: 100%; border-top: 2px solid #585858;}
+table.table-type-01 {width: 100%; border-top: 2px solid #585858; margin-top: 1.25rem;}
 .table-type-01 th, .table-type-01 td {text-align: center; vertical-align: middle; height: 3.25rem;}
 .table-type-01 th {background-color: #f6f6f6; color: #333333; font-weight: 500; font-size: .938rem; border-bottom: 1px solid #787878;}
 .table-type-01 td {color: #666666; font-weight: 300; font-size: .875rem; letter-spacing: .05rem; border-bottom: 1px solid #dddddd;}
+.table-type-01 td a {color: #666666;}
+.table-type-01 td a:hover {text-decoration: underline;}
 .table-type-01 tr:hover td {background-color: #f7f7f7;}
 table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .table-type-02 th, .table-type-02 td {border-bottom: 1px solid #dfdfdf; height: 4.375rem; vertical-align: middle; text-align: left; padding: 0 1rem; font-weight: 500; font-size: 1rem;}
 .table-type-02 th {color: #666666;}
 .table-type-02 td {color: #333333;}
+
+.notice-search-area {border: 1px solid #dddddd; background-color: #f6f6f6; padding: 2rem 0; margin-top: 2.5rem;}
+.notice-search-area .search-bar {position: relative; border: 1px solid #d6d6d6; background-color: #ffffff; width: fit-content; height: 2.75rem; margin: 0 auto;}
+.notice-search-area .search-bar label {display: none;}
+.notice-search-area .search-bar select, .notice-search-area .search-bar input {border: none; font-weight: 300; font-size: .875rem; height: 100%; box-sizing: border-box; padding: 0 .75rem;}
+.notice-search-area .search-bar select {border-right: 1px solid #d6d6d6; color: #666666; width: 5rem;}
+.notice-search-area .search-bar input {color: #333333; width: 23.625rem;}
+.notice-search-area .search-bar button svg {position: absolute; right: 1rem; top: .8rem; width: 1.125rem;}
+.notice-search-area .search-bar button line, .notice-search-area .search-bar button circle {stroke: #333333;}
 
 .card-list {display: flex; flex-wrap: wrap; justify-content: space-between;}
 .card-list>li {position: relative; width: 312px; height: 15rem; margin-bottom: 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 0 40px rgba(2, 2, 2, .14);}
@@ -84,6 +96,17 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .accordion-cover {cursor: pointer;}
 .accordion-view {display: none;}
 .accordion-cover.on + .accordion-view {display: table-row;}
+
+.notice-view-area {max-width: 996px; padding: 0 1rem; margin: 6.5rem auto;}
+.notice-view-area h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
+.notice-view-area .doc-info-wrap {text-align: center; color: #a0a0a0; font-weight: 300; font-size: 1.125rem; margin-top: 1.375rem;}
+.notice-view-area .doc-info-wrap span {color: #333333; font-weight: 400; margin: 0 1.125rem;}
+.notice-view-area .doc-info-wrap .date {letter-spacing: .05rem;}
+.notice-view-area .cont-area {margin-top: 4.375rem; color: #333333; font-weight: 300; font-size: 1rem; line-height: 1.75rem;}
+.notice-view-area .cont-area img {margin: 2.25rem 0;}
+.notice-view-area .cont-area p {margin: 2.25rem 0;}
+.notice-view-area .primary-btn-area {margin-top: 3.25rem;}
+.notice-view-area .primary-btn-area button {background-color: #f4f4f4; color: #333333; font-weight: 500; font-size: 1.25rem; min-width: 8rem; height: 3.75rem; border-radius: .5rem;}
 
 
 /* header */

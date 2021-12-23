@@ -64,8 +64,6 @@ body {padding-top: 5.313rem;}
 
 .recommender-list-area h3 {display: none;}
 .recommender-list-area table {margin-top: 1.25rem;}
-.recommender-list-area table a {color: #666666;}
-.recommender-list-area table a:hover {text-decoration: underline;}
 
 .recommender-view-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
 .recommender-view-area h3 {text-align: center; color: #333333; font-weight: 500; font-size: 1.5rem;}
