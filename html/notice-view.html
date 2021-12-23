@@ -4,47 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마이페이지 | 리서치아름</title>
+    <title>공지사항&이벤트 | 리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/mypage.css">
+    <link rel="stylesheet" href="../css/customer-service.css">
 </head>
 <body>
-    <section id="mypage-area">
-        <h2>마이페이지</h2>
-        <div class="tab">
-            <ul>
-                <li><button type="button" title="" onclick="location.href='my-info.html'">회원정보</button></li>
-                <li><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-question.html'">문의내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-recommender-list.html'">추천인현황</button></li>
-                <li class="on"><button type="button" title="" onclick="location.href='my-deposit-list.html'">예치금현황</button></li>
-            </ul>
-        </div>
-        
-        <div class="deposit-area">
-            <h3>예치금 충전</h3>
-            <form action="">
-                <table>
-                    <caption>예치금 충전</caption>
-                    <tr>
-                        <th><label for="input-recharge-amount">충전금액</label></th>
-                        <td><input type="number" id="input-recharge-amount" placeholder="충전하실 금액을 숫자만 입력해주세요" required autofocus></td>
-                    </tr>
-                    <tr class="pay-method">
-                        <th>결제방법</th>
-                        <td>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-01" class="checkbox-type-02" checked><label for="check-payment-option-01">카드 결제</label>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-02" class="checkbox-type-02"><label for="check-payment-option-02">휴대폰 결제</label>
-                        </td>
-                    </tr>
-                </table>
-                <div class="primary-btn-area">
-                    <button type="button" title="이전 화면으로 이동" class="btn-gray" onclick="location.href='my-deposit-list.html'">취소</button>
-                    <button type="button" title="" class="btn-color" onclick="confirm('입력하신 내용으로 충전 하시겠습니까 ?')">충전</button>
-                </div>
-            </form>
-        </div>
+    <section>
+        <article id="notice-view-area">
+            <h2>리포트 파일 열람 오류</h2>
+            <div class="doc-info-wrap">
+                <span class="type">공지사항</span>|<span class="date">2021년 08월 28일</span>
+            </div>
+            <div class="cont-area">
+                <img src="../img/upload/sample-01.jpg" alt="밀밭을 수확하고 있는 트랙터">
+                <p>과거부터 '농업' 에 유독 관심이 많았다.</p>
+                <p>수출 실적 호조를 아이디어로 트랙터 기업인 '대동공업( 대동)'에 투자를 한 것과 미래 먹거리 부족에 필연적으로 그 역할이 부각 될 스마트팜 관련 기업인 '그린플러스', '국순당'등의 기업을 조사하기까지 다른 투자자들이 시장을 주도하는 섹시한 테마에 몰려갈 때 유독 이 하품이 나오는 섹터가 궁금했고, 공부해보고 싶었다.</p>
+                <p>나름 부족하지 않은 수익을 보고 나온 섹터였는데, 최근 조금 흥미로운 기사가 있어서 다시 이 섹터를 조금 살펴 볼 필요성을 느낀다.</p>
+            </div>
+            <div class="primary-btn-area">
+                <button type="button" title="페이지 이동" class="btn-gray">목록보기</button>
+            </div>
+        </article>
     </section>
 
     <footer>

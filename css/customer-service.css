@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body {padding-top: 5.313rem;}
+h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
+h2 span {color: #999999;}
+h2+.sub {text-align: center; color: #333333; font-weight: 300; font-size: 1.375rem; line-height: 1.875rem; margin-top: 1rem;}
+h2+.sub span {color: #666666; font-size: 1rem;}
+.tab {margin: 3.5rem auto 0; width: 18.75rem;}
+.search-area {border: 1px solid #dddddd; background-color: #f6f6f6; padding: 2rem 0; margin-top: 2.5rem;}
+.search-area .search-bar {position: relative; border: 1px solid #d6d6d6; background-color: #ffffff; width: fit-content; height: 2.75rem; margin: 0 auto;}
+.search-area .search-bar label {display: none;}
+.search-area .search-bar select, .search-area .search-bar input {border: none; font-weight: 300; font-size: .875rem; height: 100%; box-sizing: border-box; padding: 0 .75rem;}
+.search-area .search-bar select {border-right: 1px solid #d6d6d6; color: #666666; width: 5rem;}
+.search-area .search-bar input {color: #333333; width: 23.625rem;}
+.search-area .search-bar button svg {position: absolute; right: 1rem; top: .8rem; width: 1.125rem;}
+.search-area .search-bar button line, .search-area .search-bar button circle {stroke: #333333;}
+.card-list {margin-top: 3rem;}
+.pagination {margin-top: 2rem;}
+.page-info-wrap {margin-top: 3rem; display: flex; justify-content: space-between; color: #666666; font-weight: 500; font-size: .938rem;}
+.page-info-wrap span {color: #ff4545; letter-spacing: .025rem;}
+
+#notice-event-area {max-width: 1296px; padding: 0 1rem; margin: 6.5rem auto;}
+#news-list-area {max-width: 1296px; padding: 0 1rem; margin: 6.5rem auto;}
+
+#notice-view-area {max-width: 996px; padding: 0 1rem; margin: 6.5rem auto;}
+#notice-view-area h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
+#notice-view-area .doc-info-wrap {text-align: center; color: #a0a0a0; font-weight: 300; font-size: 1.125rem; margin-top: 1.375rem;}
+#notice-view-area .doc-info-wrap .type, #notice-view-area .doc-info-wrap .date {color: #333333; margin: 0 1.125rem;}
+#notice-view-area .cont-area {margin-top: 4.375rem; color: #333333; font-weight: 300; font-size: 1rem; line-height: 1.75rem;}
+#notice-view-area .cont-area img {margin: 2.25rem 0;}
+#notice-view-area .cont-area p {margin: 2.25rem 0;}
+#notice-view-area .primary-btn-area {margin-top: 3.25rem;}
+#notice-view-area .primary-btn-area button {background-color: #f4f4f4; color: #333333; font-weight: 500; font-size: 1.25rem; min-width: 8rem; height: 3.75rem; border-radius: .5rem;}
+
+#faq-area {max-width: 1296px; padding: 0 1rem; margin: 6.5rem auto;}
+#faq-area table {margin-top: 1.25rem;}
+#faq-area th, #faq-area td {color: #666666; font-weight: 300; font-size: .875rem; line-height: 1.5rem; height: 3.25rem; padding: .875rem 1rem;}
+#faq-area th {width: 4rem; padding: 0; text-align: right;}
+#faq-area th span {display: none;}
+#faq-area .question th::before, #faq-area .answer th::before {color: #ffffff; font-size: .875rem; width: 1.5rem; height: 1.5rem; border-radius: 100%; display: inline-flex; justify-content: center; align-items: center;}
+#faq-area .question th::before {content: 'Q'; background-color: #939393;}
+#faq-area .answer th::before {content: 'A'; background-color: #ff4545;}
+#faq-area .accordion-view {background-color: #f6f6f6;}
+
+#write-area {max-width: 1296px; padding: 0 1rem; margin: 6.5rem auto;}
+.write-area-header {width: 100%; border: 1px solid #ebebeb; background-color: #f6f6f6; border-radius: .5rem; margin-top: 2.5rem;}
+.write-area-header th, .write-area-header td {text-align: left; vertical-align: middle; padding: .25rem 1.5rem; height: 3.4rem;}
+.write-area-header th {color: #666666; font-weight: 500; font-size: .938rem; width: 3.125rem;}
+.write-area-header td {color: #333333; font-weight: 500; font-size: .938rem;}
+
+.txt-write-form-area {height: 31.875rem; border: 1px solid #cccccc; border-radius: .5rem; margin-top: .75rem;}

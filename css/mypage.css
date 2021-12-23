@@ -2,6 +2,9 @@
 
 body {padding-top: 5.313rem;}
 
+.page-info-wrap {margin-top: 3rem; display: flex; justify-content: space-between; color: #666666; font-weight: 500; font-size: .938rem;}
+.page-info-wrap span {color: #ff4545; letter-spacing: .025rem;}
+
 #mypage-area {max-width: 1296px; padding: 0 1rem; margin: 6.5rem auto;}
 #mypage-area>h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
 #mypage-area .tab {margin-top: 3.5rem;}
@@ -20,8 +23,6 @@ body {padding-top: 5.313rem;}
 .payment-history-area h3 {display: none;}
 .payment-history-area h3+.guide {color: #333333; font-weight: 400; font-size: 1.25rem; line-height: 1.875rem; text-align: center; margin-top: 3rem;}
 .payment-history-area h3+.guide .date {color: #ff4545; font-weight: 500;}
-.page-info-wrap {margin-top: 3rem; display: flex; justify-content: space-between; color: #666666; font-weight: 500; font-size: .938rem;}
-.page-info-wrap span {color: #ff4545; letter-spacing: .025rem;}
 .payment-history-area table {margin-top: 1.25rem;}
 .payment-history-area td {width: 25%;}
 .payment-history-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}

@@ -1,7 +1,7 @@
 (function(){
     const header = document.querySelector('header');
     const mainDropdownMenu = document.querySelector('.depth-sub');
-    const searchArea = document.querySelector('#search-area');
+    const searchArea = document.querySelector('#header-search-area');
 
     // setDimmed(header);
     // function setDimmed(target){
@@ -35,5 +35,6 @@
 
     document.querySelector('#btn-search-toggle').addEventListener('click', function(){
         searchArea.classList.toggle('on');
+        hideDropdownMenu(mainDropdownMenu);
     });
 }())

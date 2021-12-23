@@ -4,47 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마이페이지 | 리서치아름</title>
+    <title>문의사항 | 리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/mypage.css">
+    <link rel="stylesheet" href="../css/customer-service.css">
 </head>
 <body>
-    <section id="mypage-area">
-        <h2>마이페이지</h2>
-        <div class="tab">
-            <ul>
-                <li><button type="button" title="" onclick="location.href='my-info.html'">회원정보</button></li>
-                <li><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-question.html'">문의내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-recommender-list.html'">추천인현황</button></li>
-                <li class="on"><button type="button" title="" onclick="location.href='my-deposit-list.html'">예치금현황</button></li>
-            </ul>
-        </div>
-        
-        <div class="deposit-area">
-            <h3>예치금 충전</h3>
-            <form action="">
-                <table>
-                    <caption>예치금 충전</caption>
-                    <tr>
-                        <th><label for="input-recharge-amount">충전금액</label></th>
-                        <td><input type="number" id="input-recharge-amount" placeholder="충전하실 금액을 숫자만 입력해주세요" required autofocus></td>
-                    </tr>
-                    <tr class="pay-method">
-                        <th>결제방법</th>
-                        <td>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-01" class="checkbox-type-02" checked><label for="check-payment-option-01">카드 결제</label>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-02" class="checkbox-type-02"><label for="check-payment-option-02">휴대폰 결제</label>
-                        </td>
-                    </tr>
-                </table>
-                <div class="primary-btn-area">
-                    <button type="button" title="이전 화면으로 이동" class="btn-gray" onclick="location.href='my-deposit-list.html'">취소</button>
-                    <button type="button" title="" class="btn-color" onclick="confirm('입력하신 내용으로 충전 하시겠습니까 ?')">충전</button>
-                </div>
-            </form>
-        </div>
+    <section id="write-area">
+        <h2>문의사항</h2>
+        <p class="sub">문의하신 내용의 답변은 마이페이지 문의사항 내역에서 확인 하실 수 있으며<br />내용에 따라 기재하신 연락처로 직접 연락 드리겠습니다.<br /><span>&#8251; 개별 종목과 관련한 문의사항은 관련 법률상 답변드릴 수 없습니다.</span></p>
+
+        <form action="">
+            <table class="write-area-header">
+                <caption></caption>
+                <tr>
+                    <th>작성자</th>
+                    <td>모노크롬</td>
+                </tr>
+                <tr>
+                    <th><label for="input-user-phone">연락처</label></th>
+                    <td><input type="tel" id="input-user-phone" placeholder="&quot;-&quot; 없이 숫자만 입력해 주세요" required autofocus></td>
+                </tr>
+                <tr>
+                    <th><label for="input-title">제목</label></th>
+                    <td><input type="text" id="input-title" placeholder="제목을 입력해 주세요" required></td>
+                </tr>
+            </table>
+            <div class="txt-write-form-area">
+                <p style="color: #999999; font-size: 2rem; text-align: center; margin-top: 10rem;">문서 작성 영역</p>
+            </div>
+            <div class="primary-btn-area">
+                <button type="button" class="btn-gray" title="">취소</button>
+                <button type="button" class="btn-color" title="">작성완료</button>
+            </div>
+        </form>
     </section>
 
     <footer>
@@ -136,5 +129,16 @@
     </footer>
 
 <script src="../js/common.js"></script>
+<script>
+    (function(){
+        const accordionCovers = document.querySelectorAll('.accordion-cover');
+        accordionCovers.forEach(accordionCover => {
+            accordionCover.addEventListener('click', function(){
+                console.log(this);
+                this.classList.toggle('on');
+            });
+        });
+    }())
+    </script>
 </body>
 </html>

@@ -4,46 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마이페이지 | 리서치아름</title>
+    <title>보도자료 | 리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/mypage.css">
+    <link rel="stylesheet" href="../css/customer-service.css">
 </head>
 <body>
-    <section id="mypage-area">
-        <h2>마이페이지</h2>
-        <div class="tab">
-            <ul>
-                <li><button type="button" title="" onclick="location.href='my-info.html'">회원정보</button></li>
-                <li><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-question.html'">문의내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-recommender-list.html'">추천인현황</button></li>
-                <li class="on"><button type="button" title="" onclick="location.href='my-deposit-list.html'">예치금현황</button></li>
-            </ul>
-        </div>
-        
-        <div class="deposit-area">
-            <h3>예치금 충전</h3>
+    <section id="news-list-area">
+        <h2>보도자료</h2>
+        <p class="sub">리서치알음과 관련된 보도자료입니다.</p>
+
+        <div class="search-area">
             <form action="">
-                <table>
-                    <caption>예치금 충전</caption>
-                    <tr>
-                        <th><label for="input-recharge-amount">충전금액</label></th>
-                        <td><input type="number" id="input-recharge-amount" placeholder="충전하실 금액을 숫자만 입력해주세요" required autofocus></td>
-                    </tr>
-                    <tr class="pay-method">
-                        <th>결제방법</th>
-                        <td>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-01" class="checkbox-type-02" checked><label for="check-payment-option-01">카드 결제</label>
-                            <input type="radio" name="check-payment-option" id="check-payment-option-02" class="checkbox-type-02"><label for="check-payment-option-02">휴대폰 결제</label>
-                        </td>
-                    </tr>
-                </table>
-                <div class="primary-btn-area">
-                    <button type="button" title="이전 화면으로 이동" class="btn-gray" onclick="location.href='my-deposit-list.html'">취소</button>
-                    <button type="button" title="" class="btn-color" onclick="confirm('입력하신 내용으로 충전 하시겠습니까 ?')">충전</button>
+                <div class="search-bar">
+                    <label for="select-search-category">검색어 카테고리</label><select name="" id="select-search-category">
+                        <option value="">제목</option>
+                        <option value="">내용</option>
+                    </select>
+                    <label for="input-search-notice"></label><input type="text" id="input-search-notice" placeholder="검색어를 입력하세요.">
+                    <button type="submit" title="검색">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.9 30.9"><title>검색</title><circle cx="13.95" cy="13.95" r="12.75" style="fill:none;stroke-miterlimit:10;stroke-width:2.4000000953674316px"/><line x1="23.7" y1="23.7" x2="29.7" y2="29.7" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2.4000000953674316px"/></svg>
+                    </button>
                 </div>
             </form>
+        </div>
+
+        <ul class="card-list">
+            <li><a href="notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">보도자료</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">리서치 알음 대상 수상</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">Research ARUM</div>
+                </div>
+            </a></li>
+            <li><a href="notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">보도자료</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">리서치 알음 올해의 업체 선정</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">Research ARUM</div>
+                </div>
+            </a></li>
+            <li><a href="notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">보도자료</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">리서치 알음 대상 수상</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">Research ARUM</div>
+                </div>
+            </a></li>
+            <li><a href="notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">보도자료</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">리서치 알음 올해의 업체 선정</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">Research ARUM</div>
+                </div>
+            </a></li>
+            <li><a href="notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">보도자료</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">리서치 알음 대상 수상</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">Research ARUM</div>
+                </div>
+            </a></li>
+            <li><a href="notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">보도자료</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">리서치 알음 올해의 업체 선정</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">Research ARUM</div>
+                </div>
+            </a></li>
+            <li><a href="notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">보도자료</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">리서치 알음 대상 수상</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">Research ARUM</div>
+                </div>
+            </a></li>
+            <li><a href="notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">보도자료</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">리서치 알음 올해의 업체 선정</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">Research ARUM</div>
+                </div>
+            </a></li>
+        </ul>
+        
+        <div class="pagination">
+            <button type="button" title="처음" class="btn-page-first"></button>
+            <button type="button" title="이전" class="btn-page-prev"></button>
+            <ul class="num">
+                <li><button type="button" title="" class="on">1</button></li>
+                <li><button type="button" title="">2</button></li>
+                <li><button type="button" title="">3</button></li>
+                <li><button type="button" title="">4</button></li>
+                <li><button type="button" title="">5</button></li>
+            </ul>
+            <button type="button" title="다음" class="btn-page-next"></button>
+            <button type="button" title="마지막" class="btn-page-last"></button>
         </div>
     </section>
 
