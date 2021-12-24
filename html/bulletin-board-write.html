@@ -4,122 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마이페이지 | 리서치아름</title>
+    <title>자유 게시판 | 리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/mypage.css">
+    <link rel="stylesheet" href="../css/community.css">
 </head>
 <body>
-    <section id="mypage-area" class="center-wrap">
-        <h2>마이페이지</h2>
-        <div class="tab">
-            <ul>
-                <li><button type="button" title="" onclick="location.href='my-info.html'">회원정보</button></li>
-                <li class="on"><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-question.html'">문의내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-recommender-list.html'">추천인현황</button></li>
-                <li><button type="button" title="" onclick="location.href='my-deposit-list.html'">예치금현황</button></li>
-            </ul>
-        </div>
-        
-        <div class="payment-history-area">
-            <h3>결제내역</h3>
-            <p class="guide"><span class="date">2021-12-30</span>일까지 이용 가능합니다. <br />해지하지 않으실 경우 만료일에 자동 결제됩니다.</p>
-            <div class="page-info-wrap">
-                <div class="total">전체 <span class="num">35</span>건</div>
-                <div class="page-num">페이지 <span class="current">1</span>/32</div>
+    <section id="write-area" class="center-wrap">
+        <h2>자유 게시판</h2>
+        <p class="sub">자유롭게 이야기할 수 있는 커뮤니티입니다.</p>
+
+        <form action="">
+            <div class="write-area-header">
+                <table>
+                    <caption>작성 정보</caption>
+                    <tr>
+                        <th>작성자</th>
+                        <td>모노크롬</td>
+                    </tr>
+                    <tr>
+                        <th><label for="input-title">제목</label></th>
+                        <td><input type="text" id="input-title" placeholder="제목을 입력해 주세요" required></td>
+                    </tr>
+                </table>
             </div>
-            <table class="table-type-01">
-                <caption>결제내역</caption>
-                <thead>
-                    <tr>
-                        <th>날짜</th>
-                        <th>금액</th>
-                        <th>승인번호</th>
-                        <th>비고</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="txt-write-form-area">
+                <p style="color: #999999; font-size: 2rem; text-align: center; margin-top: 10rem;">문서 작성 영역</p>
+            </div>
             <div class="primary-btn-area">
-                <button type="button" title="" class="btn-gray" onclick="confirm('정기구독을 해지 하시겠습니까?')">멤버쉽구독해지하기</button>
-                <div class="pagination">
-                    <button type="button" title="처음" class="btn-page-first"></button>
-                    <button type="button" title="이전" class="btn-page-prev"></button>
-                    <ul class="num">
-                        <li><button type="button" title="" class="on">1</button></li>
-                        <li><button type="button" title="">2</button></li>
-                        <li><button type="button" title="">3</button></li>
-                        <li><button type="button" title="">4</button></li>
-                        <li><button type="button" title="">5</button></li>
-                    </ul>
-                    <button type="button" title="다음" class="btn-page-next"></button>
-                    <button type="button" title="마지막" class="btn-page-last"></button>
-                </div>
-                <button type="button" title="" class="btn-color" onclick="location.href='my-chang-pay-method.html'">결제수단변경</button>
+                <button type="button" class="btn-gray" title="">취소</button>
+                <button type="button" class="btn-color" title="">작성완료</button>
             </div>
-        </div>
+        </form>
     </section>
 
     <footer>
@@ -211,5 +127,16 @@
     </footer>
 
 <script src="../js/common.js"></script>
+<script>
+    (function(){
+        const accordionCovers = document.querySelectorAll('.accordion-cover');
+        accordionCovers.forEach(accordionCover => {
+            accordionCover.addEventListener('click', function(){
+                console.log(this);
+                this.classList.toggle('on');
+            });
+        });
+    }())
+    </script>
 </body>
 </html>

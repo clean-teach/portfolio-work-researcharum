@@ -97,7 +97,8 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .accordion-view {display: none;}
 .accordion-cover.on + .accordion-view {display: table-row;}
 
-.notice-view-area {max-width: 996px; padding: 0 1rem; margin: 6.5rem auto;}
+.notice-view-area {margin: 6.5rem auto;}
+.notice-view-area article {max-width: 996px; padding: 0 1rem; margin: 0 auto;}
 .notice-view-area h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
 .notice-view-area .doc-info-wrap {text-align: center; color: #a0a0a0; font-weight: 300; font-size: 1.125rem; margin-top: 1.375rem;}
 .notice-view-area .doc-info-wrap span {color: #333333; font-weight: 400; margin: 0 1.125rem;}
@@ -107,6 +108,48 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .notice-view-area .cont-area p {margin: 2.25rem 0;}
 .notice-view-area .primary-btn-area {margin-top: 3.25rem;}
 .notice-view-area .primary-btn-area button {background-color: #f4f4f4; color: #333333; font-weight: 500; font-size: 1.25rem; min-width: 8rem; height: 3.75rem; border-radius: .5rem;}
+
+#write-area .write-area-header {width: 100%; border: 1px solid #ebebeb; background-color: #f6f6f6; border-radius: .5rem; padding: .5rem 0; margin-top: 2.5rem;}
+#write-area .write-area-header table {width: 100%;}
+#write-area .write-area-header th, #write-area .write-area-header td {text-align: left; vertical-align: middle; padding: .125rem 1.5rem; height: 3.4rem;}
+#write-area .write-area-header th {color: #666666; font-weight: 500; font-size: .938rem; width: 3.125rem;}
+#write-area .write-area-header td {color: #333333; font-weight: 500; font-size: .938rem;}
+
+/* 임시 */
+.txt-write-form-area {height: 31.875rem; border: 1px solid #cccccc; border-radius: .5rem; margin-top: .75rem;}
+/* 임시 */
+
+.comments-area {max-width: 996px; padding: 0 1rem; margin: 6.25rem auto;}
+.comments-area .info-area {margin: 1.125rem 0;}
+.comments-area .info-area .total {color: #333333; font-weight: 300; font-size: 1rem;}
+.comments-area .info-area .total .num {font-weight: 500; letter-spacing: .025rem;}
+.comments-area .comment-input-box {border: 1px solid #d1d1d1; background-color: #ffffff; width: 100%; border-radius: .25rem;}
+.comments-area .comment-input-box .author {color: #333333; font-weight: 500; font-size: 1rem; padding: 1.5rem 1.5rem 0;}
+.comments-area .comment-input-box label {display: none;}
+.comments-area .comment-input-box textarea {color: #333333; font-weight: 300; font-size: .938rem; line-height: 1.75rem; width: 100%; height: 6rem; box-sizing: border-box; border: none; padding: 1rem 1.5rem;;}
+.comments-area .comment-input-box .bottom-wrap {border-top: 1px solid #e5e5e5; display: flex; justify-content: space-between; align-items: center; height: 3.25rem;}
+.comments-area .comment-input-box .bottom-wrap .words-limit-count {color: #999999; font-weight: 300; font-size: .938rem; letter-spacing: .025rem; padding: 0 1.5rem;}
+.comments-area .comment-input-box .bottom-wrap .words-limit-count .current {color: #666666; font-weight: 500;}
+.comments-area .comment-input-box .bottom-wrap .btn-upload {background-color: #ff4545; color: #ffffff; font-weight: 300; font-size: .875rem; width: 3.875rem; height: 2rem; border-radius: .25rem; margin: 0 .5rem;}
+.comments-area .comments-list-area>ul>li {border-bottom: 1px solid #e5e5e5;}
+.comments-area .comment {padding: 1.375rem 0;}
+.comments-area .comment .author {color: #333333; font-weight: 500; font-size: 1rem;}
+.comments-area .comment .cont {color: #666666; font-weight: 300; font-size: .938rem; line-height: 1.75rem; padding: 1.125rem 0;}
+.comments-area .comment .btn-area {display: flex; justify-content: space-between;}
+.comments-area .comment .btn-area button {color: #333333; font-weight: 400; font-size: .938rem;}
+.comments-area .comment .btn-area button .num {font-weight: 500; letter-spacing: .025rem;}
+.comments-area .comment .btn-area .menu-wrap button + button {border-left: 1px solid #d0d0d0; margin-left: .875rem; padding-left: .875rem;}
+.comments-area .reply-area {border-top: 1px solid #e5e5e5; background-color: #f9f9f9; padding: 0 2rem;}
+.comments-area .reply {padding: 1.5rem 0;}
+.comments-area .reply .info-wrap {display: flex; justify-content: space-between;}
+.comments-area .reply .author {color: #333333; font-weight: 500; font-size: 1rem;}
+.comments-area .reply .menu-wrap button {color: #333333; font-weight: 400; font-size: .938rem;}
+.comments-area .reply .menu-wrap button + button {border-left: 1px solid #d0d0d0; margin-left: .875rem; padding-left: .875rem;}
+.comments-area .reply .cont {color: #666666; font-weight: 300; font-size: .938rem; line-height: 1.75rem; padding: 1.125rem 0;}
+.comments-area .reply+.reply {border-top: 1px solid #e9e9e9;}
+.comments-area .reply-area .btn-close-wrap {text-align: center; padding: 1rem;}
+.comments-area .reply-area .btn-close-wrap button {color: #333333; font-weight: 400; font-size: .938rem;}
+.comments-area .reply-area .btn-close-wrap button svg {width: .75rem;}
 
 
 /* header */

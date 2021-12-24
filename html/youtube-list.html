@@ -4,121 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마이페이지 | 리서치아름</title>
+    <title>알음 유투브 | 리서치아름</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/mypage.css">
+    <link rel="stylesheet" href="../css/customer-service.css">
 </head>
 <body>
-    <section id="mypage-area" class="center-wrap">
-        <h2>마이페이지</h2>
+    <section id="arum-youtube-area" class="center-wrap">
+        <h2>알음 유투브</h2>
+        <p class="sub">리서치알음에서 제작 및 제공하는 영상 컨텐츠입니다.</p>
+
         <div class="tab">
             <ul>
-                <li><button type="button" title="" onclick="location.href='my-info.html'">회원정보</button></li>
-                <li class="on"><button type="button" title="" onclick="location.href='my-pay.html'">결제내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-question.html'">문의내역</button></li>
-                <li><button type="button" title="" onclick="location.href='my-recommender-list.html'">추천인현황</button></li>
-                <li><button type="button" title="" onclick="location.href='my-deposit-list.html'">예치금현황</button></li>
+                <li class="on"><button type="button" title="카테고리 별 필터링">최신순</button></li>
+                <li><button type="button" title="카테고리 별 필터링">인기순</button></li>
             </ul>
         </div>
-        
-        <div class="payment-history-area">
-            <h3>결제내역</h3>
-            <p class="guide"><span class="date">2021-12-30</span>일까지 이용 가능합니다. <br />해지하지 않으실 경우 만료일에 자동 결제됩니다.</p>
-            <div class="page-info-wrap">
-                <div class="total">전체 <span class="num">35</span>건</div>
-                <div class="page-num">페이지 <span class="current">1</span>/32</div>
-            </div>
-            <table class="table-type-01">
-                <caption>결제내역</caption>
-                <thead>
-                    <tr>
-                        <th>날짜</th>
-                        <th>금액</th>
-                        <th>승인번호</th>
-                        <th>비고</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2020-07-17</td>
-                        <td>19,800원</td>
-                        <td>20211112900051059416421</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="primary-btn-area">
-                <button type="button" title="" class="btn-gray" onclick="confirm('정기구독을 해지 하시겠습니까?')">멤버쉽구독해지하기</button>
-                <div class="pagination">
-                    <button type="button" title="처음" class="btn-page-first"></button>
-                    <button type="button" title="이전" class="btn-page-prev"></button>
-                    <ul class="num">
-                        <li><button type="button" title="" class="on">1</button></li>
-                        <li><button type="button" title="">2</button></li>
-                        <li><button type="button" title="">3</button></li>
-                        <li><button type="button" title="">4</button></li>
-                        <li><button type="button" title="">5</button></li>
-                    </ul>
-                    <button type="button" title="다음" class="btn-page-next"></button>
-                    <button type="button" title="마지막" class="btn-page-last"></button>
+
+        <ul class="card-list">
+            <li><a href="youtube-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">알음 유투브</div>
+                    <div class="date">2021-08-28</div>
                 </div>
-                <button type="button" title="" class="btn-color" onclick="location.href='my-chang-pay-method.html'">결제수단변경</button>
-            </div>
+                <div class="tit mulit-line-ellipsis">테슬라도 주목하는 실리콘 음극재</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">이녹스(088390, KQ)</div>
+                </div>
+            </a></li>
+            <li><a href="youtube-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">알음 유투브</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">베스트 알음프라이스 선정, 알음기프트 제목 제목 제목 제목</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">이녹스(088390, KQ)</div>
+                </div>
+            </a></li>
+            <li><a href="youtube-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">알음 유투브</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">테슬라도 주목하는 실리콘 음극재</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">이녹스(088390, KQ)</div>
+                </div>
+            </a></li>
+            <li><a href="youtube-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">알음 유투브</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">베스트 알음프라이스 선정, 알음기프트 제목 제목 제목 제목</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">이녹스(088390, KQ)</div>
+                </div>
+            </a></li>
+            <li><a href="youtube-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">알음 유투브</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">테슬라도 주목하는 실리콘 음극재</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">이녹스(088390, KQ)</div>
+                </div>
+            </a></li>
+            <li><a href="youtube-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">알음 유투브</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">베스트 알음프라이스 선정, 알음기프트 제목 제목 제목 제목</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">이녹스(088390, KQ)</div>
+                </div>
+            </a></li>
+            <li><a href="youtube-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">알음 유투브</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">테슬라도 주목하는 실리콘 음극재</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">이녹스(088390, KQ)</div>
+                </div>
+            </a></li>
+            <li><a href="youtube-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">알음 유투브</div>
+                    <div class="date">2021-08-28</div>
+                </div>
+                <div class="tit mulit-line-ellipsis">베스트 알음프라이스 선정, 알음기프트 제목 제목 제목 제목</div>
+                <div class="bottom-info-wrap">
+                    <div class="writer">이녹스(088390, KQ)</div>
+                </div>
+            </a></li>
+        </ul>
+        
+        <div class="pagination">
+            <button type="button" title="처음" class="btn-page-first"></button>
+            <button type="button" title="이전" class="btn-page-prev"></button>
+            <ul class="num">
+                <li><button type="button" title="" class="on">1</button></li>
+                <li><button type="button" title="">2</button></li>
+                <li><button type="button" title="">3</button></li>
+                <li><button type="button" title="">4</button></li>
+                <li><button type="button" title="">5</button></li>
+            </ul>
+            <button type="button" title="다음" class="btn-page-next"></button>
+            <button type="button" title="마지막" class="btn-page-last"></button>
         </div>
     </section>
 
