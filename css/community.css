@@ -29,3 +29,40 @@ h2+.sub span {color: #666666; font-size: 1rem;}
 .like-sponsor-area .sponsor-wrap dd {margin-top: .25rem;}
 .like-sponsor-area .sponsor-wrap .num {font-weight: bold; font-size: 2.5rem; letter-spacing: .05rem;}
 .like-sponsor-area .btn-sponsor {background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 2rem; width: 10.625rem; height: 4.375rem; border-radius: .5rem;}
+
+.card-list {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.card-list>li {position: relative; width: 312px; height: 15rem; margin-bottom: 2.5rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 0 40px rgba(2, 2, 2, .14);}
+.card-list .type {color: #333333; font-weight: 500; font-size: 1rem;}
+.card-list .date {color: #999999; font-weight: 300; font-size: .875rem; letter-spacing: .05rem;}
+.card-list .bottom-info-wrap {position: absolute; bottom: 0; left: 0; width: 100%; box-sizing: border-box; padding: 1rem 2rem; background-color: #1765ad; color: #ffffff;}
+.card-list .writer {font-weight: 400; font-size: 1.125rem;}
+.card-list.type-02>li {width: 640px; height: 21.5rem;}
+.card-list.type-02 .top-info-wrap {padding: 1.5rem;}
+.card-list.type-02 .tit-wrap {padding: 1rem 1.5rem 0;}
+.card-list.type-02 .tit-wrap .tit {padding: 0;}
+.card-list.type-02 .tit-wrap .sub {font-weight: 300; font-size: 1.5rem; line-height: 2rem;}
+.card-list.type-02 .btn-area {position: absolute; left: 0; bottom: 3.1rem; width: 100%; box-sizing: border-box; padding: 1.5rem; display: flex; justify-content: space-between; align-content: center;}
+.card-list.type-02 .btn-area button {height: 2rem; padding: 0 1.125rem; border-radius: .25rem; font-weight: 400; font-size: .875rem;}
+.card-list.type-02 .bottom-info-wrap {padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-content: center;}
+.card-list.type-02 .bottom-info-wrap dt, .card-list.type-02 .bottom-info-wrap dd {display: inline-block; font-weight: 500; font-size: 1.125rem;}
+.card-list.type-02 .bottom-info-wrap dt {color: #68aff0;}
+.card-list.type-02 .bottom-info-wrap dd {margin-left: .5rem;}
+
+table.bulletin-board .tit {width: 50%;}
+
+#arum-forum-detail-area>h2 {display: none;}
+#arum-forum-detail-area .primary-btn-area {display: flex; justify-content: space-between;}
+.stock-item-summary-area {background-color: #1765ad; color: #ffffff; margin-top: 3.75rem; width: 100%; height: 8.25rem; border-radius: .5rem; display: flex; justify-content: space-between; align-items: center;}
+.stock-item-summary-area .tit-wrap {padding-left: 1.75rem; display: flex;}
+.stock-item-summary-area .tit-wrap img {width: 2.25rem; margin-right: 1rem; margin-bottom: -.4rem;}
+.stock-item-summary-area .tit-wrap h3 {font-weight: 500; font-size: 2rem;}
+.stock-item-summary-area .tit-wrap .sub {color: #68aff0; font-weight: 500; font-size: 1.25rem; padding-top: .4rem;}
+.stock-item-summary-area .info-area {border-left: 1px solid #0b4982; width: 12.375rem; height: 100%; padding: 0 1.5rem; display: flex; flex-direction: column; justify-content: space-evenly;}
+.stock-item-summary-area .info-area dt, .stock-item-summary-area .info-area dd {display: inline-block; font-weight: 500; font-size: 1.125rem;}
+.stock-item-summary-area .info-area dt {color: #68aff0;}
+.stock-item-summary-area .info-area dd {margin-left: .5rem;}
+.stock-item-summary-area .info-area .num {letter-spacing: .05rem; margin-right: .4rem;}
+.stock-item-summary-area .info-area button {color: #ffffff; font-weight: 500; font-size: 1rem; text-align: left; width: 100%; display: flex; justify-content: start; align-items: center;}
+.stock-item-summary-area .info-area button svg {width: .5rem; margin-left: .5rem;}
+
+.notice-view-area article {margin-top: 6.25rem;}

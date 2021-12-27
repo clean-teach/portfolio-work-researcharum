@@ -13,10 +13,11 @@ label {cursor: pointer;}
 
 /* common */
 .ellipsis {text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
-.mulit-line-ellipsis {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.multi-line-ellipsis {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
 
 .center-wrap {max-width: 1296px; padding: 0 1rem; margin: 0 auto;}
 .primary-btn-area {position: relative; margin-top: 2.375rem; text-align: center;}
+.primary-btn-area .pagination {margin-top: 0; display: inline-flex;}
 .primary-btn-area .right {position: absolute; top: 0; right: 0;}
 .primary-btn-area>button {min-width: 5.5rem; height: 2rem; box-sizing: border-box; padding: 0 1.25rem; border-radius: .25rem; font-weight: 300; font-size: .875rem;}
 .primary-btn-area>button+button {margin-left: 1rem;}
@@ -50,10 +51,12 @@ label {cursor: pointer;}
 .tab li.on {color: #ffffff; background-color: #ff4545;}
 .tab li.on button {color: #ffffff;}
 
+table.ellipsis {table-layout: fixed;}
+table.ellipsis td {white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
 table.table-type-01 {width: 100%; border-top: 2px solid #585858; margin-top: 1.25rem;}
 .table-type-01 th, .table-type-01 td {text-align: center; vertical-align: middle; height: 3.25rem;}
 .table-type-01 th {background-color: #f6f6f6; color: #333333; font-weight: 500; font-size: .938rem; border-bottom: 1px solid #787878;}
-.table-type-01 td {color: #666666; font-weight: 300; font-size: .875rem; letter-spacing: .05rem; border-bottom: 1px solid #dddddd;}
+.table-type-01 td {color: #666666; font-weight: 300; font-size: .875rem; letter-spacing: .05rem; border-bottom: 1px solid #dddddd; padding: 0 1rem;}
 .table-type-01 td a {color: #666666;}
 .table-type-01 td a:hover {text-decoration: underline;}
 .table-type-01 tr:hover td {background-color: #f7f7f7;}
@@ -76,7 +79,9 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .card-list .top-info-wrap {padding: 1.5rem 2rem; display: flex; justify-content: space-between;}
 .card-list .type {color: #333333; font-weight: 500; font-size: 1rem;}
 .card-list .date {color: #999999; font-weight: 300; font-size: .875rem; letter-spacing: .05rem;}
-.card-list .tit {padding: 1rem 2rem 0; color: #111111; font-weight: 500; font-size: 1.875rem; line-height: 2.2rem; height: 4.6rem;}
+.card-list .tit {padding: 1rem 2rem 0; color: #111111; font-weight: 500; font-size: 1.875rem; line-height: 2.2rem;}
+.card-list .tit.ellipsis {height: 2.6rem;}
+.card-list .tit.multi-line-ellipsis {height: 4.6rem;}
 .card-list .bottom-info-wrap {position: absolute; bottom: 0; left: 0; width: 100%; box-sizing: border-box; padding: 1rem 2rem; background-color: #1765ad; color: #ffffff;}
 .card-list .writer {font-weight: 400; font-size: 1.125rem;}
 
