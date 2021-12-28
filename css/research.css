@@ -18,7 +18,7 @@ h2+.sub span {color: #666666; font-size: 1rem;}
 
 table.bulletin-board .tit {width: 50%;}
 
-#arum-forum-detail-area>h2 {display: none;}
-#arum-forum-detail-area .primary-btn-area {display: flex; justify-content: space-between;}
+#research-stock-view-area article>h2 {display: none;}
+#research-stock-view-area article .cont-area {text-align: center;}
 
 .notice-view-area article {margin-top: 6.25rem;}
