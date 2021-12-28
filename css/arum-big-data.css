@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+body {padding-top: 5.313rem;}
+section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
+h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
+h2 span {color: #999999;}
+h2+.sub {text-align: center; color: #333333; font-weight: 300; font-size: 1.375rem; line-height: 1.875rem; margin-top: 1rem;}
+h2+.sub span {color: #666666; font-size: 1rem;}
+
+#arum-big-data-intro-area.center-wrap {max-width: 996px;}
+#arum-big-data-intro-area .img-wrap {margin-top: 4rem; width: 100%; height: 27.938rem; border-radius: .75rem; overflow: hidden; position: relative;}
+#arum-big-data-intro-area .img-wrap img {position: absolute; top: 0; left: 0; width: 100%;}
+#arum-big-data-intro-area .img-wrap .txt-area {position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0,0,0,.6); color: #ffffff; text-align: center; font-weight: 300; font-size: 1.125rem; box-sizing: border-box; padding: 2rem;}
+#arum-big-data-intro-area .img-wrap .txt-area .tit-01 {font-weight: 500; font-size: 1.375rem; margin-top: .5rem;}
+#arum-big-data-intro-area .img-wrap .txt-area .tit-02 {font-weight: 300; font-size: 1.375rem; margin-top: 1rem;}
+#arum-big-data-intro-area .advantage {display: flex; margin-top: 2rem;}
+#arum-big-data-intro-area .advantage li {width: 50%; display: flex; justify-content: start; align-items: center;}
+#arum-big-data-intro-area .advantage li>.num {color: #666666; font-weight: 500; font-size: 3.75rem; margin-right: 1rem;}
+#arum-big-data-intro-area .advantage li dt {color: #333333; font-weight: 500; font-size: 1.5rem;}
+#arum-big-data-intro-area .advantage li dt span {color: #ff4545; font-weight: bold;}
+#arum-big-data-intro-area .advantage li dd {color: #666666; font-weight: 500; font-size: 1rem; margin-top: .4rem;}
+#arum-big-data-intro-area .a1-3-area {margin-top: 6.25rem;}
+#arum-big-data-intro-area .a1-3-area .venn-diagram {position: relative; width: 100%; height: 22.5rem; font-weight: bold; font-size: 1.875rem; color: #ffffff;}
+#arum-big-data-intro-area .a1-3-area .venn-diagram .circle {position: absolute; width: 14.625rem; height: 14.625rem; border-radius: 100%; overflow: hidden;}
+#arum-big-data-intro-area .a1-3-area .venn-diagram .circle span {position: absolute;}
+#arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a1 {top: 0; left: calc(50% - 7.3125rem); background: linear-gradient(rgba(233,0,0,.95), rgba(233,0,0,.6));}
+#arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a2 {top: 7.875rem; left: calc(50% - 11.875rem); background: linear-gradient(-90deg, rgba(0,139,233,.95), rgba(0,139,233,.6));}
+#arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a3 {top: 7.875rem; right: calc(50% - 11.875rem); background: linear-gradient(90deg, rgba(255, 164, 21, 0.95), rgba(255, 164, 21,.6));}
+#arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a1 span {top: 3.75rem; left: calc(50% - 1rem);}
+#arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a2 span {bottom: 4.75rem; left: calc(50% - 1.75rem);}
+#arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a3 span {bottom: 4.75rem; right: calc(50% - 1.75rem);}
+#arum-big-data-intro-area .a1-3-area .venn-diagram .avg {position: absolute; top: 11.4rem; left: calc(50% - 1.75rem);}
+#arum-big-data-intro-area .a1-3-area .summary {margin-top: 2.125rem; border: 1px solid #dfdfdf; border-radius: .5rem; overflow: hidden;}
+#arum-big-data-intro-area .a1-3-area .summary li {display: flex; align-items: center; padding-left: 1.75rem; height: 7rem;}
+#arum-big-data-intro-area .a1-3-area .summary li + li {border-top: 1px solid #dfdfdf;}
+#arum-big-data-intro-area .a1-3-area .summary h3 {color: #666666; font-weight: 500; font-size: 3.75rem; margin-right: 1rem;}
+#arum-big-data-intro-area .a1-3-area .summary h3 span {font-size: 3.125rem;}
+#arum-big-data-intro-area .a1-3-area .summary .a1 h3 span {color: #ff8b8b;}
+#arum-big-data-intro-area .a1-3-area .summary .a2 h3 span {color: #87cfff;}
+#arum-big-data-intro-area .a1-3-area .summary .a3 h3 span {color: #ffc569;}
+#arum-big-data-intro-area .a1-3-area .summary dt {color: #333333; font-weight: 500; font-size: 1.5rem;}
+#arum-big-data-intro-area .a1-3-area .summary dt span {color: #ff4545; font-weight: bold;}
+#arum-big-data-intro-area .a1-3-area .summary dd {color: #666666; font-weight: 500; font-size: 1rem; margin-top: .5rem;}
+#arum-big-data-intro-area .apply-process-area {margin-top: 6.25rem;}
+#arum-big-data-intro-area .apply-process-area h3 {color: #333333; font-weight: 500; font-size: 2.125rem; text-align: center;}
+#arum-big-data-intro-area .apply-process-area .process {position: relative; height: 5.625rem; margin-top: 2.5rem;}
+#arum-big-data-intro-area .apply-process-area .process li {position: absolute; color: #ffffff; font-weight: 400; font-size: 1.125rem; line-height: 1.5rem; display: flex; align-items: center; height: 100%; box-sizing: border-box;}
+#arum-big-data-intro-area .apply-process-area .process li:nth-child(1) {background-color: #1765ad; top: 0; left: 0; width: 11.25rem; padding-left: 1.625rem; z-index: 4; border-bottom-left-radius: .5rem; border-top-left-radius: .5rem;}
+#arum-big-data-intro-area .apply-process-area .process li:nth-child(2) {background-color: #125492; top: 0; left: 18.07%; width: 12.125rem; padding-left: 3.5rem; z-index: 3;}
+#arum-big-data-intro-area .apply-process-area .process li:nth-child(3) {background-color: #0e4477; top: 0; left: 36.14%; width: 12.125rem; padding-left: 3.5rem; z-index: 2;}
+#arum-big-data-intro-area .apply-process-area .process li:nth-child(4) {background-color: #0a345c; top: 0; left: 054.21%; width: 12.125rem; padding-left: 3.5rem; z-index: 1;}
+#arum-big-data-intro-area .apply-process-area .process li:last-child {background-color: #072542; top: 0; right: 0%; width: 12.875rem; border-radius: .5rem; justify-content: center;}
+#arum-big-data-intro-area .apply-process-area .process li:last-child svg {width: 3rem; margin-left: 1.5rem;}
+#arum-big-data-intro-area .apply-process-area .process li::after {content: ''; display: block; position: absolute; top: 0; right: -1.875rem; width: 0; height: 0; border-top: 2.8125rem solid transparent; border-bottom: 2.8125rem solid transparent; border-left: 1.875rem solid #ffffff;}
+#arum-big-data-intro-area .apply-process-area .process li:nth-child(1)::after {border-left-color: #1765ad;}
+#arum-big-data-intro-area .apply-process-area .process li:nth-child(2)::after {border-left-color: #125492;}
+#arum-big-data-intro-area .apply-process-area .process li:nth-child(3)::after {border-left-color: #0e4477;}
+#arum-big-data-intro-area .apply-process-area .process li:nth-child(4)::after {border-left-color: #0a345c;}
+#arum-big-data-intro-area .apply-process-area .process li:last-child:after {display: none;}
+#arum-big-data-intro-area .apply-process-area .guide-area {color: #333333; font-weight: 400; font-size: 1rem; text-align: center; margin-top: 2.5rem;}
+#arum-big-data-intro-area .apply-process-area .guide-area a {color: #333333; font-weight: 500; display: inline-flex; justify-content: center; margin-left: 1.5rem; text-decoration: underline;}
+#arum-big-data-intro-area .apply-process-area .guide-area a svg {height: 1rem; margin-left: .5rem;}
+#arum-big-data-intro-area .primary-btn-area {text-align: center; margin-top: 2.5rem;}
+#arum-big-data-intro-area .primary-btn-area .btn-apply {min-width: 12.5rem; height: 3.75rem; border-radius: .5rem; background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 1.25rem;}
