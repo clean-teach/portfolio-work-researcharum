@@ -18,7 +18,7 @@ h2+.sub span {color: #666666; font-size: 1rem;}
 
 table.bulletin-board .tit {width: 50%;}
 
-#research-stock-view-area article>h2 {display: none;}
-#research-stock-view-area article .cont-area {text-align: center;}
+#research-view-area article>h2 {display: none;}
+#research-view-area article .cont-area {text-align: center;}
 
 .notice-view-area article {margin-top: 6.25rem;}
