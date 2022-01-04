@@ -42,16 +42,6 @@ input[type=text], input[type=password], input[type=email], select {border: 1px s
 .researcharum-guide-area {margin-top: 6.25rem;}
 .step-complete-area .btn-primary {margin-top: 6.25rem;}
 
-.join-membership-area {border-top: 1px solid #dfdfdf; margin-top: 2.5rem;}
-.join-membership-area h3 {background-color: #1765ad; color: #ffffff; font-weight: 500; font-size: 1.25rem; width: 10rem; height: 3.125rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; padding-left: 1.25rem; border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; border-top-right-radius: 1.563rem; border-bottom-right-radius: 1.563rem; margin-top: 2.5rem;}
-.join-membership-area h3::after {content: ''; display: inline-block; background-color: #ffffff; width: .625rem; height: .625rem; border-radius: 100%; margin-right: .625rem;}
-.join-membership-area .service-area ol>li {color: #333333; font-weight: 500; font-size: 1.125rem; list-style: decimal inside; margin-top: 1rem; margin-left: 1.25rem;}
-.join-membership-area .service-area ul>li {color: #666666; font-weight: 500; font-size: 1rem; margin-top: .75rem; margin-left: .75rem;}
-.join-membership-area .service-area ul>li::before {content: '- ';}
-.join-membership-area .guidance-area ul {margin-top: 1.5rem;}
-.join-membership-area .guidance-area ul>li {color: #666666; font-weight: 500; font-size: .938rem; margin-top: .75rem; margin-left: 1.25rem;}
-.join-membership-area .guidance-area ul>li::before {content: '- ';}
-
 .membership-check-list {margin-top: 2.5rem;}
 .membership-check-list li+li {margin-top: 1rem;}
 .membership-check-list input {display: none;}

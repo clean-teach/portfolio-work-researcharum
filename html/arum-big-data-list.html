@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARUM Big data | 리서치아름</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/arum-big-data.css">
+</head>
+<body>
+    <section id="arum-big-data-list-area" class="center-wrap">
+        <h2>ARUM Big data</h2>
+        <p class="sub">특허 받은 알음만의 기준으로 당일 발간 리포트 필터링 서비스</p>
+
+        <div class="tab">
+            <ul>
+                <li class="on"><button type="button" title=""><span>A1</span> 리포트 영향력</button></li>
+                <li><button type="button" title=""><span>A2</span> 리포트 파급력</button></li>
+                <li><button type="button" title=""><span>A3</span> 리포트 지속력</button></li>
+                <li><button type="button" title=""><span>Average</span> A1, A2, A3 평균</button></li>
+            </ul>
+        </div>
+        <div class="tab-guide-area">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.81 22.2" class="word-balloon-tail"><defs><style>.a{fill:#fff2f2;stroke:#ffd8d8;stroke-miterlimit:10;}</style></defs><polyline class="a" points="0.42 21.89 13.88 0.93 27.39 21.93"/></svg>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>A1</dt>
+                        <dd>(발간인 시간 - 전일 종가) / 전일 종가</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>A2</dt>
+                        <dd>(발간인 고가 - 발간일 시가) / 발간일 시가</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>A3</dt>
+                        <dd>(발간일 종가 - 발간일 시가) - 발간일 시가</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Average</dt>
+                        <dd>A1, A2, A3의 평균</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>H25</dt>
+                        <dd>(25거래일 이내 최고가 - 발간일 시가) / 발간일 시가</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>H50</dt>
+                        <dd>(50거래일 이내 최고가 - 발간일 시가) / 발간일 시가</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <div class="notice-search-area">
+            <form action="">
+                <div class="search-bar">
+                    <label for="input-search-notice"></label><input type="text" id="input-search-notice" placeholder="궁금한 애널리스트를 검색해 보세요.">
+                    <button type="submit" title="검색">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.9 30.9"><title>검색</title><circle cx="13.95" cy="13.95" r="12.75" style="fill:none;stroke-miterlimit:10;stroke-width:2.4000000953674316px"/><line x1="23.7" y1="23.7" x2="29.7" y2="29.7" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2.4000000953674316px"/></svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="page-info-wrap">
+            <div class="total"><span class="tit">A1</span>검색결과 <span class="num">325</span>건</div>
+            <div class="select-area">
+                <label for="select-search-year">년도별 검색</label><select name="" id="select-search-year">
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                    <option value="">2017</option>
+                </select>
+                <label for="select-sort-search-result">정렬조건</label><select name="" id="select-sort-search-result">
+                    <option value="">H25 내림차순</option>
+                    <option value="">H25 오름차순</option>
+                    <option value="">H50 내림차순</option>
+                    <option value="">H50 오름차순</option>
+                    <option value="">리포트 수 내림차순</option>
+                    <option value="">리포트 수 오름차순</option>
+                </select>
+            </div>
+        </div>
+        <table class="table-type-01 ellipsis">
+            <caption>당일 발간 리포트 필터링 결과</caption>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>소속</th>
+                    <th>A1순위</th>
+                    <th>A2순위</th>
+                    <th>A3순위</th>
+                    <th>평균순위</th>
+                    <th>H25</th>
+                    <th>H50</th>
+                    <th>리포트 개수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="arum-big-data-detail-list.html" title="상세보기">조민서</a></td>
+                    <td>신한</td>
+                    <td>259</td>
+                    <td>150</td>
+                    <td>456</td>
+                    <td>61</td>
+                    <td>10.39%</td>
+                    <td>12.51%</td>
+                    <td>19</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="pagination">
+            <button type="button" title="처음" class="btn-page-first"></button>
+            <button type="button" title="이전" class="btn-page-prev"></button>
+            <ul class="num">
+                <li><button type="button" title="" class="on">1</button></li>
+                <li><button type="button" title="">2</button></li>
+                <li><button type="button" title="">3</button></li>
+                <li><button type="button" title="">4</button></li>
+                <li><button type="button" title="">5</button></li>
+            </ul>
+            <button type="button" title="다음" class="btn-page-next"></button>
+            <button type="button" title="마지막" class="btn-page-last"></button>
+        </div>
+    </section>
+
+<script src="../js/common.js"></script>
+</body>
+</html>

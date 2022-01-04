@@ -19,6 +19,7 @@ label {cursor: pointer;}
 .primary-btn-area {position: relative; margin-top: 2.375rem; text-align: center;}
 .primary-btn-area .pagination {margin-top: 0; display: inline-flex;}
 .primary-btn-area .right {position: absolute; top: 0; right: 0;}
+.primary-btn-area .left {position: absolute; top: 0; left: 0;}
 .primary-btn-area>button {min-width: 5.5rem; height: 2rem; box-sizing: border-box; padding: 0 1.25rem; border-radius: .25rem; font-weight: 300; font-size: .875rem;}
 .primary-btn-area>button+button {margin-left: 1rem;}
 .btn-gray {background-color: #525252; color: #ffffff;}
@@ -35,6 +36,16 @@ label {cursor: pointer;}
 .checkbox-type-02+label::before, .checkbox-type-02+label::after {content: ''; display: block; position: absolute; border-radius: 100%;}
 .checkbox-type-02+label::before {top: 4px; left: 0; width: 16px; height: 16px; border: 1px solid #9f9f9f;}
 .checkbox-type-02:checked+label::after {top: 10px; left: 6px; width: 6px; height: 6px; background-color: #ff4545;}
+
+.join-membership-area {border-top: 1px solid #dfdfdf; margin-top: 2.5rem;}
+.join-membership-area h3 {background-color: #1765ad; color: #ffffff; font-weight: 500; font-size: 1.25rem; width: 10rem; height: 3.125rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; padding-left: 1.25rem; border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; border-top-right-radius: 1.563rem; border-bottom-right-radius: 1.563rem; margin-top: 2.5rem;}
+.join-membership-area h3::after {content: ''; display: inline-block; background-color: #ffffff; width: .625rem; height: .625rem; border-radius: 100%; margin-right: .625rem;}
+.join-membership-area .service-area ol>li {color: #333333; font-weight: 500; font-size: 1.125rem; list-style: decimal inside; margin-top: 1rem; margin-left: 1.25rem;}
+.join-membership-area .service-area ul>li {color: #666666; font-weight: 500; font-size: 1rem; margin-top: .75rem; margin-left: .75rem;}
+.join-membership-area .service-area ul>li::before {content: '- ';}
+.join-membership-area .guidance-area ul {margin-top: 1.5rem;}
+.join-membership-area .guidance-area ul>li {color: #666666; font-weight: 500; font-size: .938rem; margin-top: .75rem; margin-left: 1.25rem;}
+.join-membership-area .guidance-area ul>li::before {content: '- ';}
 
 .researcharum-guide-area {text-align: center;}
 .researcharum-guide-area .tit {color: #333333; font-weight: 500; font-size: 1.5rem;}

@@ -2,10 +2,30 @@
 
 body {padding-top: 5.313rem;}
 section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
-h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
+h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem; text-transform: uppercase;}
 h2 span {color: #999999;}
 h2+.sub {text-align: center; color: #333333; font-weight: 300; font-size: 1.375rem; line-height: 1.875rem; margin-top: 1rem;}
 h2+.sub span {color: #666666; font-size: 1rem;}
+
+.apply-process-area {margin-top: 6.25rem;}
+.apply-process-area h3 {color: #333333; font-weight: 500; font-size: 2.125rem; text-align: center;}
+.apply-process-area .process {position: relative; height: 5.625rem; margin-top: 2.5rem;}
+.apply-process-area .process li {position: absolute; color: #ffffff; font-weight: 400; font-size: 1.125rem; line-height: 1.5rem; display: flex; align-items: center; height: 100%; box-sizing: border-box;}
+.apply-process-area .process li:nth-child(1) {background-color: #1765ad; top: 0; left: 0; width: 11.25rem; padding-left: 1.625rem; z-index: 4; border-bottom-left-radius: .5rem; border-top-left-radius: .5rem;}
+.apply-process-area .process li:nth-child(2) {background-color: #125492; top: 0; left: 18.07%; width: 12.125rem; padding-left: 3.5rem; z-index: 3;}
+.apply-process-area .process li:nth-child(3) {background-color: #0e4477; top: 0; left: 36.14%; width: 12.125rem; padding-left: 3.5rem; z-index: 2;}
+.apply-process-area .process li:nth-child(4) {background-color: #0a345c; top: 0; left: 054.21%; width: 12.125rem; padding-left: 3.5rem; z-index: 1;}
+.apply-process-area .process li:last-child {background-color: #072542; top: 0; right: 0%; width: 12.875rem; border-radius: .5rem; justify-content: center;}
+.apply-process-area .process li:last-child img {width: 3rem; margin-left: 1.5rem;}
+.apply-process-area .process li::after {content: ''; display: block; position: absolute; top: 0; right: -1.875rem; width: 0; height: 0; border-top: 2.8125rem solid transparent; border-bottom: 2.8125rem solid transparent; border-left: 1.875rem solid #ffffff;}
+.apply-process-area .process li:nth-child(1)::after {border-left-color: #1765ad;}
+.apply-process-area .process li:nth-child(2)::after {border-left-color: #125492;}
+.apply-process-area .process li:nth-child(3)::after {border-left-color: #0e4477;}
+.apply-process-area .process li:nth-child(4)::after {border-left-color: #0a345c;}
+.apply-process-area .process li:last-child:after {display: none;}
+.apply-process-area .guide-area {color: #333333; font-weight: 400; font-size: 1rem; text-align: center; margin-top: 2.5rem;}
+.apply-process-area .guide-area a {color: #333333; font-weight: 500; display: inline-flex; justify-content: center; margin-left: 1.5rem; text-decoration: underline;}
+.apply-process-area .guide-area a svg {height: 1rem; margin-left: .5rem;}
 
 #arum-big-data-intro-area.center-wrap {max-width: 996px;}
 #arum-big-data-intro-area .img-wrap {margin-top: 4rem; width: 100%; height: 27.938rem; border-radius: .75rem; overflow: hidden; position: relative;}
@@ -41,24 +61,67 @@ h2+.sub span {color: #666666; font-size: 1rem;}
 #arum-big-data-intro-area .a1-3-area .summary dt {color: #333333; font-weight: 500; font-size: 1.5rem;}
 #arum-big-data-intro-area .a1-3-area .summary dt span {color: #ff4545; font-weight: bold;}
 #arum-big-data-intro-area .a1-3-area .summary dd {color: #666666; font-weight: 500; font-size: 1rem; margin-top: .5rem;}
-#arum-big-data-intro-area .apply-process-area {margin-top: 6.25rem;}
-#arum-big-data-intro-area .apply-process-area h3 {color: #333333; font-weight: 500; font-size: 2.125rem; text-align: center;}
-#arum-big-data-intro-area .apply-process-area .process {position: relative; height: 5.625rem; margin-top: 2.5rem;}
-#arum-big-data-intro-area .apply-process-area .process li {position: absolute; color: #ffffff; font-weight: 400; font-size: 1.125rem; line-height: 1.5rem; display: flex; align-items: center; height: 100%; box-sizing: border-box;}
-#arum-big-data-intro-area .apply-process-area .process li:nth-child(1) {background-color: #1765ad; top: 0; left: 0; width: 11.25rem; padding-left: 1.625rem; z-index: 4; border-bottom-left-radius: .5rem; border-top-left-radius: .5rem;}
-#arum-big-data-intro-area .apply-process-area .process li:nth-child(2) {background-color: #125492; top: 0; left: 18.07%; width: 12.125rem; padding-left: 3.5rem; z-index: 3;}
-#arum-big-data-intro-area .apply-process-area .process li:nth-child(3) {background-color: #0e4477; top: 0; left: 36.14%; width: 12.125rem; padding-left: 3.5rem; z-index: 2;}
-#arum-big-data-intro-area .apply-process-area .process li:nth-child(4) {background-color: #0a345c; top: 0; left: 054.21%; width: 12.125rem; padding-left: 3.5rem; z-index: 1;}
-#arum-big-data-intro-area .apply-process-area .process li:last-child {background-color: #072542; top: 0; right: 0%; width: 12.875rem; border-radius: .5rem; justify-content: center;}
-#arum-big-data-intro-area .apply-process-area .process li:last-child svg {width: 3rem; margin-left: 1.5rem;}
-#arum-big-data-intro-area .apply-process-area .process li::after {content: ''; display: block; position: absolute; top: 0; right: -1.875rem; width: 0; height: 0; border-top: 2.8125rem solid transparent; border-bottom: 2.8125rem solid transparent; border-left: 1.875rem solid #ffffff;}
-#arum-big-data-intro-area .apply-process-area .process li:nth-child(1)::after {border-left-color: #1765ad;}
-#arum-big-data-intro-area .apply-process-area .process li:nth-child(2)::after {border-left-color: #125492;}
-#arum-big-data-intro-area .apply-process-area .process li:nth-child(3)::after {border-left-color: #0e4477;}
-#arum-big-data-intro-area .apply-process-area .process li:nth-child(4)::after {border-left-color: #0a345c;}
-#arum-big-data-intro-area .apply-process-area .process li:last-child:after {display: none;}
-#arum-big-data-intro-area .apply-process-area .guide-area {color: #333333; font-weight: 400; font-size: 1rem; text-align: center; margin-top: 2.5rem;}
-#arum-big-data-intro-area .apply-process-area .guide-area a {color: #333333; font-weight: 500; display: inline-flex; justify-content: center; margin-left: 1.5rem; text-decoration: underline;}
-#arum-big-data-intro-area .apply-process-area .guide-area a svg {height: 1rem; margin-left: .5rem;}
 #arum-big-data-intro-area .primary-btn-area {text-align: center; margin-top: 2.5rem;}
 #arum-big-data-intro-area .primary-btn-area .btn-apply {min-width: 12.5rem; height: 3.75rem; border-radius: .5rem; background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 1.25rem;}
+
+#arum-big-data-list-area .tab {margin-top: 3.5rem;}
+#arum-big-data-list-area .tab-guide-area {position: relative; color: #333333; background-color: #fff2f2; border: 1px solid #ffd8d8; border-radius: .5rem; margin-top: 3.125rem; z-index: 1; padding: 1.125rem;}
+#arum-big-data-list-area .tab-guide-area .word-balloon-tail {position: absolute; top: calc(-1.275rem + 1px); right: calc(50% - .75rem); width: 1.5rem; z-index: 2;}
+#arum-big-data-list-area .tab-guide-area::after {content: ''; display: block; clear: both;}
+#arum-big-data-list-area .tab-guide-area li {float: left; width: 33.33%; padding: .375rem 0;}
+#arum-big-data-list-area .tab-guide-area dt, #arum-big-data-list-area .tab-guide-area dd {color: #333333; font-size: .938rem; display: inline;}
+#arum-big-data-list-area .tab-guide-area dt {font-weight: bold; letter-spacing: .025rem;}
+#arum-big-data-list-area .tab-guide-area dt::after {content: ' : ';}
+#arum-big-data-list-area .tab-guide-area dd {font-weight: 400;}
+#arum-big-data-list-area .page-info-wrap {display: flex; justify-content: space-between; align-items: flex-end; margin-top: 1.125rem;}
+#arum-big-data-list-area .page-info-wrap .num {letter-spacing: .025rem;}
+#arum-big-data-list-area .page-info-wrap .total {color: #666666; font-weight: 500; font-size: .938rem;}
+#arum-big-data-list-area .page-info-wrap .total .tit {font-size: 1.25rem;}
+#arum-big-data-list-area .page-info-wrap .total .num, #arum-big-data-list-area .page-info-wrap .current {color: #ff4545;}
+#arum-big-data-list-area .page-info-wrap label {display: none;}
+#arum-big-data-list-area .page-info-wrap select {width: 11.375rem;}
+#arum-big-data-list-area .page-info-wrap select ~ select {margin-left: .75rem;}
+
+#telegram-service-intro-area.center-wrap {max-width: 996px;}
+#telegram-service-intro-area .main-banner-area {margin-top: 4rem; width: 100%; border-radius: .75rem; overflow: hidden; position: relative;}
+#telegram-service-intro-area .main-banner-area .top-area {background-color: #1e96c8; color: #ffffff; padding: 2.5rem; font-weight: 300; font-size: 1.125rem; background-image: url(../img/logo-telegram-01.svg); background-repeat: no-repeat; background-size: 8.75rem; background-position: 82% 3.125rem;}
+#telegram-service-intro-area .main-banner-area .top-area .tit {font-weight: 500; font-size: 3.125rem; text-transform: uppercase; line-height: 4.375rem;}
+#telegram-service-intro-area .main-banner-area .top-area .sub {font-size: 1.875rem; line-height: 3.125rem;}
+#telegram-service-intro-area .main-banner-area .top-area .sub strong {font-weight: 600;}
+#telegram-service-intro-area .main-banner-area .cont-area {background-color: #e6e8ea; color: #666666; padding: 2.25rem; background-image: url(../img/bg-telegram-service-01.png); background-repeat: no-repeat; background-position: 90% bottom;}
+#telegram-service-intro-area .main-banner-area .cont-area h3 {color: #333333; font-weight: 400; font-size: 1.5rem;}
+#telegram-service-intro-area .main-banner-area .cont-area .analysis-result {color: #0e589c; font-weight: 400; font-size: 1.875rem; line-height: 2.25rem; margin-top: 2.75rem;}
+#telegram-service-intro-area .main-banner-area .cont-area .analysis-result .result {font-weight: 600; font-size: 2.875rem; line-height: 3rem;}
+#telegram-service-intro-area .main-banner-area .cont-area .analysis-result .memo {font-weight: 300; font-size: 1.125rem;}
+#telegram-service-intro-area .main-banner-area .cont-area .guide-01 {font-weight: 400; font-size: 1rem; line-height: 1.375rem;}
+#telegram-service-intro-area .main-banner-area .cont-area .guide-02 {font-weight: 400; font-size: .938rem; margin-top: 1.125rem;}
+#telegram-service-intro-area .main-banner-area .cont-area .btn-primary {width: 7.5rem; margin-top: 2.5rem;}
+#telegram-service-intro-area .advantage {display: flex; margin-top: 2rem;}
+#telegram-service-intro-area .advantage li {width: 50%; display: flex; justify-content: start; align-items: flex-start;}
+#telegram-service-intro-area .advantage li>.num {color: #666666; font-weight: 500; font-size: 3.75rem; margin-right: 1rem;}
+#telegram-service-intro-area .advantage li dt {color: #333333; font-weight: 500; font-size: 1.5rem;}
+#telegram-service-intro-area .advantage li dt span {color: #ff4545; font-weight: bold;}
+#telegram-service-intro-area .advantage li dd {color: #666666; font-weight: 500; font-size: 1rem; margin-top: .4rem;}
+#telegram-service-intro-area .advantage li .memo {color: #0e589c; font-weight: 500; font-size: 1rem; margin-top: 1rem;}
+#telegram-service-intro-area .advantage li .memo::before {content: '* ';}
+#telegram-service-intro-area .how-to-use-message-service-area {margin-top: 5rem;}
+#telegram-service-intro-area .how-to-use-message-service-area h3 {color: #333333; font-weight: 500; font-size: 2.25rem; text-align: center;}
+#telegram-service-intro-area .how-to-use-message-service-area .box {margin-top: 2.5rem; border-radius: .5rem; background-color: #072542; text-align: center; padding: 1.875rem 0;}
+#telegram-service-intro-area .how-to-use-message-service-area .box ul {display: flex; justify-content: space-around;}
+#telegram-service-intro-area .how-to-use-message-service-area .box img {width: 2.688rem;}
+#telegram-service-intro-area .how-to-use-message-service-area .box dt {color: #ffffff; font-weight: 500; font-size: 1.5rem; line-height: 1.875rem; margin-top: 1rem;}
+#telegram-service-intro-area .how-to-use-message-service-area .box dt span {color: #5999d3; font-weight: 400;}
+#telegram-service-intro-area .how-to-use-message-service-area .box dd {color: #65809a; font-weight: 300; font-size: 1rem; margin-top: .5rem;}
+#telegram-service-intro-area .message-service-fee-area {margin-top: 5rem;}
+#telegram-service-intro-area .message-service-fee-area h3 {color: #333333; font-weight: 500; font-size: 2.25rem; text-align: center;}
+#telegram-service-intro-area .message-service-fee-area .box {margin-top: 2.5rem; border-radius: .5rem; background-color: #ededed; text-align: center; padding: 1.875rem 0; color: #666666; font-weight: 500; font-size: 1.128rem;}
+#telegram-service-intro-area .message-service-fee-area .box .tit {color: #ff4545; font-size: 2.5rem; line-height: 3.75rem;}
+#telegram-service-intro-area .message-service-fee-area .box .memo {color: #ff4545; font-size: 1rem; margin-top: .5rem;}
+#telegram-service-intro-area .message-service-fee-area .box .memo::before {content: '* '}
+#telegram-service-intro-area .message-service-fee-area .box .memo::after {content: ' *'}
+#telegram-service-intro-area .tel-input-area {margin-top: 2.5rem; text-align: center;}
+#telegram-service-intro-area .tel-input-area select {width: 9.75rem;}
+#telegram-service-intro-area .tel-input-area input {width: 6.25rem; margin-left: .75rem;}
+#telegram-service-intro-area .primary-btn-area {text-align: center; margin-top: 2.5rem;}
+#telegram-service-intro-area .primary-btn-area .btn-apply {min-width: 12.5rem; height: 3.75rem; border-radius: .5rem; background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 1.25rem;}
+
