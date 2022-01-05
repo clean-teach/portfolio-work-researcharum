@@ -241,7 +241,7 @@ header .btn-wrap button + button {margin-left: 1.625rem;}
 .depth-sub .depth-03>li {margin-top: 1rem;}
 .depth-sub .depth-02>li>a {position: relative; color: #333333; font-weight: 500; font-size: 1rem; text-transform: uppercase;}
 .depth-sub .depth-02>li>a.on::before {content: ''; display: block; position: absolute; top: .8rem; width: 100%; height: 1rem; background-color: rgba(255, 69, 69, .2);}
-.depth-sub .depth-03>li>a {color: #666666; font-weight: 200; font-size: .938rem; text-transform: uppercase;}
+.depth-sub .depth-03>li>a {color: #666666; font-weight: 400; font-size: .938rem; text-transform: uppercase;}
 
 #header-search-area {margin-top: 5.313rem; height: 0; background-color: #ffffff; overflow: hidden; transition: .4s;}
 #header-search-area .search-bar {position: relative; max-width: 800px; margin: 0 auto; opacity: 0; transition: .4s;}
