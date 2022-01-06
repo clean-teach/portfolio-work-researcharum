@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 <body>
     <header>
@@ -95,7 +96,215 @@
                 </div>
             </form>
             <div class="result-area">
-                <p class="no-result"><span class="search-word">검색어</span>에 대한 검색 결과가 없습니다.</p>
+                <!-- <p class="no-result"><span class="search-word">검색어</span>에 대한 검색 결과가 없습니다.</p> -->
+                <div class="result center-wrap">
+                    <ul class="card-list type-02">
+                        <li>
+                            <div class="top-info-wrap">
+                                <div class="type">Small cap Research</div>
+                                <div class="left">
+                                    <div class="writer">
+                                        <span class="name">이동현</span>
+                                        <span class="name">손준희</span>
+                                    </div>
+                                    <div class="date">2021-08-28</div>
+                                </div>
+                            </div>
+                            <div class="tit-wrap">
+                                <div class="tit ellipsis">유투바이오 (221800, KONEX) 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐</div>
+                                <div class="sub multi-line-ellipsis">국내 최초 IT/BT 융합 디지털 헬스 기업 유전체 분석 서비스 신성장동력 확보 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 </div>
+                            </div>
+                            <div class="btn-area">
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href=''">리포트 보기</button>
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href='small-cap-research-view.html'">종목 토론 참여</button>
+                            </div>
+                            <div class="bottom-info-wrap">
+                                <dl>
+                                    <dt>주가전망</dt>
+                                    <dd>Positive</dd>
+                                </dl>
+                                <dl>
+                                    <dt>적정주가</dt>
+                                    <dd>10,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>현재주가</dt>
+                                    <dd>9,300원</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top-info-wrap">
+                                <div class="type">Small cap Research</div>
+                                <div class="left">
+                                    <div class="writer">
+                                        <span class="name">이동현</span>
+                                        <span class="name">손준희</span>
+                                    </div>
+                                    <div class="date">2021-08-28</div>
+                                </div>
+                            </div>
+                            <div class="tit-wrap">
+                                <div class="tit ellipsis">유투바이오 (221800, KONEX) 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐</div>
+                                <div class="sub multi-line-ellipsis">국내 최초 IT/BT 융합 디지털 헬스 기업 유전체 분석 서비스 신성장동력 확보 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 </div>
+                            </div>
+                            <div class="btn-area">
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href=''">리포트 보기</button>
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href='small-cap-research-view.html'">종목 토론 참여</button>
+                            </div>
+                            <div class="bottom-info-wrap">
+                                <dl>
+                                    <dt>주가전망</dt>
+                                    <dd>Positive</dd>
+                                </dl>
+                                <dl>
+                                    <dt>적정주가</dt>
+                                    <dd>10,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>현재주가</dt>
+                                    <dd>9,300원</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top-info-wrap">
+                                <div class="type">Small cap Research</div>
+                                <div class="left">
+                                    <div class="writer">
+                                        <span class="name">이동현</span>
+                                        <span class="name">손준희</span>
+                                    </div>
+                                    <div class="date">2021-08-28</div>
+                                </div>
+                            </div>
+                            <div class="tit-wrap">
+                                <div class="tit ellipsis">유투바이오 (221800, KONEX) 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐</div>
+                                <div class="sub multi-line-ellipsis">국내 최초 IT/BT 융합 디지털 헬스 기업 유전체 분석 서비스 신성장동력 확보 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 </div>
+                            </div>
+                            <div class="btn-area">
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href=''">리포트 보기</button>
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href='small-cap-research-view.html'">종목 토론 참여</button>
+                            </div>
+                            <div class="bottom-info-wrap">
+                                <dl>
+                                    <dt>주가전망</dt>
+                                    <dd>Positive</dd>
+                                </dl>
+                                <dl>
+                                    <dt>적정주가</dt>
+                                    <dd>10,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>현재주가</dt>
+                                    <dd>9,300원</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top-info-wrap">
+                                <div class="type">Small cap Research</div>
+                                <div class="left">
+                                    <div class="writer">
+                                        <span class="name">이동현</span>
+                                        <span class="name">손준희</span>
+                                    </div>
+                                    <div class="date">2021-08-28</div>
+                                </div>
+                            </div>
+                            <div class="tit-wrap">
+                                <div class="tit ellipsis">유투바이오 (221800, KONEX) 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐</div>
+                                <div class="sub multi-line-ellipsis">국내 최초 IT/BT 융합 디지털 헬스 기업 유전체 분석 서비스 신성장동력 확보 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 </div>
+                            </div>
+                            <div class="btn-area">
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href=''">리포트 보기</button>
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href='small-cap-research-view.html'">종목 토론 참여</button>
+                            </div>
+                            <div class="bottom-info-wrap">
+                                <dl>
+                                    <dt>주가전망</dt>
+                                    <dd>Positive</dd>
+                                </dl>
+                                <dl>
+                                    <dt>적정주가</dt>
+                                    <dd>10,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>현재주가</dt>
+                                    <dd>9,300원</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top-info-wrap">
+                                <div class="type">Small cap Research</div>
+                                <div class="left">
+                                    <div class="writer">
+                                        <span class="name">이동현</span>
+                                        <span class="name">손준희</span>
+                                    </div>
+                                    <div class="date">2021-08-28</div>
+                                </div>
+                            </div>
+                            <div class="tit-wrap">
+                                <div class="tit ellipsis">유투바이오 (221800, KONEX) 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐</div>
+                                <div class="sub multi-line-ellipsis">국내 최초 IT/BT 융합 디지털 헬스 기업 유전체 분석 서비스 신성장동력 확보 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 </div>
+                            </div>
+                            <div class="btn-area">
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href=''">리포트 보기</button>
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href='small-cap-research-view.html'">종목 토론 참여</button>
+                            </div>
+                            <div class="bottom-info-wrap">
+                                <dl>
+                                    <dt>주가전망</dt>
+                                    <dd>Positive</dd>
+                                </dl>
+                                <dl>
+                                    <dt>적정주가</dt>
+                                    <dd>10,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>현재주가</dt>
+                                    <dd>9,300원</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top-info-wrap">
+                                <div class="type">Small cap Research</div>
+                                <div class="left">
+                                    <div class="writer">
+                                        <span class="name">이동현</span>
+                                        <span class="name">손준희</span>
+                                    </div>
+                                    <div class="date">2021-08-28</div>
+                                </div>
+                            </div>
+                            <div class="tit-wrap">
+                                <div class="tit ellipsis">유투바이오 (221800, KONEX) 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐 제목 길어짐</div>
+                                <div class="sub multi-line-ellipsis">국내 최초 IT/BT 융합 디지털 헬스 기업 유전체 분석 서비스 신성장동력 확보 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 내용 길어짐 </div>
+                            </div>
+                            <div class="btn-area">
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href=''">리포트 보기</button>
+                                <button type="button" title="페이지 이동" class="btn-color" onclick="location.href='small-cap-research-view.html'">종목 토론 참여</button>
+                            </div>
+                            <div class="bottom-info-wrap">
+                                <dl>
+                                    <dt>주가전망</dt>
+                                    <dd>Positive</dd>
+                                </dl>
+                                <dl>
+                                    <dt>적정주가</dt>
+                                    <dd>10,000원</dd>
+                                </dl>
+                                <dl>
+                                    <dt>현재주가</dt>
+                                    <dd>9,300원</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -126,19 +335,276 @@
         </div>
     </section>
 
-    <section>
+    <section class="card-list-area type-01 center-wrap">
         <h2><span>Small cap</span> Research</h2>
+        <div class="card-cont-area">
+            <ul class="card-list">
+                <li><a href="html/small-cap-research-view.html" title="페이지 이동">
+                    <div class="top-info-wrap">
+                        <div class="type">알음 유투브</div>
+                        <div class="date">2021-08-28</div>
+                    </div>
+                    <div class="tit multi-line-ellipsis">테슬라도 주목하는 실리콘 음극재</div>
+                    <div class="bottom-info-wrap">
+                        <div class="writer">이녹스(088390, KQ)</div>
+                    </div>
+                </a></li>
+                <li><a href="html/small-cap-research-view.html" title="페이지 이동">
+                    <div class="top-info-wrap">
+                        <div class="type">알음 유투브</div>
+                        <div class="date">2021-08-28</div>
+                    </div>
+                    <div class="tit multi-line-ellipsis">베스트 알음프라이스 선정, 알음기프트 제목 제목 제목 제목</div>
+                    <div class="bottom-info-wrap">
+                        <div class="writer">이녹스(088390, KQ)</div>
+                    </div>
+                </a></li>
+                <li><a href="html/small-cap-research-view.html" title="페이지 이동">
+                    <div class="top-info-wrap">
+                        <div class="type">알음 유투브</div>
+                        <div class="date">2021-08-28</div>
+                    </div>
+                    <div class="tit multi-line-ellipsis">테슬라도 주목하는 실리콘 음극재</div>
+                    <div class="bottom-info-wrap">
+                        <div class="writer">이녹스(088390, KQ)</div>
+                    </div>
+                </a></li>
+                <li><a href="html/small-cap-research-view.html" title="페이지 이동">
+                    <div class="top-info-wrap">
+                        <div class="type">알음 유투브</div>
+                        <div class="date">2021-08-28</div>
+                    </div>
+                    <div class="tit multi-line-ellipsis">베스트 알음프라이스 선정, 알음기프트 제목 제목 제목 제목</div>
+                    <div class="bottom-info-wrap">
+                        <div class="writer">이녹스(088390, KQ)</div>
+                    </div>
+                </a></li>
+                <li><a href="html/small-cap-research-view.html" title="페이지 이동">
+                    <div class="top-info-wrap">
+                        <div class="type">알음 유투브</div>
+                        <div class="date">2021-08-28</div>
+                    </div>
+                    <div class="tit multi-line-ellipsis">테슬라도 주목하는 실리콘 음극재</div>
+                    <div class="bottom-info-wrap">
+                        <div class="writer">이녹스(088390, KQ)</div>
+                    </div>
+                </a></li>
+                <li><a href="html/small-cap-research-view.html" title="페이지 이동">
+                    <div class="top-info-wrap">
+                        <div class="type">알음 유투브</div>
+                        <div class="date">2021-08-28</div>
+                    </div>
+                    <div class="tit multi-line-ellipsis">베스트 알음프라이스 선정, 알음기프트 제목 제목 제목 제목</div>
+                    <div class="bottom-info-wrap">
+                        <div class="writer">이녹스(088390, KQ)</div>
+                    </div>
+                </a></li>
+            </ul>
+            <div class="more-area">
+                <button type="button" class="btn-more" title="페이지 이동" onclick="location.href='html/small-cap-research-list.html'">More →</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="card-list-area type-01 center-wrap">
+        <h2><span>Unlisted</span> Research</h2>
+        <div class="card-cont-area">
+            <ul class="card-list">
+                <li><a href="html/unlisted-research-view.html" title="페이지 이동">
+                    <div class="top-info-wrap">
+                        <div class="type">알음 유투브</div>
+                        <div class="date">2021-08-28</div>
+                    </div>
+                    <div class="tit multi-line-ellipsis">테슬라도 주목하는 실리콘 음극재</div>
+                    <div class="bottom-info-wrap">
+                        <div class="writer">이녹스(088390, KQ)</div>
+                    </div>
+                </a></li>
+                <li><a href="html/unlisted-research-view.html" title="페이지 이동">
+                    <div class="top-info-wrap">
+                        <div class="type">알음 유투브</div>
+                        <div class="date">2021-08-28</div>
+                    </div>
+                    <div class="tit multi-line-ellipsis">베스트 알음프라이스 선정, 알음기프트 제목 제목 제목 제목</div>
+                    <div class="bottom-info-wrap">
+                        <div class="writer">이녹스(088390, KQ)</div>
+                    </div>
+                </a></li>
+                <li><a href="html/unlisted-research-view.html" title="페이지 이동">
+                    <div class="top-info-wrap">
+                        <div class="type">알음 유투브</div>
+                        <div class="date">2021-08-28</div>
+                    </div>
+                    <div class="tit multi-line-ellipsis">테슬라도 주목하는 실리콘 음극재</div>
+                    <div class="bottom-info-wrap">
+                        <div class="writer">이녹스(088390, KQ)</div>
+                    </div>
+                </a></li>
+            </ul>
+            <div class="more-area">
+                <button type="button" class="btn-more" title="페이지 이동" onclick="location.href='html/unlisted-research-list.html'">More →</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="earnings-rate-ranking-area" class="card-list-area type-02 center-wrap">
+        <div class="info-area">
+            <h2>수익률 TOP3</h2>
+            <div class="btn-wrap">
+                <button type="button" title="기간별 순위 보기" class="on">1주</button>
+                <button type="button" title="기간별 순위 보기">1개월</button>
+                <button type="button" title="기간별 순위 보기">분기</button>
+                <button type="button" title="기간별 순위 보기">반기</button>
+                <button type="button" title="기간별 순위 보기">1년</button>
+            </div>
+        </div>
         <ul class="card-list">
-            <li class="card">
-                <div class="top">
-                    <div class="writer">알음 유투브</div>
-                    <div class="date">2021-08-28</div>
+            <li>
+                <div class="cont-area">
+                    <h3>1</h3>
+                    <div class="tit multi-line-ellipsis"><a href="" title="페이지 이동">미래에셋코리아 레버리지 2.0 투자신탁(주식-파생재간접형) 종류A [수수료선취-오프라인] 레버리지 2.0 투자신탁(주식-파생재간접형) 종류A [수수료선취-오프라인]</a></div>
+                    <div class="earnings-rate">수익률 <span class="num">7.99</span> %</div>
                 </div>
-                <div class="tit"><a href="">올해 첫 흑자전환, 기초 생명과학 장비업체 추천하는 리스트</a></div>
-                <div class="bottom">
-                    <div class="code">이녹스(088390. KQ)</div>
+                <div class="graph-area">
+                    <div class="graph">
+                        <canvas id="line-chart-01"></canvas>
+                        <script>
+                            (function(){
+                                new Chart(document.getElementById("line-chart-01"), {
+                                type: 'line',
+                                data: {
+                                labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+                                datasets: [{ 
+                                    data: [112,24,579,1,974,1111,1343,221,783,2478],
+                                    label: "미래에셋코리아 레버리지 2.0 투자신탁",
+                                    borderColor: "#ffffff",
+                                    fill: false
+                                    }
+                                ]
+                                }
+                                });
+                            }())
+                        </script>
+                    </div>
+                    <h4>1주 수익률추이</h4>
                 </div>
             </li>
+            <li>
+                <div class="cont-area">
+                    <h3>2</h3>
+                    <div class="tit multi-line-ellipsis"><a href="" title="페이지 이동">미래에셋코스닥 혁신성장 증권 자투자신탁(주식) 종류A [수수료선취-오프라인]</a></div>
+                    <div class="earnings-rate">수익률 <span class="num">6.96</span> %</div>
+                </div>
+                <div class="graph-area">
+                    <div class="graph">
+                        <canvas id="line-chart-02"></canvas>
+                        <script>
+                            (function(){
+                                new Chart(document.getElementById("line-chart-02"), {
+                                type: 'line',
+                                data: {
+                                labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+                                datasets: [{ 
+                                    data: [86,114,106,106,107,111,133,221,783,2478],
+                                    label: "미래에셋코리아 레버리지 2.0 투자신탁",
+                                    borderColor: "#ffffff",
+                                    fill: false
+                                    }
+                                ]
+                                }
+                                });
+                            }())
+                        </script>
+                    </div>
+                    <h4>1주 수익률추이</h4>
+                </div>
+            </li>
+            <li>
+                <div class="cont-area">
+                    <h3>3</h3>
+                    <div class="tit multi-line-ellipsis"><a href="" title="페이지 이동">미래에셋글로벌넥스트 노멀증권 투자신탁(주식) 종류C1</a></div>
+                    <div class="earnings-rate">수익률 <span class="num">5.66</span> %</div>
+                </div>
+                <div class="graph-area">
+                    <div class="graph">
+                        <canvas id="line-chart-03"></canvas>
+                        <script>
+                            (function(){
+                                new Chart(document.getElementById("line-chart-03"), {
+                                type: 'line',
+                                data: {
+                                labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+                                datasets: [{ 
+                                    data: [86,114,106,106,107,111,133,221,783,2478],
+                                    label: "미래에셋코리아 레버리지 2.0 투자신탁",
+                                    borderColor: "#ffffff",
+                                    fill: false
+                                    }
+                                ]
+                                }
+                                });
+                            }())
+                        </script>
+                    </div>
+                    <h4>1주 수익률추이</h4>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="main-notice-event-area" class="card-list-area type-02 center-wrap">
+        <h2>공지 및 이벤트</h2>
+        <div class="main-notice-area">
+            <div class="main-notice"><a href="html/notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">필독</div>
+                </div>
+                <div class="tit multi-line-ellipsis">홈에이지 및 서비스 개편에 따른 안내</div>
+                <div class="bottom-info-wrap">
+                    <div class="date">2021-08-28</div>
+                </div>
+            </a></div>
+            <div class="more-area">
+                <button type="button" class="btn-more" title="페이지 이동" onclick="location.href='html/notice-event-list.html'">More →</button>
+            </div>
+        </div>
+        <ul class="card-list">
+            <li><a href="html/notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">공지</div>
+                </div>
+                <div class="tit multi-line-ellipsis">리포트 파일 열람 오류 리포트 파일 열람 오류 리포트 파일 열람 오류</div>
+                <div class="bottom-info-wrap">
+                    <div class="date">2021-08-28</div>
+                </div>
+            </a></li>
+            <li><a href="html/notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">공지</div>
+                </div>
+                <div class="tit multi-line-ellipsis">리포트 파일 열람 오류 리포트 파일 열람 오류 리포트 파일 열람 오류</div>
+                <div class="bottom-info-wrap">
+                    <div class="date">2021-08-28</div>
+                </div>
+            </a></li>
+            <li><a href="html/notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">공지</div>
+                </div>
+                <div class="tit multi-line-ellipsis">리포트 파일 열람 오류 리포트 파일 열람 오류 리포트 파일 열람 오류</div>
+                <div class="bottom-info-wrap">
+                    <div class="date">2021-08-28</div>
+                </div>
+            </a></li>
+            <li><a href="html/notice-view.html" title="페이지 이동">
+                <div class="top-info-wrap">
+                    <div class="type">공지</div>
+                </div>
+                <div class="tit multi-line-ellipsis">리포트 파일 열람 오류 리포트 파일 열람 오류 리포트 파일 열람 오류</div>
+                <div class="bottom-info-wrap">
+                    <div class="date">2021-08-28</div>
+                </div>
+            </a></li>
         </ul>
     </section>
 

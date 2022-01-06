@@ -18,7 +18,7 @@ header.on .gnb a {color: #666666;}
 header.on .btn-wrap button path, header.on .btn-wrap button circle, header.on .btn-wrap button line {stroke: #333333;}
 header.on #btn-menu i {background-color: #333333;}
 
-#section-main-banner {width: 100%; height: 100vh;}
+#section-main-banner {width: 100%; height: 100vh; min-height: 937px;}
 #section-main-banner h2 {width: 0; height: 0; overflow: hidden;}
 .slider {height: 100%; overflow: hidden;}
 .banner {min-height: 100%; box-sizing: border-box; padding-top: 5.313rem;}
@@ -29,3 +29,51 @@ header.on #btn-menu i {background-color: #333333;}
 .banner-01 p span {color: #ffee8d; font-weight: 400; font-size: 1.5rem;}
 .banner-01 .btn-detail {display: flex; justify-content: center; align-items: center; width: 10.75rem; height: 3.125rem; color: #ffffff; font-weight: 400; font-size: 1.125rem; border: 1px solid rgba(255, 255, 255, .3); border-radius: .4rem; margin-top: 2rem;}
 .banner-01 .btn-detail svg {margin-left: .4rem;}
+
+.card-list-area {padding: 4rem 0;}
+.card-list-area h2 {text-align: center; color: #ffffff; font-weight: 300; font-size: 1.5rem;}
+.card-list-area h2 span {font-weight: 500;}
+.card-list-area .card-cont-area {margin-top: 6.25rem; display: flex;}
+.card-list-area .card-list>li:hover {transform: translateY(-.625rem); transition: .4s;}
+.card-list-area.type-01 .card-cont-area .card-list {flex: 3;}
+.card-list-area.type-01 .card-cont-area .more-area {flex: 1;}
+.card-list-area.type-01 .card-list .bottom-info-wrap {background-color: #222222;}
+.card-list-area.type-01 .more-area {display: flex; justify-content: center; align-items: center;}
+.card-list-area.type-01 .btn-more {min-width: 10.5rem; height: 3rem; border-radius: .5rem; border: 1px solid rgba(255,255,255,.5); color: #ffffff; font-weight: 400; font-size: 1.1235rem; text-transform: uppercase;}
+.card-list-area.type-01 .card-list>li:hover .bottom-info-wrap {background-color: #1765ad;}
+.card-list-area.type-01 .btn-more:hover {background-color: rgba(255, 255, 255, .2); transition: .2s;}
+
+.card-list-area.type-02 .card-list>li {background-color: rgba(0,0,0,.4); color: #ffffff;}
+.card-list-area.type-02 .card-list>li .bottom-info-wrap {background: none;}
+.card-list-area.type-02 .card-list>li .type {color: #dddddd;}
+.card-list-area.type-02 .card-list>li .tit {color: #ffffff;}
+.card-list-area.type-02 .card-list>li .date {color: #dddddd;}
+
+#earnings-rate-ranking-area {display: flex; height: 34.5rem;}
+#earnings-rate-ranking-area .info-area {flex: 1; height: 100%; border-radius: 1.25rem; background-color: rgba(0,0,0,.4); color: #ffffff; text-align: center; display: flex; flex-direction: column; align-items: center;}
+#earnings-rate-ranking-area .info-area h2 {font-weight: 500; font-size: 1.5rem; padding: 6.25rem 0;}
+#earnings-rate-ranking-area .info-area button {color: #dddddd; font-weight: 300; font-size: 1rem; display: block; width: 100%; text-align: center;}
+#earnings-rate-ranking-area .info-area button+button {margin-top: 2rem;}
+#earnings-rate-ranking-area .info-area button.on {color: #ffffff; font-weight: 600; font-size: 1.125rem;}
+#earnings-rate-ranking-area .card-list {flex: 3; height: 100%;}
+#earnings-rate-ranking-area .card-list>li {height: 100%;}
+#earnings-rate-ranking-area .card-list>li>.cont-area {padding: 1.875rem 1.375rem 0;}
+#earnings-rate-ranking-area .card-list h3 {color: #ffffff; font-weight: 400; font-size: 3.125rem;}
+#earnings-rate-ranking-area .card-list .cont-area .tit {color: #ffffff; font-weight: 400; font-size: 1.125rem; line-height: 1.75rem; word-break: keep-all; margin-top: 2.375rem; padding: 0; height: 6.6rem; -webkit-line-clamp: 4;}
+#earnings-rate-ranking-area .card-list .cont-area .tit a {color: #ffffff;}
+#earnings-rate-ranking-area .card-list .cont-area .earnings-rate {color: #dddddd; font-weight: 300; font-size: .875rem; margin-top: 2.25rem;}
+#earnings-rate-ranking-area .card-list .cont-area .earnings-rate .num {color: #ffffff; font-weight: 400; font-size: 1.5rem; letter-spacing: .025rem; margin-top: 2.25rem;}
+#earnings-rate-ranking-area .card-list .graph-area {color: #ffffff; font-weight: 300; font-size: .875rem; text-align: center; margin-top: 2rem;}
+#earnings-rate-ranking-area .card-list .graph-area .graph {height: 11.4rem;}
+#earnings-rate-ranking-area .card-list .graph-area h4 {margin-top: 1rem;}
+
+#main-notice-event-area {display: flex; padding: 0; margin-top: 9.5rem; margin-bottom: 9.875rem;}
+#main-notice-event-area h2 {width: 0; height: 0; overflow: hidden;}
+#main-notice-event-area .main-notice-area {flex: 1; position: relative;}
+#main-notice-event-area .main-notice {padding: 3.5rem;}
+#main-notice-event-area .main-notice .type {color: #ffffff; font-weight: bold; font-size: 1.5rem;}
+#main-notice-event-area .main-notice .tit {color: #ffffff; font-weight: bold; font-size: 3.5rem; line-height: 4rem; margin-top: 2.5rem; max-width: 28rem;}
+#main-notice-event-area .main-notice .date {color: #dddddd; font-weight: 300; font-size: .875rem; letter-spacing: .025rem; margin-top: 5.25rem;}
+#main-notice-event-area .btn-more {min-width: 10.5rem; height: 3rem; border-radius: .5rem; border: 1px solid rgba(255,255,255,.5); color: #ffffff; font-weight: 400; font-size: 1.1235rem; text-transform: uppercase; position: absolute; right: 3.5rem; bottom: 2.5rem;}
+#main-notice-event-area .btn-more:hover {background-color: rgba(255, 255, 255, .2); transition: .2s;}
+#main-notice-event-area .card-list {flex: 1;}
