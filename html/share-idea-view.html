@@ -217,32 +217,11 @@
             </div>
             <div class="primary-btn-area">
                 <button type="button" class="btn-gray btn-close" title="">취소</button>
-                <button type="button" class="btn-color" title="">후원하기</button>
+                <button type="button" class="btn-color" title="" onclick="alert('알음 김도윤님께 10,000원을 후원하셨습니다')">후원하기</button>
             </div>
         </div>
     </div>
 
 <script src="../js/common.js"></script>
-
-<script>
-    const popupArea = document.querySelector('#popup-area');
-    popupArea.querySelectorAll('.btn-close').forEach(btnClose => {
-        btnClose.addEventListener('click', function(){
-            closePopup();
-        });
-    });
-    function openPopup(popup){
-        popupArea.style.display = 'flex';
-        popupArea.querySelector('.popup-box').style.display = 'none';
-        popupArea.querySelector(popup).style.display = 'block';
-    }
-    function closePopup(){
-        popupArea.style.display = 'none';
-        popupArea.querySelectorAll('.popup-box').forEach(popup => {
-            popup.style.display = 'none';
-        });
-    }
-</script>
-
 </body>
 </html>

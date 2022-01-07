@@ -1,4 +1,5 @@
 // Utils
+const popupArea = document.querySelector('#popup-area');
 let scrollBaseValue = 0;
 function getScrollDirection(){
     let result;
@@ -7,6 +8,25 @@ function getScrollDirection(){
     scrollBaseValue = window.scrollY;
     return result;
 }
+
+function openPopup(popup){
+    document.body.style.overflow = "hidden";
+    popupArea.style.display = 'flex';
+    popupArea.querySelector('.popup-box').style.display = 'none';
+    popupArea.querySelector(popup).style.display = 'block';
+}
+function closePopup(){
+    document.body.style.overflow = "scroll";
+    popupArea.style.display = 'none';
+    popupArea.querySelectorAll('.popup-box').forEach(popup => {
+        popup.style.display = 'none';
+    });
+}
+popupArea.querySelectorAll('.btn-close').forEach(btnClose => {
+    btnClose.addEventListener('click', function(){
+        closePopup();
+    });
+});
 
 (function(){
     const header = document.querySelector('header');

@@ -216,6 +216,7 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 #popup-area .popup-box .popup-top-area {height: 5rem; padding: 0 1.875rem; border-bottom: 2px solid #b8b8b8; display: flex; justify-content: space-between; align-items: center;}
 #popup-area .popup-box .popup-top-area h2 {color: #333333; font-weight: bold; font-size: 1.5rem;}
 #popup-area .popup-box .popup-top-area .btn-close {width: 1rem; height: 1rem; background: url(../img/x.svg) no-repeat center;}
+#popup-area .popup-box .cont-area {overflow-y: scroll; max-height: 80vh;}
 #popup-area .popup-box .primary-btn-area {padding: 1.875rem; margin-top: 0;}
 
 #popup-sponsor {max-width: 560px;}
@@ -229,6 +230,16 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 #popup-sponsor-confirm .cont-area .bold {font-weight: 500;}
 #popup-sponsor-confirm .cont-area .color {color: #ff4545;}
 #popup-sponsor-confirm .cont-area .num {letter-spacing: .025rem;}
+
+#popup-report-list {max-width: 560px;}
+#popup-report-list .cont-area {padding: 0 1.875rem;}
+#popup-report-list .cont-area li {display: flex; align-items: center; height: 5.5rem;}
+#popup-report-list .cont-area li + li {border-top: 1px solid #d4d4d4;}
+#popup-report-list .cont-area .info-area {width: calc(100% - 6.375rem); box-sizing: border-box; padding-right: 6rem;}
+#popup-report-list .cont-area .date {color: #666666; font-weight: 300; font-size: 1rem; letter-spacing: .025rem;}
+#popup-report-list .cont-area .tit {color: #333333; font-weight: 500; font-size: 1.125rem; margin-top: .75rem;}
+#popup-report-list .cont-area .btn-area {width: 6.375rem;}
+#popup-report-list .cont-area .btn-area button {width: 100%; height: 2rem; border-radius: .25rem;}
 
 
 /* header */
