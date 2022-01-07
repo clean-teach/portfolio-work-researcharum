@@ -11,12 +11,13 @@ header .gnb a {color: #fffefe;}
 header .gnb a:hover {color: #ffffff;}
 header .gnb a.on {color: #ffffff;}
 header .btn-wrap button path, header .btn-wrap button circle, header .btn-wrap button line {stroke: #fffefe;}
-#btn-menu i {background-color: #ffffff;}
+#btn-main-menu i {background-color: #ffffff;}
 header.on {background-color: #ffffff; border-bottom-color: #ffffff;}
 header.on h1 a {background-image: url(../img/logo-researcharum-198x45-01.png);}
 header.on .gnb a {color: #666666;}
+header.on .gnb a:hover, header.on .gnb a.on {color: #111111;}
 header.on .btn-wrap button path, header.on .btn-wrap button circle, header.on .btn-wrap button line {stroke: #333333;}
-header.on #btn-menu i {background-color: #333333;}
+header.on #btn-main-menu i {background-color: #333333;}
 
 #section-main-banner {width: 100%; height: 100vh; min-height: 937px;}
 #section-main-banner h2 {width: 0; height: 0; overflow: hidden;}
