@@ -1,5 +1,4 @@
 // Utils
-const popupArea = document.querySelector('#popup-area');
 let scrollBaseValue = 0;
 function getScrollDirection(){
     let result;
@@ -8,6 +7,9 @@ function getScrollDirection(){
     scrollBaseValue = window.scrollY;
     return result;
 }
+
+// Popup js
+const popupArea = document.querySelector('#popup-area');
 
 function openPopup(popup){
     document.body.style.overflow = "hidden";
@@ -22,12 +24,15 @@ function closePopup(){
         popup.style.display = 'none';
     });
 }
-popupArea.querySelectorAll('.btn-close').forEach(btnClose => {
-    btnClose.addEventListener('click', function(){
-        closePopup();
-    });
-});
+if(popupArea){
+    popupArea.querySelectorAll('.btn-close').forEach(btnClose => {
+        btnClose.addEventListener('click', function(){
+            closePopup();
+        });
+    }); 
+}
 
+// Header js
 (function(){
     const header = document.querySelector('header');
     const btnMainMenu = document.querySelector('#btn-main-menu');
