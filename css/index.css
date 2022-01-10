@@ -66,10 +66,10 @@ header.on #btn-main-menu i {background-color: #333333;}
 #earnings-rate-ranking-area .card-list .cont-area .earnings-rate .num {color: #ffffff; font-weight: 400; font-size: 1.5rem; letter-spacing: .025rem; margin-top: 2.25rem;}
 #earnings-rate-ranking-area .card-list .graph-area {color: #ffffff; font-weight: 300; font-size: .875rem; text-align: center; margin-top: 2rem;}
 #earnings-rate-ranking-area .card-list .graph-area .graph {height: 11.4rem;}
-#earnings-rate-ranking-area .card-list .graph-area h4 {margin-top: 1rem;}
+#earnings-rate-ranking-area .card-list .graph-area h4 {padding: 1rem;}
 
 #main-notice-event-area {display: flex; padding: 0; margin-top: 9.5rem; margin-bottom: 9.875rem;}
-#main-notice-event-area h2 {width: 0; height: 0; overflow: hidden;}
+#main-notice-event-area h2 {text-align: center; color: #ffffff; font-weight: 300; font-size: 1.5rem; width: 0; height: 0; overflow: hidden;}
 #main-notice-event-area .main-notice-area {flex: 1; position: relative;}
 #main-notice-event-area .main-notice {padding: 3.5rem;}
 #main-notice-event-area .main-notice .type {color: #ffffff; font-weight: bold; font-size: 1.5rem;}
@@ -77,4 +77,44 @@ header.on #btn-main-menu i {background-color: #333333;}
 #main-notice-event-area .main-notice .date {color: #dddddd; font-weight: 300; font-size: .875rem; letter-spacing: .025rem; margin-top: 5.25rem;}
 #main-notice-event-area .btn-more {min-width: 10.5rem; height: 3rem; border-radius: .5rem; border: 1px solid rgba(255,255,255,.5); color: #ffffff; font-weight: 400; font-size: 1.1235rem; text-transform: uppercase; position: absolute; right: 3.5rem; bottom: 2.5rem;}
 #main-notice-event-area .btn-more:hover {background-color: rgba(255, 255, 255, .2); transition: .2s;}
-#main-notice-event-area .card-list {flex: 1;}
+#main-notice-event-area .card-list-wrap {flex: 1;}
+
+@media screen and (max-width: 1328px) {
+    .center-wrap {max-width: 960px;}
+    .banner-01 .wrapper {max-width: 960px;}
+    .card-list-area.type-01 .card-cont-area .card-list {flex: 2;}
+    #earnings-rate-ranking-area {display: block; height: auto;}
+    #earnings-rate-ranking-area .info-area {flex: auto; height: auto; background: none; display: block;}
+    #earnings-rate-ranking-area .info-area h2 {font-size: 1.375rem; padding: 2rem 0;}
+    #earnings-rate-ranking-area .info-area .btn-wrap {height: 3.125rem; border-radius: .25rem; background-color: rgba(0,0,0,.4); color: #ffffff; display: flex; justify-content:space-around; align-items: center;}
+    #earnings-rate-ranking-area .info-area button+button {margin-top: 0;}
+    #earnings-rate-ranking-area .info-area button.on {font-size: 1rem;}
+    #earnings-rate-ranking-area .card-list {margin-top: 2rem;}
+    #main-notice-event-area {display: block;}
+    #main-notice-event-area h2 {width: auto; height: auto; overflow: auto;}
+}
+@media screen and (max-width: 1024px) {
+    .center-wrap {max-width: 768px;}
+    .banner-01 .wrapper {max-width: 768px;}
+    .card-list-area {padding: 3.125rem 1rem; padding-right: 0;}
+    .card-list-area h2 {text-align: left; font-size: 1.375rem;}
+    .card-list-area .card-cont-area {margin-top: 1.5rem; display: block; overflow-x: scroll;}
+    .small-cap-research-area.card-list-area .card-cont-area .card-list {width: 1952px;}
+    .unlisted-research-area.card-list-area .card-cont-area .card-list {width: 968px;}
+    .card-list-area.type-01 {position: relative;}
+    .card-list-area.type-01 .more-area {display: block; width: 0; flex: 0;}
+    .card-list-area.type-01 .btn-more {min-width: auto; width: 2rem; height: 2rem; border-radius: 0; border: none; color: rgba(255, 255, 255, 0); overflow: hidden; position: absolute; top: 3.125rem; right: 1rem; background-color: #ffffff;}
+    .card-list-area.type-01 .card-cont-area .more-area {flex: 0;}
+    .card-list-area .card-list-wrap {overflow-x: scroll;}
+    #earnings-rate-ranking-area .card-list {width: 968px;}
+    #main-notice-event-area {padding: 0 1rem;}
+    #main-notice-event-area h2 {text-align: left; font-weight: 500; font-size: 1.375rem;}
+    #main-notice-event-area .main-notice {padding: 1.5rem 0rem;}
+    #main-notice-event-area .card-list {width: 1296px;}
+    #main-notice-event-area .main-notice .tit {font-size: 1.875rem; line-height: 2.25rem; margin-top: 2.5rem;}
+}
+@media screen and (max-width: 768px) {
+    #section-main-banner {min-height: auto;}
+    .banner-01 h3 {font-size: 1.875rem; line-height: 2.125rem; letter-spacing: 0; padding-top: 2rem;}
+    #earnings-rate-ranking-area .info-area h2 {font-size: 1.25rem;}
+}
