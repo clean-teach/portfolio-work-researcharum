@@ -38,9 +38,11 @@ if(popupArea){
     const btnMainMenu = document.querySelector('#btn-main-menu');
     const gnbBtns = document.querySelector('header .gnb').querySelectorAll('a');
     const mainDropdownMenu = document.querySelector('.depth-sub');
-    const mainDropdownMenuH = mainDropdownMenu.offsetHeight;
+    const mainDropdownMenuContArea = mainDropdownMenu.querySelector('.cont-area');
+    const mainDropdownMenuH = mainDropdownMenuContArea.offsetHeight;
     const mainDropdownMenuDepth01List = mainDropdownMenu.querySelectorAll('.depth-01>li');
     const mainDropdownMenuBtns = mainDropdownMenu.querySelectorAll('a');
+    const btnMainSearch = document.querySelector('#btn-search-toggle')
     const searchArea = document.querySelector('#header-search-area');
 
     let currentMainMenu = false;
@@ -56,25 +58,30 @@ if(popupArea){
     //     console.log(dimBox);
     // }
 
-    function showDropdownMenu(dropdownMenu){
+    function showDropdownMenu(){
         document.body.style.overflowY = "hidden";
         header.classList.add('on');
-        dropdownMenu.style.transition = .4 + 's';
-        dropdownMenu.style.height = mainDropdownMenuH + 'px';
-        dropdownMenu.classList.add('on');
-        mainDropdownMenuBtns.forEach(btn=>{
-            btn.style.transition = .4 + 's';
-            btn.style.transitionDelay = .1 + 's';
-            btn.style.opacity = 1;
-        });
+        mainDropdownMenu.style.display = 'block';
+        mainDropdownMenu.classList.add('on');
+        setTimeout(function() {
+            mainDropdownMenuContArea.style.transition = .4 + 's';
+            mainDropdownMenuContArea.style.height = 
+                mainDropdownMenuH + 'px';
+            mainDropdownMenuBtns.forEach(btn=>{
+                btn.style.transition = .4 + 's';
+                btn.style.transitionDelay = .1 + 's';
+                btn.style.opacity = 1;
+            });
+        }, 1);
         btnMainMenu.classList.add('close');
         currentMainMenu = true;
     }
-    function hideDropdownMenu(dropdownMenu){
+    function hideDropdownMenu(){
         document.body.style.overflowY = "scroll";
         header.classList.remove('on');
-        dropdownMenu.style.height = 0;
-        dropdownMenu.classList.remove('on');
+        mainDropdownMenu.style.display = 'none';
+        mainDropdownMenu.classList.remove('on');
+        mainDropdownMenuContArea.style.height = 0;
         mainDropdownMenuBtns.forEach(btn=>{
             btn.style.opacity = 0;
         });
@@ -85,30 +92,34 @@ if(popupArea){
         currentMainMenu = false;
     }
 
-    function showSearchArea(searchArea){
-        hideDropdownMenu(mainDropdownMenu);
+    function showSearchArea(){
+        hideDropdownMenu();
         document.body.style.overflowY = "hidden";
         header.classList.add('on');
+        header.querySelector('#btn-main-menu').style.display = 'none';
         searchArea.classList.add('on');
+        btnMainSearch.classList.add('close');
     }
-    function hideSearchArea(searchArea){
+    function hideSearchArea(){
         document.body.style.overflowY = "scroll";
         header.classList.remove('on');
+        header.querySelector('#btn-main-menu').style.display = 'flex';
         searchArea.classList.remove('on');
+        btnMainSearch.classList.remove('close');
     }
 
-    hideDropdownMenu(mainDropdownMenu);
+    hideDropdownMenu();
     header.querySelector('.gnb').addEventListener('mouseenter', function(){
-        showDropdownMenu(mainDropdownMenu);
+        showDropdownMenu();
     });
     mainDropdownMenu.querySelector('.depth-01').addEventListener('mouseleave', function(){
-        hideDropdownMenu(mainDropdownMenu);
+        hideDropdownMenu();
     });
     btnMainMenu.addEventListener('click', function(){
         if(this.classList.value === 'close'){
-            hideDropdownMenu(mainDropdownMenu);
+            hideDropdownMenu();
         }else{
-            showDropdownMenu(mainDropdownMenu);
+            showDropdownMenu();
         }
     });
 
@@ -122,11 +133,11 @@ if(popupArea){
         });
     });
 
-    document.querySelector('#btn-search-toggle').addEventListener('click', function(){
+    btnMainSearch.addEventListener('click', function(){
         if(searchArea.classList.value === 'on'){
-            hideSearchArea(searchArea);
+            hideSearchArea();
         }else{
-            showSearchArea(searchArea);
+            showSearchArea();
         }
     });
 
