@@ -12,13 +12,13 @@ function getScrollDirection(){
 const popupArea = document.querySelector('#popup-area');
 
 function openPopup(popup){
-    document.body.style.overflow = "hidden";
+    document.body.style.overflowY = "hidden";
     popupArea.style.display = 'flex';
     popupArea.querySelector('.popup-box').style.display = 'none';
     popupArea.querySelector(popup).style.display = 'block';
 }
 function closePopup(){
-    document.body.style.overflow = "scroll";
+    document.body.style.overflowY = "scroll";
     popupArea.style.display = 'none';
     popupArea.querySelectorAll('.popup-box').forEach(popup => {
         popup.style.display = 'none';
@@ -57,7 +57,7 @@ if(popupArea){
     // }
 
     function showDropdownMenu(dropdownMenu){
-        document.body.style.overflow = "hidden";
+        document.body.style.overflowY = "hidden";
         header.classList.add('on');
         dropdownMenu.style.transition = .4 + 's';
         dropdownMenu.style.height = mainDropdownMenuH + 'px';
@@ -71,7 +71,7 @@ if(popupArea){
         currentMainMenu = true;
     }
     function hideDropdownMenu(dropdownMenu){
-        document.body.style.overflow = "scroll";
+        document.body.style.overflowY = "scroll";
         header.classList.remove('on');
         dropdownMenu.style.height = 0;
         dropdownMenu.classList.remove('on');
@@ -86,12 +86,14 @@ if(popupArea){
     }
 
     function showSearchArea(searchArea){
-        document.body.style.overflow = "hidden";
-        searchArea.classList.add('on');
         hideDropdownMenu(mainDropdownMenu);
+        document.body.style.overflowY = "hidden";
+        header.classList.add('on');
+        searchArea.classList.add('on');
     }
     function hideSearchArea(searchArea){
-        document.body.style.overflow = "scroll";
+        document.body.style.overflowY = "scroll";
+        header.classList.remove('on');
         searchArea.classList.remove('on');
     }
 
