@@ -54,7 +54,10 @@
             </ul>
         </nav>
         <div class="btn-wrap">
-            <button type="button" title="검색창 열기" id="btn-search-toggle">
+            <button type="button" title="뒤로가기" class="btn-back" onclick="history.back()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.62 24.41"><polyline points="12.91 23.71 1.41 12.21 12.91 0.71" style="fill:none;stroke-miterlimit:10;stroke-width:2px"/></svg>
+            </button>
+            <button type="button" title="검색창 열기" id="btn-search-toggle" class="btn-search">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.9 30.9"><title>검색창 열기</title><circle cx="13.95" cy="13.95" r="12.75" style="fill:none;stroke-miterlimit:10;stroke-width:2.4000000953674316px"/><line x1="23.7" y1="23.7" x2="29.7" y2="29.7" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2.4000000953674316px"/></svg>
             </button>
             <button type="button" title="마이페이지로 이동" id="btn-user" class="btn-user" onclick="location.href='html/login.html'">
@@ -126,7 +129,7 @@
                 </ul>
             </div>
         </nav>
-        <div id="header-search-area">
+        <div class="header-search-area">
             <h2>통합검색</h2>
             <div class="cont-area">
                 <form action="">

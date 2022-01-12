@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 body {background-color: #f2f2f2; padding-top: 5.313rem;}
+section h2 {color: #111111; font-weight: bold; font-size: 2.625rem;}
 
 #login-area {background-color: #ffffff; max-width: 672px; margin: 2.25rem auto 6.25rem; padding: 2.25rem 2rem; text-align: center;}
-#login-area h2 {color: #111111; font-weight: bold; font-size: 2.625rem;}
 #login-area form {margin-top: 5rem;}
 #login-area label {display: none;}
 #login-area input {width: 100%; height: 3.25rem; box-sizing: border-box; padding: 0 1rem; border: 1px solid #d6d6d6; font-weight: 300; font-size: .875rem;}
@@ -24,6 +24,15 @@ body {background-color: #f2f2f2; padding-top: 5.313rem;}
 
 .researcharum-guide-area {margin-top: 5.375rem;}
 
+@media screen and (max-width: 1024px) {
+    section h2 {position: fixed; top: 2rem; left: 25%; width: 50%; font-size: 1.25rem; z-index: 11;}
+    #login-area form {margin-top: 0;}
+    #login-area .btn-sns-area {margin-top: 1.875rem; padding-top: 1.875rem; display: block;}
+    #login-area .btn-sns-area button {width: 100%; height: 3.75rem; font-size: 1.125rem;}
+    #login-area .btn-sns-area button + button {margin-top: 1.125rem;}
+}
+
 @media screen and (max-width: 768px) {
-    #login-area .btn-sns-area button {width: 100%; height: 4.375rem; border-radius: .5rem; font-weight: 500; font-size: 1.125rem; display: flex; justify-content: center; align-items: center;}
+    #login-area {max-width: 100%; margin: 0 auto; padding: 2rem 1.5rem;}
+    .researcharum-guide-area {margin-top: 3.125rem;}
 }

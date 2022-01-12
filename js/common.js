@@ -144,7 +144,7 @@ if(popupArea){
 
     // scroll 상태에 따른 Local Navigation Button Style
     function setLnbStyle(e) {
-        if(e && getScrollDirection() === 'DOWN'){
+        if(e && getScrollDirection() === 'DOWN' && window.innerWidth > 1024){
             actionHeaderToggle().hide();
         } else if(e && getScrollDirection() === 'UP'){
             actionHeaderToggle().show();

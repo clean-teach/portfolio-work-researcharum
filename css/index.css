@@ -3,10 +3,10 @@
 /* body {background: url(../../../02_design/durian.png) no-repeat center top;}
 body * {opacity: .9;} */
 
-body {background-image: url(../img/bg-main-01.jpg); background-repeat: no-repeat; background-attachment: fixed;}
+body {background-image: url(../img/bg-main-01.jpg); background-repeat: no-repeat; background-attachment: fixed; padding-top: 0;}
 
 header {background-color: rgba(0,0,0,.6); border-bottom-color: rgba(0,0,0,.6);}
-h1 a {background-image: url(../img/logo-researcharum-198x45-ffffff.png);}
+header h1 a {background-image: url(../img/logo-researcharum-198x45-ffffff.png);}
 header .gnb a {color: #fffefe;}
 header .gnb a:hover {color: #ffffff;}
 header .gnb a.on {color: #ffffff;}
@@ -101,6 +101,13 @@ header.on #btn-main-menu i {background-color: #333333;}
     #main-notice-event-area h2 {width: auto; height: auto; overflow: auto;}
 }
 @media screen and (max-width: 1024px) {
+    header h1 {display: flex;}
+    header .btn-wrap {width: auto;}
+    header .btn-back {display: none;}
+    header .btn-search {display: block;}
+    header.on h1 {display: flex; left: auto; right: 128px; width: 25px;}
+    header.on h1 a {width: 100%; background-image: url(../img/icon-home-01.svg);}
+
     .center-wrap {max-width: 768px;}
     .banner-01 .wrapper {max-width: 768px;}
     .card-list-area {padding: 3.125rem 1rem; padding-right: 0;}
@@ -123,10 +130,6 @@ header.on #btn-main-menu i {background-color: #333333;}
     #main-notice-event-area .main-notice .tit {font-size: 1.875rem; line-height: 2.25rem; margin-top: 2.5rem;}
 }
 @media screen and (max-width: 768px) {
-    header.on h1 {left: auto; right: 128px; width: 25px;}
-    header.on h1 a {width: 100%; background-image: url(../img/icon-home-01.svg);}
-    header.on .depth-sub h2 {width: auto; height: 5.313rem; position: absolute; top: -5.313rem; left: 1rem; color: #ffffff; font-weight: 500; font-size: 1.25rem; z-index: 99; display: flex; align-items: center;}
-
     #section-main-banner {min-height: auto;}
     .banner-01 h3 {font-size: 1.875rem; line-height: 2.125rem; letter-spacing: 0; padding-top: 2rem;}
     #earnings-rate-ranking-area .info-area h2 {font-size: 1.25rem;}
