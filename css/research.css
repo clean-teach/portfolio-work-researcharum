@@ -1,10 +1,6 @@
 @charset "utf-8";
 
 section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
-section h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
-section h2 span {color: #999999;}
-section h2+.sub {text-align: center; color: #333333; font-weight: 300; font-size: 1.375rem; line-height: 1.875rem; margin-top: 1rem;}
-section h2+.sub span {color: #666666; font-size: 1rem;}
 .tab {margin: 3.5rem auto 0; width: 18.75rem;}
 .card-list {margin-top: 3rem;}
 .pagination {margin-top: 2rem;}
@@ -19,5 +15,13 @@ table.bulletin-board .tit {width: 50%;}
 
 #research-view-area article>h2 {display: none;}
 #research-view-area article .cont-area {text-align: center;}
+#research-view-area article .cont-area img {max-width: 100%;}
 
 .notice-view-area article {margin-top: 6.25rem;}
+
+@media screen and (max-width: 1024px) {
+    section.center-wrap {margin-top: 0; margin-bottom: 5rem;}
+}
+@media screen and (max-width: 768px) {
+    
+}

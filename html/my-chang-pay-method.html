@@ -24,21 +24,24 @@
         
         <div class="change-payment-method-area">
             <h3>결제수단 변경</h3>
+            <table class="guide">
+                <caption>결제수단 변경</caption>
+                <tr>
+                    <th>안내사항</th>
+                    <td>
+                        <ul>
+                            <li>결제 수단을 변경합니다.</li>
+                            <li>신용카드 결제의 경우 실결제는 진행되지 않습니다.</li>
+                            <li>휴대폰 결제로 변경은 1개월 결제가 진행되면서 처리됩니다.</li>
+                            <li>휴대폰 결제로 변경할 경우 현재 잔여기간이 남아 있으시면 잔여기간후로 기간이 연장되어 결제 처리 됩니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
             <form action="">
-                <table>
+                <table class="pay-method">
                     <caption>결제수단 변경</caption>
-                    <tr class="guide">
-                        <th>안내사항</th>
-                        <td>
-                            <ul>
-                                <li>결제 수단을 변경합니다.</li>
-                                <li>신용카드 결제의 경우 실결제는 진행되지 않습니다.</li>
-                                <li>휴대폰 결제로 변경은 1개월 결제가 진행되면서 처리됩니다.</li>
-                                <li>휴대폰 결제로 변경할 경우 현재 잔여기간이 남아 있으시면 잔여기간후로 기간이 연장되어 결제 처리 됩니다.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr class="pay-method">
+                    <tr>
                         <th>변경하실 결제수단</th>
                         <td>
                             <input type="radio" name="check-payment-option" id="check-payment-option-01" class="checkbox-type-02" checked><label for="check-payment-option-01">카드 결제</label>

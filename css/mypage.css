@@ -1,16 +1,15 @@
 @charset "utf-8";
 
+.center-wrap {max-width: 1296px; padding: 0 1rem; margin: 6.5rem auto;}
+.tab {margin-top: 3.5rem;}
+
 .page-info-wrap {margin-top: 3rem; display: flex; justify-content: space-between; color: #666666; font-weight: 500; font-size: .938rem;}
 .page-info-wrap span {color: #ff4545; letter-spacing: .025rem;}
-
-.center-wrap {max-width: 1296px; padding: 0 1rem; margin: 6.5rem auto;}
-#mypage-area>h2 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
-#mypage-area .tab {margin-top: 3.5rem;}
 
 .member-info-area {margin-top: 3.875rem;}
 .member-info-area h3 {display: none;}
 .member-info-area th {width: 11.875rem; box-sizing: border-box; padding-left: 1.5rem; color: #666666; font-weight: 300; font-size: 1rem;}
-.member-info-area td {padding: 0 1.5rem; color: #333333; font-size: .938rem;}
+.member-info-area td {color: #333333; font-size: .938rem;}
 
 .member-info-input-area {margin-top: 3.875rem;}
 .member-info-input-area h3 {display: none;}
@@ -22,20 +21,22 @@
 .payment-history-area h3+.guide {color: #333333; font-weight: 400; font-size: 1.25rem; line-height: 1.875rem; text-align: center; margin-top: 3rem;}
 .payment-history-area h3+.guide .date {color: #ff4545; font-weight: 500;}
 .payment-history-area table {margin-top: 1.25rem;}
-.payment-history-area td {width: 25%;}
+.payment-history-area td {width: 25%; min-width: 10rem;}
 .payment-history-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}
 .payment-history-area .primary-btn-area .pagination {margin-top: 0;}
 
 .change-payment-method-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
 .change-payment-method-area h3 {text-align: center; color: #333333; font-weight: 500; font-size: 1.5rem;}
-.change-payment-method-area table {width: 100%; border-top: 1px solid #dfdfdf; margin-top: 2.5rem;}
-.change-payment-method-area th, .change-payment-method-area td {border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; vertical-align: middle; text-align: left;}
+.change-payment-method-area table {width: 100%; border-top: 1px solid #dfdfdf;}
+.change-payment-method-area th, .change-payment-method-area td {vertical-align: middle; text-align: left;}
 .change-payment-method-area th {min-width: 10rem; font-weight: 500; font-size: 1.125rem; color: #333333; box-sizing: border-box; padding-left: 1.5rem;}
+.change-payment-method-area .guide {margin-top: 2.5rem;}
 .change-payment-method-area .guide th {background-color: #1765ad; color: #ffffff; font-weight: 500; font-size: 1.25rem; width: 10rem; height: 3.125rem; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; padding-left: 1.25rem; border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; border-top-right-radius: 1.563rem; border-bottom-right-radius: 1.563rem; margin-top: 2.5rem;}
 .change-payment-method-area .guide th::after {content: ''; display: inline-block; background-color: #ffffff; width: .625rem; height: .625rem; border-radius: 100%; margin-right: .625rem;}
 .change-payment-method-area .guide td {padding: 2.5rem 0;}
 .change-payment-method-area .guide li {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.875rem; margin-left: 1.25rem; max-width: 22rem;}
 .change-payment-method-area .guide li::before {content: '- ';}
+.change-payment-method-area .pay-method th, .change-payment-method-area .pay-method td {border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf;}
 .change-payment-method-area .pay-method td {height: 4.5rem; text-align: right;}
 .change-payment-method-area td label ~ label {margin-left: 2.25rem;}
 
@@ -109,3 +110,29 @@
 .withdraw-area .account input {width: 30%;}
 .withdraw-area .account input ~ input {margin-left: 1rem;}
 .withdraw-area .guide td {font-weight: 300; font-size: .875rem; line-height: 1.5rem; color: #999999;}
+
+@media screen and (max-width: 1024px) {
+    .center-wrap {max-width: 1296px; margin: 0 auto 5rem;}
+    .tab {margin-top: 0;}
+    .page-info-wrap {margin-top: 2rem;}
+
+    .member-info-area, .member-info-input-area, .change-payment-method-area {margin-top: 0;}
+    .member-info-area h3, .member-info-input-area h3, .change-payment-method-area h3 {display: block; color: #333333; font-weight: 500; font-size: 1.063rem; text-align: center; padding: 2rem 0;}
+    
+    .member-info-area th, .member-info-input-area th {width: auto; padding-left: 0; color: #333333; font-weight: 500; font-size: .875rem;}
+    .member-info-area td, .member-info-input-area td {padding: 1.25rem 0; padding-left: 0;}
+    .member-info-input-area input {height: auto; border: none; padding: 0;}
+
+    .payment-history-area h3+.guide {font-size: .938rem; line-height: 1.375rem; margin-top: 2rem;}
+    .payment-history-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}
+    .payment-history-area .primary-btn-area .pagination {margin-top: 0;}
+
+    .change-payment-method-area th, .change-payment-method-area td {border: none;}
+    .change-payment-method-area .guide {margin-top: 0;}
+    .change-payment-method-area .guide td {display: block; padding: 1.5rem 0;}
+    .change-payment-method-area .pay-method {border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf;}
+    .change-payment-method-area .pay-method th, .change-payment-method-area .pay-method td {display: block; border: none;}
+    .change-payment-method-area .pay-method th {padding: 1.25rem 0;}
+    .change-payment-method-area .pay-method td {height: 3rem; text-align: right;}
+    .change-payment-method-area td label ~ label {margin-left: 2.25rem;}
+}
