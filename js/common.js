@@ -43,7 +43,7 @@ if(popupArea){
     const mainDropdownMenuDepth01List = mainDropdownMenu.querySelectorAll('.depth-01>li');
     const mainDropdownMenuBtns = mainDropdownMenu.querySelectorAll('a');
     const btnMainSearch = document.querySelector('#btn-search-toggle')
-    const searchArea = document.querySelector('#header-search-area');
+    const searchArea = document.querySelector('.header-search-area');
 
     let currentMainMenu = false;
 
@@ -112,8 +112,10 @@ if(popupArea){
     header.querySelector('.gnb').addEventListener('mouseenter', function(){
         showDropdownMenu();
     });
-    mainDropdownMenu.querySelector('.depth-01').addEventListener('mouseleave', function(){
-        hideDropdownMenu();
+    mainDropdownMenu.querySelector('.cont-area').addEventListener('mouseleave', function(){
+        if(window.innerWidth >= 1024){
+            hideDropdownMenu();
+        }
     });
     btnMainMenu.addEventListener('click', function(){
         if(this.classList.value === 'close'){
@@ -134,7 +136,15 @@ if(popupArea){
     });
 
     btnMainSearch.addEventListener('click', function(){
-        if(searchArea.classList.value === 'on'){
+        let current = false;
+        searchArea.classList.forEach(i => {
+            if(i === 'on'){
+                current = true;
+            }else{
+                current = false;
+            }
+        });
+        if(current){
             hideSearchArea();
         }else{
             showSearchArea();
