@@ -58,15 +58,24 @@ if(popupArea){
     //     console.log(dimBox);
     // }
 
+    function setHeightDropdownMenu(){
+        if(window.innerWidth >= 1680){
+            mainDropdownMenuContArea.style.height = 
+            mainDropdownMenuH + 'px';
+        }else{
+            mainDropdownMenuContArea.style.height = 
+            window.innerHeight + 'px';
+        }
+    }
+
     function showDropdownMenu(){
         document.body.style.overflowY = "hidden";
         header.classList.add('on');
         mainDropdownMenu.style.display = 'block';
+        setHeightDropdownMenu();
         mainDropdownMenu.classList.add('on');
         setTimeout(function() {
             mainDropdownMenuContArea.style.transition = .4 + 's';
-            mainDropdownMenuContArea.style.height = 
-                mainDropdownMenuH + 'px';
             mainDropdownMenuBtns.forEach(btn=>{
                 btn.style.transition = .4 + 's';
                 btn.style.transitionDelay = .1 + 's';
@@ -183,6 +192,10 @@ if(popupArea){
             };
         }
     }
+
+    window.addEventListener('resize', function(){
+        setHeightDropdownMenu();
+    });
     
     document.addEventListener('scroll', function(e) {
         setLnbStyle(e);
