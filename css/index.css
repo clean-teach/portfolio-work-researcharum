@@ -56,7 +56,7 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 .card-list-area.type-02 .card-list>li .tit {color: #ffffff;}
 .card-list-area.type-02 .card-list>li .date {color: #dddddd;}
 
-#earnings-rate-ranking-area {display: flex; height: 34.5rem;}
+#earnings-rate-ranking-area {display: flex; height: 44.5rem;}
 #earnings-rate-ranking-area .info-area {flex: 1; height: 100%; border-radius: 1.25rem; background-color: rgba(0,0,0,.4); color: #ffffff; text-align: center; display: flex; flex-direction: column; align-items: center;}
 #earnings-rate-ranking-area .info-area h2 {font-weight: 500; font-size: 1.5rem; padding: 6.25rem 0;}
 #earnings-rate-ranking-area .info-area button {color: #dddddd; font-weight: 300; font-size: 1rem; display: block; width: 100%; text-align: center;}

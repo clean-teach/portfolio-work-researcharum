@@ -9,7 +9,7 @@
 .member-info-area {margin-top: 3.875rem;}
 .member-info-area h3 {display: none;}
 .member-info-area th {width: 11.875rem; box-sizing: border-box; padding-left: 1.5rem; color: #666666; font-weight: 300; font-size: 1rem;}
-.member-info-area td {color: #333333; font-size: .938rem;}
+.member-info-area td {color: #333333; font-size: .938rem; word-break: keep-all;}
 
 .member-info-input-area {margin-top: 3.875rem;}
 .member-info-input-area h3 {display: none;}
@@ -21,7 +21,7 @@
 .payment-history-area h3+.guide {color: #333333; font-weight: 400; font-size: 1.25rem; line-height: 1.875rem; text-align: center; margin-top: 3rem;}
 .payment-history-area h3+.guide .date {color: #ff4545; font-weight: 500;}
 .payment-history-area table {margin-top: 1.25rem;}
-.payment-history-area td {width: 25%; min-width: 10rem;}
+.payment-history-area td {width: 25%; min-width: 10rem; word-break: keep-all;}
 .payment-history-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}
 .payment-history-area .primary-btn-area .pagination {margin-top: 0;}
 
@@ -42,16 +42,19 @@
 
 .question-history-area h3 {display: none;}
 .question-history-area table {margin-top: 1.25rem; table-layout: fixed;}
-.question-history-area th:nth-child(1) {width: 75%;}
-.question-history-area td {padding: 0 2.5rem;}
-.question-history-area td.tit {text-align: left;}
-.question-history-area td.date {letter-spacing: .025rem;}
-.question-history-area td.state {color: #999999;}
-.question-history-area .complete td.state {color: #666666; font-weight: 500;}
-.question-history-area .complete td.state::after {content: ''; display: inline-block; width: .875rem; height: .875rem; background: url(../img/icon-anggle-bottom-1px-999999.svg) no-repeat bottom; background-size: contain; margin-left: .5rem;}
-.question-history-area .complete.on td.state::after {background-image: url(../img/icon-anggle-top-2px-666666.svg); background-position: bottom;}
+.question-history-area th.date {width: 8rem;}
+.question-history-area th.state-answer {width: 6rem;}
+.question-history-area th.state-toggle {width: 4rem;}
+.question-history-area td {padding: 0 1rem; line-height: 1.375rem;}
 .question-history-area .accordion-cover {cursor: auto;}
 .question-history-area .accordion-cover.complete {cursor: pointer;}
+.question-history-area td.tit {text-align: left; padding: 0 2.5rem;}
+.question-history-area td.date {letter-spacing: .025rem;}
+.question-history-area td.state-answer {color: #999999;}
+.question-history-area .complete td.state-answer {color: #666666; font-weight: 500;}
+.question-history-area .complete td.state-toggle {text-align: center; padding: 0;}
+.question-history-area .complete td.state-toggle::after {content: ''; display: inline-block; width: .875rem; height: .875rem; background: url(../img/icon-anggle-bottom-1px-999999.svg) no-repeat center; background-size: contain;}
+.question-history-area .complete.on td.state-toggle::after {background-image: url(../img/icon-anggle-top-2px-666666.svg);}
 .accordion-cover.on td, .accordion-view td {background-color: #f7f7f7;}
 .accordion-view td {text-align: left; padding: 1.5rem 2.5rem;}
 .question-history-area .accordion-view h4 {display: none;}
@@ -63,25 +66,38 @@
 
 .recommender-list-area h3 {display: none;}
 .recommender-list-area table {margin-top: 1.25rem;}
+.recommender-list-area th {min-width: 8rem;}
+.recommender-list-area td {word-break: keep-all;}
+.recommender-list-area th:nth-child(1) {min-width: 2rem;}
+.recommender-list-area th:nth-child(3) {min-width: 6rem;}
+.recommender-list-area th:nth-child(4) {min-width: 10rem;}
+.recommender-list-area th:nth-child(6) {min-width: 8rem;}
+.recommender-list-area th:nth-child(8) {min-width: 6rem;}
 
 .recommender-view-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
 .recommender-view-area h3 {text-align: center; color: #333333; font-weight: 500; font-size: 1.5rem;}
+.recommender-view-area td {word-break: keep-all;}
 .recommender-view-area .recommender-info {margin-top: 2.5rem;}
 .recommender-view-area .recommender-info th, .recommender-view-area .recommender-info td {height: 4.5rem;}
 .recommender-view-area .recommender-info td {letter-spacing: .025rem;}
 .recommender-view-area .payment-history {margin-top: 1.25rem;}
+.recommender-view-area .payment-history th:nth-child(1) {min-width: 2rem;}
+.recommender-view-area .payment-history th:nth-child(3) {min-width: 12rem;}
 .recommender-view-area .payment-history td {letter-spacing: .05rem;}
 
 .deposit-history-area h3 {display: none;}
 .deposit-history-area .total-info {background-color: #1765ad; color: #ffffff; margin-top: 3.75rem; width: 100%; height: 6.25rem; border-radius: .5rem; display: flex; justify-content: space-between; align-items: center;}
-.deposit-history-area .total-info .balance {padding-left: 1.75rem; font-weight: 300; font-size: 1.5rem; padding-bottom: .4rem;}
-.deposit-history-area .total-info .balance img {width: 2.25rem; margin-right: 1rem; margin-bottom: -.4rem;}
-.deposit-history-area .total-info .balance span {font-size: 2rem;}
+.deposit-history-area .total-info .balance {padding-left: 1.75rem; font-weight: 300; font-size: 1.5rem; padding-bottom: .4rem; word-break: keep-all; overflow-x: scroll; display: flex;}
+.deposit-history-area .total-info .balance img {width: 2.25rem; margin-right: 1rem;}
+.deposit-history-area .total-info .balance .tit {font-size: 2rem;}
 .deposit-history-area .total-info .balance .num {font-weight: bold; letter-spacing: .05rem; margin-left: .4rem;}
-.deposit-history-area .total-info .btn-wrap {border-left: 1px solid #0b4982; width: 6.875rem; height: 100%; padding: 0 1.5rem; display: flex; flex-direction: column; justify-content: space-evenly;}
-.deposit-history-area .total-info .btn-wrap button {display: block; color: #ffffff; font-weight: 500; font-size: 1rem; text-align: justify; width: 100%; display: flex; justify-content: space-between; align-items: center;}
+.deposit-history-area .total-info .btn-wrap {border-left: 1px solid #0b4982; width: 10rem; height: 100%; display: flex; flex-direction: column; justify-content: space-evenly;}
+.deposit-history-area .total-info .btn-wrap button {color: #ffffff; font-weight: 500; font-size: 1rem; text-align: justify; width: 100%; box-sizing: border-box; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center;}
 .deposit-history-area .total-info .btn-wrap button svg {width: .5rem;}
-.deposit-history-area table {margin-top: 1.25rem;}
+.deposit-history-area table {margin-top: 1.25rem; word-break: keep-all;}
+.deposit-history-area th:nth-child(1) {min-width: 2rem;}
+.deposit-history-area th:nth-child(2) {min-width: 8rem;}
+.deposit-history-area th:nth-child(3) {min-width: 16rem;}
 .deposit-history-area table .memo {text-align: left;}
 
 .deposit-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
@@ -116,16 +132,35 @@
     .tab {margin-top: 0;}
     .page-info-wrap {margin-top: 2rem;}
 
-    .member-info-area, .member-info-input-area, .change-payment-method-area {margin-top: 0;}
-    .member-info-area h3, .member-info-input-area h3, .change-payment-method-area h3 {display: block; color: #333333; font-weight: 500; font-size: 1.063rem; text-align: center; padding: 2rem 0;}
-    
-    .member-info-area th, .member-info-input-area th {width: auto; padding-left: 0; color: #333333; font-weight: 500; font-size: .875rem;}
-    .member-info-area td, .member-info-input-area td {padding: 1.25rem 0; padding-left: 0;}
-    .member-info-input-area input {height: auto; border: none; padding: 0;}
+    .member-info-area, .member-info-input-area, .change-payment-method-area, .recommender-view-area, .deposit-area, .withdraw-area {margin-top: 0;}
+    .member-info-area h3, .member-info-input-area h3, .change-payment-method-area h3, .recommender-view-area h3, .deposit-area h3, .withdraw-area h3 {display: block; color: #333333; font-weight: 500; font-size: 1.063rem; text-align: center; padding: 2rem 0;}
 
     .payment-history-area h3+.guide {font-size: .938rem; line-height: 1.375rem; margin-top: 2rem;}
     .payment-history-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}
     .payment-history-area .primary-btn-area .pagination {margin-top: 0;}
+
+    .question-history-area table {margin-top: 1.25rem; table-layout: fixed;}
+    .question-history-area th {display: none;}
+    .question-history-area th.tit {width: 100%;}
+    .question-history-area th.date {width: auto;}
+    .question-history-area th.state-answer {width: auto;}
+    .question-history-area td {box-sizing: border-box; height: auto;}
+    .question-history-area .accordion-cover {cursor: auto; position: relative; height: 4.875rem;}
+    .question-history-area .accordion-cover td {display: block; position: absolute; padding: 0 .75rem;}
+    .question-history-area td.tit {width: 100%; height: 100%; left: 0; bottom: 0; padding: 2.25rem .75rem 0; padding-right: 6rem;}
+    .question-history-area td.date {width: auto; left: 0; bottom: 52%; border: none;}
+    .question-history-area td.state-answer {width: auto; left: 6rem; bottom: 52%; border: none;}
+    .question-history-area td.state-toggle {width: 4rem; height: 100%; right: 0; top: 0; display: flex; align-items: center; justify-content: center;}
+    .question-history-area .question, .question-history-area .answer {position: relative; padding-left: 2.25rem;}
+    .question-history-area .answer {margin-top: 1.25rem;}
+
+    .recommender-view-area .recommender-info {margin-top: 0;}
+    .recommender-view-area .recommender-info th, .recommender-view-area .recommender-info td {height: auto;}
+}
+@media screen and (max-width: 768px) {
+    .member-info-area th, .member-info-input-area th {width: auto; padding-left: 0; color: #333333; font-weight: 500; font-size: .875rem;}
+    .member-info-area td, .member-info-input-area td {padding: 1.25rem 0; padding-left: 0;}
+    .member-info-input-area input {height: auto; border: none; padding: 0;}
 
     .change-payment-method-area th, .change-payment-method-area td {border: none;}
     .change-payment-method-area .guide {margin-top: 0;}
@@ -135,4 +170,27 @@
     .change-payment-method-area .pay-method th {padding: 1.25rem 0;}
     .change-payment-method-area .pay-method td {height: 3rem; text-align: right;}
     .change-payment-method-area td label ~ label {margin-left: 2.25rem;}
+
+    .deposit-history-area .total-info {margin-top: 2rem; height: auto; display: block; overflow: hidden;}
+    .deposit-history-area .total-info .balance {padding: 1.5rem 1.25rem;}
+    .deposit-history-area .total-info .balance .tit {font-size: 1.625rem;}
+    .deposit-history-area .total-info .balance .num {letter-spacing: .025rem; margin-left: .2rem;}
+    .deposit-history-area .total-info .btn-wrap {border-left: none; border-top: 1px solid #0b4982; width: 100%; height: 3.375rem; display: flex; flex-direction:row; justify-content: space-evenly;}
+    .deposit-history-area .total-info .btn-wrap button { text-align: left; width: 50%; height: 100%; padding: 0 1.25rem; justify-content: space-between;}
+    .deposit-history-area .total-info .btn-wrap button svg {width: .5rem; margin-left: 1rem;}
+
+    .deposit-area table {margin-top: 0;}
+    .deposit-area th, .deposit-area td {border: none; height: auto; display: block; padding: .75rem 0;}
+    .deposit-area th {min-width: auto; font-size: 1rem; padding-left: 0;}
+    .deposit-area td {border-bottom: 1px solid #dfdfdf;}
+    .deposit-area .pay-method td {text-align: right;}
+    .deposit-area td input {height: 3.125rem; font-size: .875rem;}
+    .deposit-area td label ~ label {margin-left: 2.25rem;}
+
+    .withdraw-area table {margin-top: 0; border-top: 1px solid #dfdfdf;}
+    .withdraw-area th, .withdraw-area td {border: none; height: auto; display: block; padding: .75rem 0;}
+    .withdraw-area th {min-width: auto; font-size: 1rem; padding-left: 0;}
+    .withdraw-area td {border-bottom: 1px solid #dfdfdf;}
+    .withdraw-area .account input {width: 100%;}
+    .withdraw-area .account input ~ input {margin-left: 0; margin-top: 1rem;}
 }
