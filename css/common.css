@@ -159,7 +159,7 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .notice-view-area .doc-info-wrap span {color: #333333; font-weight: 400; margin: 0 1.125rem;}
 .notice-view-area .doc-info-wrap .date {letter-spacing: .05rem;}
 .notice-view-area .cont-area {margin-top: 4.375rem; color: #333333; font-weight: 300; font-size: 1rem; line-height: 1.75rem;}
-.notice-view-area .cont-area img {margin: 2.25rem 0;}
+.notice-view-area .cont-area img {margin: 2.25rem 0; width: 100%;}
 .notice-view-area .cont-area p {margin: 2.25rem 0;}
 .notice-view-area .primary-btn-area {margin-top: 3.25rem;}
 .notice-view-area .primary-btn-area button {background-color: #f4f4f4; color: #333333; font-weight: 500; font-size: 1.25rem; min-width: 8rem; height: 3.75rem; border-radius: .5rem;}
@@ -365,7 +365,8 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     header .depth-sub .depth-01 {height: 100%; padding: 0 1.25rem 1.55rem; display: block;}
     header .depth-sub h3 {width: auto; height: auto; overflow: auto; font-weight: 500; font-size: 1.125rem; padding: 1.375rem 0; border-bottom: 1px solid #d2d2d2;}
     header .depth-sub h3 a {color: #1765ad}
-    header .depth-sub .depth-01>li+li {margin-left: 0; margin-top: 2.5rem;}
+    header .depth-sub .depth-01>li {margin-bottom: 2.5rem;}
+    header .depth-sub .depth-01>li+li {margin-left: 0;}
     header .depth-sub .depth-02 {margin-top: 1.375rem;}
     header .depth-sub .depth-03>li {list-style: disc inside; margin-left: .75rem;font-size: .875rem;}
     header .depth-sub .depth-03>li>a {font-size: .875rem;}
@@ -374,6 +375,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
 }
 
 @media screen and (max-width: 1328px) {
+    .card-list>li {width: 32%;}
     .card-list.type-02>li {height: 24rem;}
     .card-list.type-02 .btn-area {bottom: 6rem;}
     .card-list.type-02 .bottom-info-wrap {flex-direction: column;}
@@ -385,7 +387,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .center-wrap {width: 100%;}
 
     section>h2 {position: fixed; top: 2rem; left: 25%; width: 50%; font-size: 1.25rem; z-index: 11;}
-    section>h2+.sub {font-size: .938rem; line-height: 1.375rem;}
+    section>h2+.sub {font-size: .938rem; line-height: 1.375rem; padding: 0;}
     section>h2+.sub span {color: #666666; font-size: .875rem; line-height: 1.375rem;}
 
     .checkbox-type-01+label {font-size: 1rem;}
@@ -406,14 +408,31 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .notice-search-area .search-bar button {right: 0;}
     .stock-item-summary-area .tit-wrap h3 {font-size: 1.375rem; line-height: 1.75rem;}
 
+    .card-list>li {width: 49%;}
     .card-list .top-info-wrap {justify-content: left; flex-direction: column;}
     .card-list .top-info-wrap .left {justify-content: left; margin-top: .875rem;}
     .card-list .top-info-wrap .writer {margin-right: .75rem;}
     .card-list .tit {font-size: 1.5rem; line-height: 1.875rem;}
     .card-list .tit.ellipsis {height: 2.2rem;}
-    .card-list .tit.multi-line-ellipsis {height: 4.6rem;}
+    .card-list .tit.multi-line-ellipsis {height: 4rem;}
     .card-list.type-02 .tit-wrap {padding: 0 1.5rem;}
     .card-list.type-02 .tit-wrap .sub {font-size: 1.25rem; line-height: 1.625rem;}
+
+    .notice-view-area {margin-top: 2rem;}
+    .notice-view-area h2 {font-size: 1.5rem; line-height: 1.75rem;}
+    .notice-view-area .doc-info-wrap {font-size: 1rem; margin-top: .875rem;}
+    .notice-view-area .cont-area {margin-top: 2rem; font-size: .938rem; line-height: 1.375rem;}
+    .notice-view-area .cont-area img {margin: 2rem 0; width: 100%;}
+    .notice-view-area .cont-area p {margin: 2rem 0;}
+    .notice-view-area .primary-btn-area {margin-top: 2rem;}
+    .notice-view-area .primary-btn-area button {font-size: 1rem; min-width: 6.25rem; height: 2.875rem;}
+
+    #write-area .write-area-header {border: none; background: none; border-radius: 0; padding: .5rem 0; margin-top: 2.5rem;}
+    #write-area .write-area-header table {border-top: 1px solid #dfdfdf;}
+    #write-area .write-area-header th, #write-area .write-area-header td {display: block; padding: 1.25rem 0; height: auto;}
+    #write-area .write-area-header th {color: #333333; font-size: .875rem; width: auto; padding-bottom: 0;}
+    #write-area .write-area-header td {font-size: .938rem; border-bottom: 1px solid #dfdfdf;}
+    #write-area .write-area-header td input {border: none; height: auto; padding: 0;}
 
     header h1 {display: none;}
     header .btn-wrap {width: 100%;}
@@ -444,6 +463,8 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .table-type-02 th, .table-type-02 td {display: block; height: auto; padding: 1.25rem 0;}
     .table-type-02 th {border-bottom: none; padding-bottom: 0;}
     .table-type-02 td {border-bottom: 1px solid #dfdfdf;}
+    .table-type-accordion th, .table-type-accordion td {display: table-cell; height: auto; padding: 1.25rem 0;}
+    .table-type-accordion th {border-bottom: 1px solid #dfdfdf;}
 
     .researcharum-guide-area .tit {font-size: 1.25rem;}
     .researcharum-guide-area .sub {font-size: 1rem;}
@@ -453,6 +474,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
 
     .notice-search-area .search-bar {width: 100%;}
 
+    .card-list>li {width: 100%;}
     .card-list.type-02>li {width: 100%;}
 
     .fnb li {float: left; margin-right: 1.5rem;}

@@ -64,7 +64,7 @@ if(popupArea){
             mainDropdownMenuH + 'px';
         }else{
             mainDropdownMenuContArea.style.height = 
-            window.innerHeight + 'px';
+            (window.innerHeight - 85) + 'px';
         }
     }
 
