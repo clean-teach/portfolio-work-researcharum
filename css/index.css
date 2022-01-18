@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* body {background: url(../../../02_design/durian.png) no-repeat center top;}
-body * {opacity: .9;} */
-
 body {background-image: url(../img/bg-main-01.jpg); background-repeat: no-repeat; background-attachment: fixed; padding-top: 0;}
 
 header {background-color: rgba(0,0,0,.6); border-bottom-color: rgba(0,0,0,.6);}
@@ -10,7 +7,7 @@ header h1 a {background-image: url(../img/logo-researcharum-198x45-ffffff.png);}
 header .gnb a {color: #fffefe;}
 header .gnb a:hover {color: #ffffff;}
 header .gnb a.on {color: #ffffff;}
-header .btn-wrap button path, header .btn-wrap button circle, header .btn-wrap button line {stroke: #fffefe;}
+header .btn-wrap button path, header .btn-wrap button circle, header .btn-wrap button line {stroke: #ffffff;}
 #btn-main-menu i {background-color: #ffffff;}
 header.on {background-color: #ffffff; border-bottom-color: #ffffff;}
 header.on h1 a {background-image: url(../img/logo-researcharum-198x45-01.png);}

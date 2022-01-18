@@ -94,10 +94,10 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .notice-search-area .search-bar button svg {width: 1.125rem;}
 .notice-search-area .search-bar button line, .notice-search-area .search-bar button circle {stroke: #333333;}
 
-.stock-item-summary-area {background-color: #1765ad; color: #ffffff; margin-top: 3.75rem; width: 100%; height: 8.25rem; border-radius: .5rem; display: flex; justify-content: space-between; align-items: center;}
+.stock-item-summary-area {position: relative; background-color: #1765ad; color: #ffffff; margin-top: 3.75rem; width: 100%; height: 8.25rem; border-radius: .5rem; display: flex; justify-content: space-between; align-items: center;}
 .stock-item-summary-area .tit-wrap {padding-left: 1.75rem; height: 100%; display: flex; align-items: center;}
 .stock-item-summary-area .tit-wrap img {width: 3.25rem; margin-right: 1rem;}
-.stock-item-summary-area .tit-wrap h3 {font-weight: 500; font-size: 2rem;}
+.stock-item-summary-area .tit-wrap h3 {font-weight: 500; font-size: 2rem; color: #ffffff; text-align: left;}
 .stock-item-summary-area .tit-wrap h3 dt, .stock-item-summary-area .tit-wrap h3 dd {display: inline;}
 .stock-item-summary-area .tit-wrap h3 dt {color: #68aff0;}
 .stock-item-summary-area .tit-wrap .sub {color: #68aff0; font-weight: 500; font-size: 1.25rem; padding-top: .4rem;}
@@ -153,27 +153,29 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .accordion-cover.on + .accordion-view {display: table-row;}
 
 .notice-view-area {margin: 6.5rem auto;}
+.notice-view-area>h2 {display: none;}
 .notice-view-area article {max-width: 996px; padding: 0 1rem; margin: 0 auto;}
 .notice-view-area h3 {text-align: center; color: #111111; font-weight: bold; font-size: 2.625rem;}
 .notice-view-area .doc-info-wrap {text-align: center; color: #a0a0a0; font-weight: 300; font-size: 1.125rem; margin-top: 1.375rem;}
 .notice-view-area .doc-info-wrap span {color: #333333; font-weight: 400; margin: 0 1.125rem;}
-.notice-view-area .doc-info-wrap .date {letter-spacing: .05rem;}
+.notice-view-area .doc-info-wrap .date {letter-spacing: .05rem; margin-left: 0;}
+.notice-view-area .doc-info-wrap .date::before {content: '|'; color: #999999; margin-right: 1.125rem;}
 .notice-view-area .cont-area {margin-top: 4.375rem; color: #333333; font-weight: 300; font-size: 1rem; line-height: 1.75rem;}
 .notice-view-area .cont-area img {margin: 2.25rem 0; width: 100%;}
 .notice-view-area .cont-area p {margin: 2.25rem 0;}
 .notice-view-area .primary-btn-area {margin-top: 3.25rem;}
 .notice-view-area .primary-btn-area button {background-color: #f4f4f4; color: #333333; font-weight: 500; font-size: 1.25rem; min-width: 8rem; height: 3.75rem; border-radius: .5rem;}
 
-.like-sponsor-area {background-color: #fff1f1; height: 7.25rem;}
-.like-sponsor-area .center-wrap {max-width: 996px; height: 100%; padding: 0 1rem; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
-.like-sponsor-area .like-wrap {text-align: left; display: flex; justify-content: left;}
-.like-sponsor-area .like-wrap button {width: 6.063rem; height: 6.125rem; background-repeat: no-repeat; background-image: url(../img/sprite-btn-like-01.png); background-position: 200%; background-position: 100% center;}
+.like-sponsor-area {background-color: #fff1f1;}
+.like-sponsor-area .center-wrap {max-width: 996px; padding: 0 1rem; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+.like-sponsor-area .like-wrap {text-align: left; display: flex; justify-content: left; align-items: center; height: 7.25rem;}
+.like-sponsor-area .like-wrap button {width: 6.063rem; height: 6.125rem; background-repeat: no-repeat; background-image: url(../img/sprite-btn-like-01.png); background-position: 200%; background-position: 100% center; background-size: 12.126rem;}
 .like-sponsor-area .like-wrap button.on {background-position: 0 center;}
 .like-sponsor-area .like-wrap .info {display: flex; flex-direction: column; justify-content: center; padding: 0 .875rem;}
 .like-sponsor-area .like-wrap .info .num {color: #ff4545; font-weight: bold; font-size: 2.5rem; letter-spacing: .05rem;}
 .like-sponsor-area .like-wrap .info .guide {color: #e27979; font-weight: 400; font-size: 1.125rem; margin-top: .75rem;}
-.like-sponsor-area .sponsor-wrap {text-align: right; display: flex; justify-content: right;}
-.like-sponsor-area .sponsor-wrap dl {color: #333333; font-weight: 400; font-size: 1.125rem; margin-right: 1.5rem; display: flex; flex-direction: column; justify-content: center;}
+.like-sponsor-area .sponsor-wrap {text-align: right; display: flex; justify-content: right; align-items: center; height: 7.25rem;}
+.like-sponsor-area .sponsor-wrap dl {color: #333333; font-weight: 400; font-size: 1.125rem; padding: 0 1.5rem; display: flex; flex-direction: column; justify-content: center;}
 .like-sponsor-area .sponsor-wrap dd {margin-top: .25rem;}
 .like-sponsor-area .sponsor-wrap .num {font-weight: bold; font-size: 2.5rem; letter-spacing: .05rem;}
 .like-sponsor-area .btn-sponsor {background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 2rem; width: 10.625rem; height: 4.375rem; border-radius: .5rem;}
@@ -381,6 +383,8 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .card-list.type-02 .bottom-info-wrap {flex-direction: column;}
     .card-list.type-02 .bottom-info-wrap dl+dl {margin-top: .75rem;}
     .card-list.type-02 .bottom-info-wrap dt, .card-list.type-02 .bottom-info-wrap dd {font-size: 1rem;}
+
+    .notice-view-area .stock-item-summary-area {width: calc(100% - 2rem);}
 }
 
 @media screen and (max-width: 1024px) {
@@ -407,6 +411,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .notice-search-area .search-bar select {width: 100%;}
     .notice-search-area .search-bar input {width: 100%; margin-top: 1rem;}
     .notice-search-area .search-bar button {right: 0;}
+
     .stock-item-summary-area .tit-wrap h3 {font-size: 1.375rem; line-height: 1.75rem;}
 
     .card-list>li {width: 49%;}
@@ -420,20 +425,33 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .card-list.type-02 .tit-wrap .sub {font-size: 1.25rem; line-height: 1.625rem;}
 
     .notice-view-area {margin-top: 2rem;}
+    .notice-view-area>h2 {display: block;}
     .notice-view-area h3 {font-size: 1.5rem; line-height: 1.75rem;}
     .notice-view-area .doc-info-wrap {font-size: 1rem; margin-top: .875rem;}
+    .notice-view-area .doc-info-wrap span {display: block; margin: .5rem 1.125rem;}
+    .notice-view-area .doc-info-wrap .date {letter-spacing: .025rem; margin-left: 1.125rem;}
+    .notice-view-area .doc-info-wrap .date::before {display: none;}
     .notice-view-area .cont-area {margin-top: 2rem; font-size: .938rem; line-height: 1.375rem;}
     .notice-view-area .cont-area img {margin: 2rem 0; width: 100%;}
     .notice-view-area .cont-area p {margin: 2rem 0;}
     .notice-view-area .primary-btn-area {margin-top: 2rem;}
     .notice-view-area .primary-btn-area button {font-size: 1rem; min-width: 6.25rem; height: 2.875rem;}
 
-    #write-area .write-area-header {border: none; background: none; border-radius: 0; padding: .5rem 0; margin-top: 2.5rem;}
+    #write-area .write-area-header {border: none; background: none; border-radius: 0; padding: .5rem 0; margin-top: 1.5rem;}
     #write-area .write-area-header table {border-top: 1px solid #dfdfdf;}
     #write-area .write-area-header th, #write-area .write-area-header td {display: block; padding: 1.25rem 0; height: auto;}
     #write-area .write-area-header th {color: #333333; font-size: .875rem; width: auto; padding-bottom: 0;}
     #write-area .write-area-header td {font-size: .938rem; border-bottom: 1px solid #dfdfdf;}
     #write-area .write-area-header td input {border: none; height: auto; padding: 0;}
+
+    .like-sponsor-area .like-wrap button {width: 5rem; height: 5rem; background-size: 10rem; flex-shrink: 0;}
+    .like-sponsor-area .like-wrap .info .num {font-size: 1.875rem; letter-spacing: -.025rem;}
+    .like-sponsor-area .like-wrap .info .guide {font-size: 1rem; line-height: 1.25rem; margin-top: .25rem;}
+    .like-sponsor-area .sponsor-wrap dl {font-size: 1rem; padding: 0 1rem;}
+    .like-sponsor-area .sponsor-wrap .num {font-size: 1.875rem; letter-spacing: -.025rem;}
+    .like-sponsor-area .btn-sponsor {font-size: 1rem; width: 5rem; height: 3.25rem;}
+
+    .comments-area {margin: 2rem auto;}
 
     header h1 {display: none;}
     header .btn-wrap {width: 100%;}
@@ -475,8 +493,24 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
 
     .notice-search-area .search-bar {width: 100%;}
 
+    .stock-item-summary-area {margin-top: 2rem; height: auto; display: block;}
+    .stock-item-summary-area .tit-wrap {padding: 1.5rem 1.375rem; height: auto;}
+    .stock-item-summary-area .tit-wrap img {width: 2.625rem; margin-right: .625rem;}
+    .stock-item-summary-area .tit-wrap h3
+    .stock-item-summary-area .tit-wrap .sub {font-size: 1.125rem; padding-top: .4rem;}
+    .stock-item-summary-area .info-area {border-left: none; border-top: 1px solid #0b4982; width: 100%; height: auto; box-sizing: border-box; padding: 1.625rem 1.375rem; flex-direction: row; justify-content: space-between;}
+    .stock-item-summary-area .info-area dt, .stock-item-summary-area .info-area dd {font-size: 1rem;}
+    .stock-item-summary-area .info-area .num {letter-spacing: .025rem; margin-right: 0;}
+    .stock-item-summary-area .info-area button {position: absolute; bottom: 5.7rem; left: 10.4rem;}
+
     .card-list>li {width: 100%;}
     .card-list.type-02>li {width: 100%;}
+
+    .like-sponsor-area .center-wrap {display: block;}
+    .like-sponsor-area .like-wrap {text-align: left; justify-content: left;}
+    .like-sponsor-area .sponsor-wrap {text-align: left; justify-content: left; border-top: 1px solid #ffd9d9;}
+    .like-sponsor-area .sponsor-wrap dl {order: 2;}
+    .like-sponsor-area .btn-sponsor {order: 1;}
 
     .fnb li {float: left; margin-right: 1.5rem;}
 }
