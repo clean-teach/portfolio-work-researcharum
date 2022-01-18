@@ -510,7 +510,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .stock-item-summary-area .info-area {border-left: none; border-top: 1px solid #0b4982; width: 100%; height: auto; box-sizing: border-box; padding: 1.625rem 1.375rem; flex-direction: row; justify-content: space-between;}
     .stock-item-summary-area .info-area dt, .stock-item-summary-area .info-area dd {font-size: 1rem;}
     .stock-item-summary-area .info-area .num {letter-spacing: .025rem; margin-right: 0;}
-    .stock-item-summary-area .info-area button {position: absolute; bottom: 5.7rem; left: 10.4rem;}
+    .stock-item-summary-area .info-area button {position: absolute; bottom: 5.7rem; left: 10.4rem; width: auto;}
 
     .card-list>li {width: 100%; margin-right: 0;}
     .card-list>li:nth-child(4n), .card-list>li:nth-child(3n) {margin-right: 0;}
