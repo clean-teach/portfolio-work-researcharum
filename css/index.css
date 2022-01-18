@@ -38,6 +38,9 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 .card-list-area h2 {text-align: center; color: #ffffff; font-weight: 300; font-size: 1.5rem;}
 .card-list-area h2 span {font-weight: 500;}
 .card-list-area .card-cont-area {margin-top: 6.25rem; display: flex;}
+.card-list-area .card-list {justify-content: space-between;}
+.card-list-area .card-list>li {margin-right: 0;}
+.card-list-area .card-list>li:nth-child(4n) {margin-right: 0;}
 .card-list-area .card-list>li:hover {transform: translateY(-.625rem); transition: .4s;}
 .card-list-area.type-01 .card-cont-area .card-list {flex: 3;}
 .card-list-area.type-01 .card-cont-area .more-area {flex: 1;}
@@ -92,6 +95,8 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 @media screen and (max-width: 1328px) {
     .center-wrap {max-width: 960px;}
     .banner-01 .wrapper {max-width: 960px;}
+    .card-list-area .card-list>li {width: 19.5rem;}
+
     .card-list-area.type-01 .card-cont-area .card-list {flex: 2;}
     #earnings-rate-ranking-area {display: block; height: auto;}
     #earnings-rate-ranking-area .info-area {flex: auto; height: auto; background: none; display: block;}
