@@ -43,8 +43,8 @@ section>h2 {text-transform: uppercase;}
 #service-area .service-list-area .cont .tit span {color: #a1a1a1;}
 #service-area .service-list-area .cont .sub {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.5rem; margin-top: 1.25rem;}
 #service-area .service-list-area .recommender-system .cont {background-color: #f9f8f8; color: #666666; font-weight: 500; text-align: left; padding: 2rem; max-width: 100%;}
-#service-area .service-list-area .recommender-system .cont h4 {color: #333333; font-size: 1rem;}
-#service-area .service-list-area .recommender-system .cont li {color: #666666; font-size: .938rem; margin-top: .75rem; list-style: decimal inside;}
+#service-area .service-list-area .recommender-system .cont h4 {color: #333333; font-size: 1rem; margin-bottom: 1rem;}
+#service-area .service-list-area .recommender-system .cont li {color: #666666; font-size: .938rem; line-height: 1.5rem; margin-top: .25rem; margin-left: 1rem; list-style: decimal outside;}
 #service-area .arum-sns-area {background-color: #e0f5ff; padding: 2rem; font-weight: 500; font-size: .938rem; line-height: 1.5rem;}
 #service-area .arum-sns-area h3 {color: #333333; font-weight: 500; font-size: 1rem;}
 #service-area .arum-sns-area ul {display: flex; justify-content: start; margin-top: .75rem;}
@@ -139,6 +139,26 @@ section>h2 {text-transform: uppercase;}
 }
 
 @media screen and (max-width: 768px) {
+    #service-area {margin-top: 0; margin-bottom: 0; padding: 2rem 0 0;}
+    #service-area>h2+.sub {font-size: 1.5rem; line-height: 1.875rem; margin-top: 0;}
+    #service-area .news-area {margin-top: 2rem; padding: 0 1rem;}
+    #service-area .news-area ul {flex-direction: column;}
+    #service-area .news-area li {width: 100%;}
+    #service-area .news-area li+li {margin-top: 1.5rem;}
+    #service-area .news-area li .img-wrap img {min-width: 100%; min-height: 100%;}
+    #service-area .service-list-area>ul>li {margin-top: 5rem;}
+    #service-area .service-list-area h3 span {font-size: 2.25rem;}
+    #service-area .service-list-area h3+.tit {font-size: 2rem; line-height: 2.5rem; padding: 0 1rem;}
+    #service-area .service-list-area img {margin-top: 1.5rem;}
+    #service-area .service-list-area .cont {max-width: 100%; margin: auto; padding: 0 1rem;}
+    #service-area .service-list-area .cont .tit {font-size: 1rem; line-height: 1.375rem; margin-top: 2.5rem;}
+    #service-area .service-list-area .cont .sub {font-size: .875rem; line-height: 1.25rem; margin-top: .5rem;}
+    #service-area .service-list-area .recommender-system .cont {margin-top: 5rem; padding: 2rem 1rem;}
+    #service-area .arum-sns-area ul {flex-direction: column;}
+    #service-area .arum-sns-area ul li {width: 100%;}
+    #service-area .arum-sns-area ul li:nth-child(even) {padding-left: 0; margin-top: 1rem;}
+    #service-area .arum-join-area .tit {font-size: 1.5rem; line-height: 2rem; box-sizing: border-box; padding-right: 3rem;}
+
     #organization-area .organization-chart {margin-top: 1rem;}
     #organization-area .organization-chart>ul>li {flex: 100%;}
     #organization-area .organization-chart>ul>li+li {border-left: 1px solid #d6d6d6;}
