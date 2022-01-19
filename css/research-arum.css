@@ -134,6 +134,8 @@ section>h2 {text-transform: uppercase;}
     #organization-area .ci-area .signature-system-area .box .language-type>li {padding: 2.5rem;}
     #organization-area .ci-area .signature-system-area .box .language-type>li+li {border-left: none;}
 
+    #organization-area h4+.sub br {display: none;}
+
     #contactus-area .map-area {margin-top: 0rem;}
     #investor-relationship-area .card-list .top-info-wrap {flex-direction: row; justify-content: space-between;}
 }

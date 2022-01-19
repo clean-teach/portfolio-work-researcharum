@@ -483,6 +483,8 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
 }
 
 @media screen and (max-width: 768px) {
+    section>h2+.sub br {display: none;}
+    
     .primary-btn-area>button {width: 48%;}
     .primary-btn-area>button+button {margin-left: 0;}
     .primary-btn-area>button:nth-child(even) {margin-left: 2%;}

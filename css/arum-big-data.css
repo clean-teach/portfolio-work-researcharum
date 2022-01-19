@@ -18,14 +18,13 @@ section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
 .apply-process-area .process li:nth-child(3)::after {border-left-color: #0e4477;}
 .apply-process-area .process li:nth-child(4)::after {border-left-color: #0a345c;}
 .apply-process-area .process li:last-child:after {display: none;}
-.apply-process-area .guide-area {color: #333333; font-weight: 400; font-size: 1rem; text-align: center; margin-top: 2.5rem;}
+.apply-process-area .guide-area {color: #333333; font-weight: 400; font-size: 1rem; line-height: 1.25rem; text-align: center; margin-top: 2.5rem;}
 .apply-process-area .guide-area a {color: #333333; font-weight: 500; display: inline-flex; justify-content: center; margin-left: 1.5rem; text-decoration: underline;}
 .apply-process-area .guide-area a svg {height: 1rem; margin-left: .5rem;}
 
 #arum-big-data-intro-area.center-wrap {max-width: 996px;}
-#arum-big-data-intro-area .img-wrap {margin-top: 4rem; width: 100%; height: 27.938rem; border-radius: .75rem; overflow: hidden; position: relative;}
-#arum-big-data-intro-area .img-wrap img {position: absolute; top: 0; left: 0; width: 100%;}
-#arum-big-data-intro-area .img-wrap .txt-area {position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0,0,0,.6); color: #ffffff; text-align: center; font-weight: 300; font-size: 1.125rem; box-sizing: border-box; padding: 2rem;}
+#arum-big-data-intro-area .img-wrap {margin-top: 4rem; width: 100%; height: 27.938rem; border-radius: .75rem; overflow: hidden; position: relative; background: url(../img/bg-arum-big-data--01.jpg) no-repeat center; background-size: cover;}
+#arum-big-data-intro-area .img-wrap .txt-area {position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0,0,0,.6); color: #ffffff; text-align: center; font-weight: 300; font-size: 1.125rem; line-height: 1.75rem; box-sizing: border-box; padding: 2rem;}
 #arum-big-data-intro-area .img-wrap .txt-area .tit-01 {font-weight: 500; font-size: 1.375rem; margin-top: .5rem;}
 #arum-big-data-intro-area .img-wrap .txt-area .tit-02 {font-weight: 300; font-size: 1.375rem; margin-top: 1rem;}
 #arum-big-data-intro-area .advantage {display: flex; margin-top: 2rem;}
@@ -35,7 +34,7 @@ section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
 #arum-big-data-intro-area .advantage li dt span {color: #ff4545; font-weight: bold;}
 #arum-big-data-intro-area .advantage li dd {color: #666666; font-weight: 500; font-size: 1rem; margin-top: .4rem;}
 #arum-big-data-intro-area .a1-3-area {margin-top: 6.25rem;}
-#arum-big-data-intro-area .a1-3-area .venn-diagram {position: relative; width: 100%; height: 22.5rem; font-weight: bold; font-size: 1.875rem; color: #ffffff;}
+#arum-big-data-intro-area .a1-3-area .venn-diagram {position: relative; width: 100%; height: 22.5rem; font-weight: bold; font-size: 1.875rem; color: #ffffff; letter-spacing: .025rem;}
 #arum-big-data-intro-area .a1-3-area .venn-diagram .circle {position: absolute; width: 14.625rem; height: 14.625rem; border-radius: 100%; overflow: hidden;}
 #arum-big-data-intro-area .a1-3-area .venn-diagram .circle span {position: absolute;}
 #arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a1 {top: 0; left: calc(50% - 7.3125rem); background: linear-gradient(rgba(233,0,0,.95), rgba(233,0,0,.6));}
@@ -68,14 +67,15 @@ section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
 #arum-big-data-list-area .tab-guide-area dt {font-weight: bold; letter-spacing: .025rem;}
 #arum-big-data-list-area .tab-guide-area dt::after {content: ' : ';}
 #arum-big-data-list-area .tab-guide-area dd {font-weight: 400;}
-#arum-big-data-list-area .page-info-wrap {display: flex; justify-content: space-between; align-items: flex-end; margin-top: 1.125rem;}
+#arum-big-data-list-area .page-info-wrap {display: flex; justify-content: space-between; flex-flow: row-reverse; align-items: flex-end; margin-top: 1.125rem;}
+#arum-big-data-list-area .page-info-wrap label {display: none;}
+#arum-big-data-list-area .page-info-wrap select {width: 11.375rem;}
+#arum-big-data-list-area .page-info-wrap select ~ select {margin-left: .75rem;}
 #arum-big-data-list-area .page-info-wrap .num {letter-spacing: .025rem;}
 #arum-big-data-list-area .page-info-wrap .total {color: #666666; font-weight: 500; font-size: .938rem;}
 #arum-big-data-list-area .page-info-wrap .total .tit {font-size: 1.25rem;}
 #arum-big-data-list-area .page-info-wrap .total .num, #arum-big-data-list-area .page-info-wrap .current {color: #ff4545;}
-#arum-big-data-list-area .page-info-wrap label {display: none;}
-#arum-big-data-list-area .page-info-wrap select {width: 11.375rem;}
-#arum-big-data-list-area .page-info-wrap select ~ select {margin-left: .75rem;}
+
 
 #telegram-service-intro-area.center-wrap {max-width: 996px;}
 #telegram-service-intro-area .main-banner-area {margin-top: 4rem; width: 100%; border-radius: .75rem; overflow: hidden; position: relative;}
@@ -120,3 +120,66 @@ section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
 #telegram-service-intro-area .primary-btn-area {text-align: center; margin-top: 2.5rem;}
 #telegram-service-intro-area .primary-btn-area .btn-apply {min-width: 12.5rem; height: 3.75rem; border-radius: .5rem; background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 1.25rem;}
 
+@media screen and (max-width: 1024px) {
+    section.center-wrap {margin-top: 0rem; margin-bottom: 5rem;}
+
+    .apply-process-area {margin-top: 5rem; padding: 0 1rem;}
+    .apply-process-area h3 {font-size: 1.5rem;}
+    .apply-process-area .process {height: auto; margin-top: 1.5rem;}
+    .apply-process-area .process li {position: static; font-size: 1rem; line-height: 1.375rem; height: 5rem; justify-content: center; text-align: center; background: url(../img/triangle-01-12x9-ffffff.svg) no-repeat center 3.75rem; background-size: .75rem;}
+    .apply-process-area .process li br {display: none;}
+    .apply-process-area .process li:nth-child(1) {top: auto; left: auto; width: 100%; padding-left: 0; z-index: auto; border-bottom-left-radius: 0; border-top-left-radius: .5rem; border-top-right-radius: .5rem;}
+    .apply-process-area .process li:nth-child(2) {top: auto; left: auto; width: 100%; padding-left: 0; z-index: auto;}
+    .apply-process-area .process li:nth-child(3) {top: auto; left: auto; width: 100%; padding-left: 0; z-index: auto;}
+    .apply-process-area .process li:nth-child(4) {top: auto; left: auto; width: 100%; padding-left: 0; z-index: auto; border-bottom-left-radius: .5rem; border-bottom-right-radius: .5rem;}
+    .apply-process-area .process li:last-child {top: auto; left: auto; width: 100%; background-image: none; margin-top: .75rem;}
+    .apply-process-area .process li::after {display: none;}
+    .apply-process-area .guide-area {font-size: .938rem;}
+    .apply-process-area .guide-area a {font-size: 1rem; display: flex; margin-left: 0; margin-top: 1.75rem;}
+
+    #arum-big-data-intro-area {padding: 0;}
+    #arum-big-data-intro-area .img-wrap {margin-top: 1.5rem; height: 27.875rem; border-radius: 0;}
+    #arum-big-data-intro-area .img-wrap .txt-area {padding: 2rem 1rem;}
+    #arum-big-data-intro-area .img-wrap .txt-area .tit-01 {margin-top: .25rem;}
+    #arum-big-data-intro-area .img-wrap .txt-area .tit-02 {font-size: 1.125rem; margin-top: .75rem;}
+    #arum-big-data-intro-area .advantage {margin-top: 0;padding: 2rem 1rem;}
+    #arum-big-data-intro-area .advantage li>.num {font-size: 1.625rem;}
+    #arum-big-data-intro-area .advantage li dt {font-size: 1.375rem;}
+    #arum-big-data-intro-area .advantage li dd {font-size: .938rem; margin-top: .4rem;}
+    #arum-big-data-intro-area .a1-3-area {margin-top: 5rem;}
+    #arum-big-data-intro-area .a1-3-area .venn-diagram {height: 18.125rem; font-size: .938rem;}
+    #arum-big-data-intro-area .a1-3-area .venn-diagram .circle {width: 11.75rem; height: 11.75rem;}
+    #arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a1 {left: calc(50% - 5.875rem);}
+    #arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a2 {top: 6.375rem; left: calc(50% - 9.5rem);}
+    #arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a3 {top: 6.375rem; right: calc(50% - 9.5rem);}
+    #arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a1 span {top: 3rem; left: calc(50% - .5rem);}
+    #arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a2 span {bottom: 3.75rem; left: calc(50% - 2.5rem);}
+    #arum-big-data-intro-area .a1-3-area .venn-diagram .circle.a3 span {bottom: 3.75rem; right: calc(50% - 2.5rem);}
+    #arum-big-data-intro-area .a1-3-area .venn-diagram .avg {top: 9.5rem; left: calc(50% - 1rem);}
+
+    #arum-big-data-list-area .tab {margin-top: 1.25rem;}
+    #arum-big-data-list-area .tab li button {min-width: 12rem;}
+    #arum-big-data-list-area .tab-guide-area {margin-top: 1.5rem; padding: 1.5rem 1.25rem;}
+    #arum-big-data-list-area .tab-guide-area li {width: 50%;}
+    #arum-big-data-list-area .tab-guide-area dt, #arum-big-data-list-area .tab-guide-area dd {font-size: .875rem;}
+    #arum-big-data-list-area table {width: 60rem;}
+    #arum-big-data-list-area th {min-width: 12rem;}
+}
+@media screen and (max-width: 768px) {
+    #arum-big-data-intro-area .advantage {flex-direction: column; padding: 1rem;}
+    #arum-big-data-intro-area .advantage li {width: 100%; margin-top: 1rem;}
+    #arum-big-data-intro-area .a1-3-area .summary {margin-top: 2rem; border: none; border-radius: 0;}
+    #arum-big-data-intro-area .a1-3-area .summary li {padding: 1rem; height: 5.875rem;}
+    #arum-big-data-intro-area .a1-3-area .summary h3 {font-size: 1.625rem;}
+    #arum-big-data-intro-area .a1-3-area .summary h3 span {font-size: 1.625rem;}
+    #arum-big-data-intro-area .a1-3-area .summary dt {font-size: 1.375rem;}
+    #arum-big-data-intro-area .a1-3-area .summary dd {font-weight: 400; margin-top: .25rem;}
+    #arum-big-data-intro-area .primary-btn-area {margin-top: 2.375rem;}
+    #arum-big-data-intro-area .primary-btn-area .btn-apply {min-width: 9.5rem; height: 2rem; border-radius: .25rem; font-size: .875rem;}
+
+    #arum-big-data-list-area .tab-guide-area li {float: none; width: 100%; padding: .25rem 0;}
+    #arum-big-data-list-area .page-info-wrap {flex-flow: column; align-items: stretch;}
+    #arum-big-data-list-area .page-info-wrap select {width: 100%;}
+    #arum-big-data-list-area .page-info-wrap select ~ select {margin-left: 0; margin-top: .75rem;}
+    #arum-big-data-list-area .page-info-wrap .total {margin-top: 2rem;}
+}
