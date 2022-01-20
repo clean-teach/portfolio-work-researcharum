@@ -227,13 +227,14 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 
 #popup-area {position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9999; background-color: rgba(0,0,0,.8); display: flex; justify-content: center; align-items: center; display: none;}
 #popup-area .popup-box {position: relative; background-color: #ffffff; width: 100%; display: none;}
-#popup-area .popup-box .popup-top-area {height: 5rem; padding: 0 1.875rem; border-bottom: 2px solid #b8b8b8; display: flex; justify-content: space-between; align-items: center;}
-#popup-area .popup-box .popup-top-area h2 {color: #333333; font-weight: bold; font-size: 1.5rem;}
+#popup-area .popup-box .popup-top-area {min-height: 5rem; box-sizing: border-box; padding: 1rem 1.875rem; border-bottom: 2px solid #b8b8b8; display: flex; justify-content: space-between; align-items: center;}
+#popup-area .popup-box .popup-top-area h2 {color: #333333; font-weight: bold; font-size: 1.5rem; line-height: 2rem;}
 #popup-area .popup-box .popup-top-area .btn-close {width: 1rem; height: 1rem; background: url(../img/x.svg) no-repeat center;}
-#popup-area .popup-box .cont-area {overflow-y: scroll; max-height: 80vh;}
+#popup-area .popup-box .cont-area {overflow-y: scroll; max-height: 60vh;}
 #popup-area .popup-box .primary-btn-area {padding: 1.875rem; margin-top: 0;}
 
 #popup-sponsor {max-width: 560px;}
+#popup-sponsor table {width: 100%;}
 #popup-sponsor th, #popup-sponsor td {border-bottom: 1px solid #dddddd; text-align: left; vertical-align: middle; height: 4.25rem;}
 #popup-sponsor th {background-color: #f9f9f9; color: #333333; font-weight: 500; font-size: .938rem; padding: 0 1.875rem; box-sizing: border-box; width: 190px;}
 #popup-sponsor td {color: #333333; font-weight: 400; font-size: 1rem; padding: 0 1.125rem;}
@@ -524,6 +525,19 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .like-sponsor-area .sponsor-wrap {text-align: left; justify-content: left; border-top: 1px solid #ffd9d9;}
     .like-sponsor-area .sponsor-wrap dl {order: 2;}
     .like-sponsor-area .btn-sponsor {order: 1;}
+
+    #popup-report-list.popup-box {max-width: 100vw;}
+    #popup-report-list .popup-top-area {height: 6.125rem;}
+    #popup-report-list.popup-box .cont-area {padding: 0 1.125rem; max-height: calc(100vh - 6.125rem);}
+    #popup-report-list .cont-area li {flex-wrap: wrap; height: 7.125rem;}
+    #popup-report-list .cont-area .info-area {width: 100%; padding-right: 0;}
+    #popup-report-list .cont-area .date {font-size: .875rem;}
+    #popup-report-list .cont-area .tit {font-size: 1rem; margin-top: .5rem;}
+
+    #popup-sponsor .cont-area {padding: 1rem;}
+    #popup-sponsor th, #popup-sponsor td {height: auto;}
+    #popup-sponsor th {display: block; background-color: #ffffff; padding: 1rem 0; width: 100%; border-bottom: none;}
+    #popup-sponsor td {display: block; padding: 0 0 1rem;}
 
     .fnb li {float: left; margin-right: 1.5rem;}
 }
