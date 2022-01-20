@@ -51,7 +51,7 @@ section>h2+.sub span {color: #666666; font-size: 1rem; line-height: 1.375rem;}
 .join-membership-area .service-area ul>li {color: #666666; font-weight: 500; font-size: 1rem; margin-top: .75rem; margin-left: .75rem;}
 .join-membership-area .service-area ul>li::before {content: '- ';}
 .join-membership-area .guidance-area ul {margin-top: 1rem;}
-.join-membership-area .guidance-area ul>li {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.5rem; margin-left: 1.25rem; position: relative; padding-left: 1rem;}
+.join-membership-area .guidance-area ul>li {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.5rem; margin-left: .75rem; position: relative; padding-left: .75rem;}
 .join-membership-area .guidance-area ul>li+li {margin-top: .5rem;}
 .join-membership-area .guidance-area ul>li::before {content: '- '; position: absolute; top: 0; left: 0;}
 

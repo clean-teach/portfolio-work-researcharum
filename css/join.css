@@ -64,7 +64,6 @@ input[type=text], input[type=password], input[type=email], select {border: 1px s
 @media screen and (max-width: 1024px) {
     body {background-color: #ffffff;}
     
-    #join-area {max-width: 100%; margin: 0 auto; padding: 0; padding-bottom: 5rem;}
     .tab {margin-top: 0;}
 
     .step-agree-area {margin-top: 2.5rem; padding: 0 1.5rem;}
@@ -84,6 +83,10 @@ input[type=text], input[type=password], input[type=email], select {border: 1px s
 
     .step-complete-area {padding: 0 1.5rem;}
     .step-complete-area .btn-primary {margin-top: 4.375rem;}
+
+    .payment-info-area th, .payment-info-area td {height: 4.5rem;}
+    .payment-info-area th {padding-left: 0; font-size: 1rem;}
+    .payment-info-area td {padding-right: 0; font-size: .938rem;}
 }
 @media screen and (max-width: 768px) {
     .membership-check-list li {height: 5rem;}
@@ -91,4 +94,6 @@ input[type=text], input[type=password], input[type=email], select {border: 1px s
     .membership-check-list .txt {flex-direction: column;}
     .membership-check-list .tit {font-size: .938rem;}
     .membership-check-list .price {margin-top: .75rem;}
+
+    #join-area {max-width: 100%; margin: 0 auto; padding: 0; padding-bottom: 5rem;}
 }
