@@ -9,6 +9,8 @@ label {cursor: pointer;}
 [type=text], [type=password], [type=email], [type=tel], [type=number], select {width: 100%; height: 2.5rem; box-sizing: border-box; border: 1px solid #d6d6d6; padding: 0 1rem; color: #333333; font-weight: 500; font-size: .938rem;}
 [type=checkbox], [type=radio], select {cursor: pointer;}
 ::placeholder {color: #999999;}
+select::-ms-expand {display: none;}
+select {-o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #ffffff url(../img/icon-anggle-bottom-2px-333333.svg) no-repeat calc(100% - 1rem) center; background-size: .6rem;}
 
 
 /* Common */
@@ -262,7 +264,7 @@ header {z-index: 10; position: fixed; top: 0; left: 0; width: 100%; height: 5.31
 header .btn-back {width: 2rem; height: 2rem; display: none;}
 header .btn-back svg {width: .875rem;}
 header h1 {position: absolute; top: 0; left: 30px; width: 198px; height: 100%; display: flex; align-items: center; z-index: 13;}
-header h1 a {width: 198px; height: 45px; background-image: url(../img/logo-researcharum-198x45-01.png); background-repeat: no-repeat; background-position: center;}
+header h1 a {width: 198px; height: 45px; background-image: url(../img/logo-researcharum-198x45-01.png); background-repeat: no-repeat; background-position: center; background-size: contain;}
 header h1 span {display: block; overflow: hidden; width: 0; height: 0;}
 header .gnb {position: absolute; top: 0; left: 25rem; height: 100%;}
 header .gnb {height: 100%;}
@@ -349,7 +351,7 @@ footer .sitemap .depth-03>li>a {color: #999999; font-weight: 200; font-size: .93
 .fnb::after {content: ''; display: block; clear: both;}
 .fnb li {float: left; margin-right: 2.5rem;}
 .fnb a {color: #ffffff; font-weight: 400; font-size: .875rem;}
-footer address {margin-top: 2.25rem; color: #999999; font-weight: 200; font-size: .875rem; line-height: 1.375rem; word-break: keep-all; max-width: 30rem;}
+footer address {margin-top: 2.25rem; color: #999999; font-weight: 300; font-size: .875rem; line-height: 1.375rem; word-break: keep-all; max-width: 30rem;}
 footer address li {display: inline;}
 footer address li + li {margin-right: .5rem;}
 footer address li + li::before {content: '/'; margin-right: .5rem;}
@@ -539,5 +541,6 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     #popup-sponsor th {display: block; background-color: #ffffff; padding: 1rem 0; width: 100%; border-bottom: none;}
     #popup-sponsor td {display: block; padding: 0 0 1rem;}
 
+    header h1 {width: 140px;}
     .fnb li {float: left; margin-right: 1.5rem;}
 }
