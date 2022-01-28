@@ -114,7 +114,7 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .stock-item-summary-area .info-area button svg {width: .5rem; margin-left: .5rem;}
 
 .card-list {display: flex; flex-wrap: wrap; justify-content: start;}
-.card-list>li {position: relative; width: 19.5rem; height: 15rem; margin-bottom: 2.5rem; margin-right: 1rem; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 0 40px rgba(2, 2, 2, .14); background-color: #ffffff;}
+.card-list>li {position: relative; width: 19.5rem; height: 15rem; margin-bottom: 2.5rem; margin-right: 1rem; border-radius: 1.25rem; overflow: hidden; background: linear-gradient(#ffffff 90%, rgba(255,255,255,0) 3rem); box-shadow: 0 0 40px rgba(2, 2, 2, .14);}
 .card-list>li:nth-child(4n) {margin-right: 0;}
 .card-list .top-info-wrap {padding: 1.5rem 2rem; display: flex; justify-content: space-between;}
 .card-list .top-info-wrap .left {display: flex; justify-content: space-between;}
@@ -420,8 +420,8 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .join-membership-area {padding: 0 1.5rem;}
     .notice-search-area .search-bar {border: none; width: 36rem; height: auto; margin: 0 auto; background: none;}
     .notice-search-area .search-bar select, .notice-search-area .search-bar input {border: 1px solid #d6d6d6; height: 2.75rem;}
-    .notice-search-area .search-bar select {width: 100%;}
-    .notice-search-area .search-bar input {width: 100%; margin-top: 1rem;}
+    .notice-search-area .search-bar select {width: 100%; margin-bottom: 1rem;}
+    .notice-search-area .search-bar input {width: 100%;}
     .notice-search-area .search-bar button {right: 0;}
 
     .stock-item-summary-area .tit-wrap h3 {font-size: 1.375rem; line-height: 1.75rem;}
