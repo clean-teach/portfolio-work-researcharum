@@ -432,6 +432,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .card-list .top-info-wrap {justify-content: left; flex-direction: column;}
     .card-list .top-info-wrap .left {justify-content: left; margin-top: .875rem;}
     .card-list .top-info-wrap .writer {margin-right: .75rem;}
+    .card-list .date {margin-top: .5rem;}
     .card-list .tit {font-size: 1.5rem; line-height: 1.875rem;}
     .card-list .tit.ellipsis {height: 2.2rem;}
     .card-list .tit.multi-line-ellipsis {height: 4rem;}
