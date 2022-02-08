@@ -14,9 +14,13 @@ section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
 
 table.bulletin-board .tit {width: 50%;}
 
+#research-view-area {max-width: 996px;}
 #research-view-area article>h2 {display: none;}
-#research-view-area article .cont-area {text-align: center;}
-#research-view-area article .cont-area img {max-width: 100%;}
+#research-view-area article .cont-area {text-align: justify; color: #333333; font-weight: 300; font-size: .938rem; line-height: 1.25rem;}
+#research-view-area article .cont-area img {max-width: 100%; margin: 1rem 0;}
+#research-view-area article .cont-area li+li,
+#research-view-area article .cont-area p+p {margin-top: 1rem;}
+#research-view-area .primary-btn-area {display: flex; justify-content: space-between;}
 
 .notice-view-area article {margin-top: 6.25rem;}
 

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 <body>
     <header>
@@ -498,7 +497,6 @@
         <div class="info-area">
             <h2>수익률 TOP3</h2>
             <div class="btn-wrap">
-                <button type="button" title="기간별 순위 보기" class="on">1주</button>
                 <button type="button" title="기간별 순위 보기">1개월</button>
                 <button type="button" title="기간별 순위 보기">분기</button>
                 <button type="button" title="기간별 순위 보기">반기</button>
@@ -510,91 +508,40 @@
                 <li>
                     <div class="cont-area">
                         <h3>1</h3>
-                        <div class="tit multi-line-ellipsis"><a href="" title="페이지 이동">미래에셋코리아 레버리지 2.0 투자신탁(주식-파생재간접형) 종류A [수수료선취-오프라인] 레버리지 2.0 투자신탁(주식-파생재간접형) 종류A [수수료선취-오프라인]</a></div>
+                        <div class="tit multi-line-ellipsis">미래에셋코리아 레버리지 2.0 투자신탁(주식-파생재간접형) 종류A [수수료선취-오프라인] 레버리지 2.0 투자신탁(주식-파생재간접형) 종류A [수수료선취-오프라인]</div>
                         <div class="earnings-rate">수익률 <span class="num">7.99</span> %</div>
                     </div>
                     <div class="graph-area">
                         <div class="graph">
-                            <canvas id="line-chart-01"></canvas>
-                            <script>
-                                (function(){
-                                    new Chart(document.getElementById("line-chart-01"), {
-                                    type: 'line',
-                                    data: {
-                                    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
-                                    datasets: [{ 
-                                        data: [112,24,579,1,974,1111,1343,221,783,2478],
-                                        label: "미래에셋코리아 레버리지 2.0 투자신탁",
-                                        borderColor: "#ffffff",
-                                        fill: false
-                                        }
-                                    ]
-                                    }
-                                    });
-                                }())
-                            </script>
+                            <img src="img/graph-main-earnings-rate-ranking-01.png" alt="수익률 추이 그래프">
                         </div>
-                        <h4>1주 수익률추이</h4>
+                        <h4>1개월 수익률추이</h4>
                     </div>
                 </li>
                 <li>
                     <div class="cont-area">
                         <h3>2</h3>
-                        <div class="tit multi-line-ellipsis"><a href="" title="페이지 이동">미래에셋코스닥 혁신성장 증권 자투자신탁(주식) 종류A [수수료선취-오프라인]</a></div>
+                        <div class="tit multi-line-ellipsis">미래에셋코스닥 혁신성장 증권 자투자신탁(주식) 종류A [수수료선취-오프라인]</div>
                         <div class="earnings-rate">수익률 <span class="num">6.96</span> %</div>
                     </div>
                     <div class="graph-area">
                         <div class="graph">
-                            <canvas id="line-chart-02"></canvas>
-                            <script>
-                                (function(){
-                                    new Chart(document.getElementById("line-chart-02"), {
-                                    type: 'line',
-                                    data: {
-                                    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
-                                    datasets: [{ 
-                                        data: [86,114,106,106,107,111,133,221,783,2478],
-                                        label: "미래에셋코리아 레버리지 2.0 투자신탁",
-                                        borderColor: "#ffffff",
-                                        fill: false
-                                        }
-                                    ]
-                                    }
-                                    });
-                                }())
-                            </script>
+                            <img src="img/graph-main-earnings-rate-ranking-02.png" alt="수익률 추이 그래프">
                         </div>
-                        <h4>1주 수익률추이</h4>
+                        <h4>1개월 수익률추이</h4>
                     </div>
                 </li>
                 <li>
                     <div class="cont-area">
                         <h3>3</h3>
-                        <div class="tit multi-line-ellipsis"><a href="" title="페이지 이동">미래에셋글로벌넥스트 노멀증권 투자신탁(주식) 종류C1</a></div>
+                        <div class="tit multi-line-ellipsis">미래에셋글로벌넥스트 노멀증권 투자신탁(주식) 종류C1</div>
                         <div class="earnings-rate">수익률 <span class="num">5.66</span> %</div>
                     </div>
                     <div class="graph-area">
                         <div class="graph">
-                            <canvas id="line-chart-03"></canvas>
-                            <script>
-                                (function(){
-                                    new Chart(document.getElementById("line-chart-03"), {
-                                    type: 'line',
-                                    data: {
-                                    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
-                                    datasets: [{ 
-                                        data: [86,114,106,106,107,111,133,221,783,2478],
-                                        label: "미래에셋코리아 레버리지 2.0 투자신탁",
-                                        borderColor: "#ffffff",
-                                        fill: false
-                                        }
-                                    ]
-                                    }
-                                    });
-                                }())
-                            </script>
+                            <img src="img/graph-main-earnings-rate-ranking-03.png" alt="수익률 추이 그래프">
                         </div>
-                        <h4>1주 수익률추이</h4>
+                        <h4>1개월 수익률추이</h4>
                     </div>
                 </li>
             </ul>
