@@ -8,6 +8,28 @@ function getScrollDirection(){
     return result;
 }
 
+// 종목 선택 버튼 클릭시, 데이터 업데이트
+function setStockItemList(){
+    window.event.preventDefault();
+    const researchListArea = document.querySelector('#research-list-area');
+    const stockItemSummaryArea = document.querySelector('.stock-item-summary-area');
+    const htmlInnerStockItemSummary = `
+    <div class="tit-wrap">
+        <img src="../img/icon-chart-01.svg" alt="그래프가 차트 아이콘">
+        <div class="txt-wrap">
+            <h3>
+                <dl>
+                    <dt>[종목]</dt>
+                    <dd>에이치엔에스하이텍 (044990, KONEX)</dd>
+                </dl>
+            </h3>
+        </div>
+    </div>
+    `;
+    stockItemSummaryArea.innerHTML = htmlInnerStockItemSummary;
+    stockItemSummaryArea.style.display = 'block';
+}
+
 // Popup js
 const popupArea = document.querySelector('#popup-area');
 
