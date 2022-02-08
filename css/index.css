@@ -25,6 +25,10 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 #section-main-banner {width: 100%; height: 100vh; min-height: 937px;}
 #section-main-banner h2 {width: 0; height: 0; overflow: hidden;}
 .slider {height: 100%; overflow: hidden;}
+.slider .btn-left, .slider .btn-right {position: absolute; bottom: 3.25rem; width: .875rem; height: .875rem; background-repeat: no-repeat; background-position: center;}
+.slider .btn-left {left: calc(50% - 648px + 1rem); background-image: url(../img/icon-anggle-left-2px-8x14-ffffff.png);}
+.slider .btn-right {left: calc(50% - 648px + 6rem); background-image: url(../img/icon-anggle-right-2px-8x14-ffffff.png);}
+.slider .current-number-area {position: absolute; bottom: 3.25rem; left: calc(50% - 648px + 3rem); color: #ffffff; font-weight: 500; font-size: 1rem;}
 .banner {min-height: 100%; box-sizing: border-box; padding-top: 5.313rem;}
 .banner-01 {background: url(../img/bg-main-banner-01.jpg) no-repeat center; background-size: cover;}
 .banner-01 .wrapper {max-width: 1296px; padding: 0 1rem; margin: 0 auto;}
@@ -33,6 +37,16 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 .banner-01 p span {color: #ffee8d; font-weight: 400; font-size: 1.5rem;}
 .banner-01 .btn-detail {display: flex; justify-content: center; align-items: center; width: 10.75rem; height: 3.125rem; color: #ffffff; font-weight: 400; font-size: 1.125rem; border: 1px solid rgba(255, 255, 255, .3); border-radius: .4rem; margin-top: 2rem;}
 .banner-01 .btn-detail svg {margin-left: .4rem;}
+
+/* sample */
+.banner-02 {background: url(../img/bg-main-banner-01.jpg) no-repeat center; background-size: cover;}
+.banner-02 .wrapper {max-width: 1296px; padding: 0 1rem; margin: 0 auto;}
+.banner-02 h3 {color: #ffffff; font-weight: bold; font-size: 4.375rem; line-height: 5.6rem; letter-spacing: -.25rem; word-break: keep-all; padding-top: 10.5rem; max-width: 44rem;}
+.banner-02 p {color: #ffffff; font-weight: 200; font-size: 1.25rem; line-height: 1.75rem; letter-spacing: -.025rem; margin-top: 1.125rem;}
+.banner-02 p span {color: #ffee8d; font-weight: 400; font-size: 1.5rem;}
+.banner-02 .btn-detail {display: flex; justify-content: center; align-items: center; width: 10.75rem; height: 3.125rem; color: #ffffff; font-weight: 400; font-size: 1.125rem; border: 1px solid rgba(255, 255, 255, .3); border-radius: .4rem; margin-top: 2rem;}
+.banner-02 .btn-detail svg {margin-left: .4rem;}
+/* sample */
 
 .card-list-area {padding: 4rem 0;}
 .card-list-area h2 {text-align: center; color: #ffffff; font-weight: 300; font-size: 1.5rem;}
@@ -95,6 +109,10 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 
 @media screen and (max-width: 1328px) {
     .center-wrap {max-width: 960px;}
+
+    .slider .btn-left {left: calc(50% - 480px + 1rem);}
+    .slider .btn-right {left: calc(50% - 480px + 6rem);}
+    .slider .current-number-area {left: calc(50% - 480px + 3rem);}
     .banner-01 .wrapper {max-width: 960px;}
     .card-list-area .card-list>li {width: 19.5rem;}
 
@@ -120,6 +138,10 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 
     section>h2 {position: static; top: auto; left: auto; width: auto; font-size: inherit; z-index: 11;}
 
+    .slider .btn-left {left: auto; right: 6rem;}
+    .slider .btn-right {left: auto; right: 1rem;}
+    .slider .current-number-area {left: auto; right: 3rem;}
+
     .card-list-area {padding: 3.125rem 1rem;}
     .card-list-area h2 {text-align: left; font-size: 1.375rem;}
     .card-list-area .card-cont-area {margin-top: 1.5rem; display: block; overflow-x: scroll;}
@@ -142,5 +164,6 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 @media screen and (max-width: 768px) {
     #section-main-banner {min-height: auto;}
     .banner-01 h3 {font-size: 1.875rem; line-height: 2.125rem; letter-spacing: 0; padding-top: 2rem;}
+    .banner-02 h3 {font-size: 1.875rem; line-height: 2.125rem; letter-spacing: 0; padding-top: 2rem;}
     #earnings-rate-ranking-area .info-area h2 {font-size: 1.25rem;}
 }
