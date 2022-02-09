@@ -89,7 +89,7 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .table-type-02 td {color: #333333; padding: 0 1.5rem;}
 
 .notice-search-area {border: 1px solid #dddddd; background-color: #f6f6f6; padding: 2rem; margin-top: 2.5rem;}
-.notice-search-area .search-bar {position: relative; border: 1px solid #d6d6d6; background-color: #ffffff; width: fit-content; height: 2.75rem; margin: 0 auto;}
+.notice-search-area .search-bar {position: relative; border: 1px solid #d6d6d6; background-color: #ffffff; width: fit-content; height: 2.75rem; margin: 0 auto; display: flex;}
 .notice-search-area .search-bar label {display: none;}
 .notice-search-area .search-bar select, .notice-search-area .search-bar input {border: none; font-weight: 300; font-size: .875rem; height: 100%; box-sizing: border-box; padding: 0 .75rem;}
 .notice-search-area .search-bar select {border-right: 1px solid #d6d6d6; color: #666666; width: 5rem;}
@@ -419,7 +419,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .tab li.on button {color: #111111;}
     .pagination, .primary-btn-area .pagination {display: none;}
     .join-membership-area {padding: 0 1.5rem;}
-    .notice-search-area .search-bar {border: none; width: 36rem; height: auto; margin: 0 auto; background: none;}
+    .notice-search-area .search-bar {border: none; width: 36rem; height: auto; margin: 0 auto; background: none; display: block;}
     .notice-search-area .search-bar select, .notice-search-area .search-bar input {border: 1px solid #d6d6d6; height: 2.75rem;}
     .notice-search-area .search-bar select {width: 100%; margin-bottom: 1rem;}
     .notice-search-area .search-bar input {width: 100%;}
