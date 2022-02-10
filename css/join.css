@@ -63,6 +63,12 @@ input[type=text], input[type=password], input[type=email], select {border: 1px s
 .payment-info-area .total .num {font-weight: bold; font-size: 1.5rem; letter-spacing: .05rem;}
 .payment-info-area td label ~ label {margin-left: 2.25rem;}
 
+.pay-report-area .report-info-area {background-color: #eaf2f6; padding: 1.75rem 1.5rem; border-radius: .5rem; margin-top: 2.5rem;}
+.pay-report-area .report-info-area .tit {color: #333333; font-weight: 500; font-size: 1.5rem;}
+.pay-report-area .report-info-area .sub {color: #666666; font-weight: 300; font-size: 1rem; line-height: 2rem;}
+.pay-report-area .guide {color: #666666; font-weight: 400; font-size: .938rem; line-height: 1.5rem; margin-top: 1.5rem;}
+.guide-join-membership {margin-top: 6.25rem;}
+
 @media screen and (max-width: 1024px) {
     body {background-color: #ffffff;}
     
