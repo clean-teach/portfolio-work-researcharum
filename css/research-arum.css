@@ -13,12 +13,12 @@ section>h2 {text-transform: uppercase;}
 #aboutus-area .cont-area h3 {color: #333333; font-weight: 500; font-size: 1.25rem;}
 #aboutus-area .cont-area p {margin-top: 1.875rem;}
 
-#service-area {max-width: 738px; background-color: #ffffff; margin-top: 6.5rem; margin-bottom: 6.25rem; padding-top: 3rem; padding-bottom: 1rem;}
+#service-area {max-width: 996px; background-color: #ffffff; margin-top: 6.5rem; margin-bottom: 6.25rem; padding-top: 3rem; padding-bottom: 1rem;}
 #service-area>h2+.sub {color: #333333; font-weight: 400; font-size: 2.875rem; line-height: 3.25rem; margin-top: 4rem;}
 #service-area>h2+.sub strong {color: #ff4545; font-weight: 600;}
 #service-area .news-area {margin-top: 4.375rem;}
 #service-area .news-area ul {display: flex; justify-content: space-evenly;}
-#service-area .news-area li {width: 20rem; border-radius: 1rem; border: 1px solid #d0d0d0; overflow: hidden;}
+#service-area .news-area li {width: 25rem; border-radius: 1rem; border: 1px solid #d0d0d0; overflow: hidden;}
 #service-area .news-area li .img-wrap {overflow: hidden; position: relative; width: 100%; height: 15rem;}
 #service-area .news-area li .txt-wrap {padding: 1.25rem;}
 #service-area .news-area li .date {color: #333333; font-weight: bold; font-size: 1.5rem; letter-spacing: .025rem;}
@@ -45,14 +45,14 @@ section>h2 {text-transform: uppercase;}
 #service-area .service-list-area .recommender-system .cont {background-color: #f9f8f8; color: #666666; font-weight: 500; text-align: left; padding: 2rem; max-width: 100%;}
 #service-area .service-list-area .recommender-system .cont h4 {color: #333333; font-size: 1rem; margin-bottom: 1rem;}
 #service-area .service-list-area .recommender-system .cont li {color: #666666; font-size: .938rem; line-height: 1.5rem; margin-top: .25rem; margin-left: 1rem; list-style: decimal outside;}
-#service-area .arum-sns-area {background-color: #e0f5ff; padding: 2rem; font-weight: 500; font-size: .938rem; line-height: 1.5rem;}
-#service-area .arum-sns-area h3 {color: #333333; font-weight: 500; font-size: 1rem;}
-#service-area .arum-sns-area ul {display: flex; justify-content: start; margin-top: .75rem;}
-#service-area .arum-sns-area ul li {width: 50%;}
-#service-area .arum-sns-area ul li:nth-child(even) {padding-left: 2rem; box-sizing: border-box;}
-#service-area .arum-sns-area a {display: flex; justify-content: start; color: #666666;}
+#service-area .bottom-box-wrap {display: flex; flex-wrap: wrap;}
+#service-area .arum-sns-area {background-color: #e0f5ff; width: 50%; box-sizing: border-box; padding: 2rem; font-weight: 500; font-size: .938rem; line-height: 1.5rem;}
+#service-area .arum-sns-area h3 {color: #333333; font-weight: 500; font-size: 1.25rem;}
+#service-area .arum-sns-area ul {display: flex; flex-wrap: wrap; justify-content: start; margin-top: .75rem;}
+#service-area .arum-sns-area ul li {width: 100%; margin-top: .5rem;}
+#service-area .arum-sns-area a {display: flex; justify-content: start; align-items: center; color: #666666;}
 #service-area .arum-sns-area img {width: 2.5rem; margin-right: .75rem;}
-#service-area .arum-join-area {background-color: #ffdbdb; padding: 2rem; position: relative;}
+#service-area .arum-join-area {background-color: #ffdbdb; width: 50%; box-sizing: border-box; padding: 2rem; position: relative;}
 #service-area .arum-join-area>a::after {content: ''; display: block; position: absolute; right: 2rem; top: calc(50% - 1.5rem); width: 3rem; height: 3rem; border-radius: 100%; overflow: hidden; background: url(../img/icon-circle-link-01.svg) no-repeat center; background-size: contain;}
 #service-area .arum-join-area h3 {color: #333333; font-weight: 500; font-size: 1.25rem;}
 #service-area .arum-join-area .tit {color: #333333; font-weight: bold; font-size: 1.875rem; line-height: 2.25rem; margin-top: 1rem;}
@@ -114,6 +114,11 @@ section>h2 {text-transform: uppercase;}
 
 @media screen and (max-width: 1024px) {
     section {margin-top: 0;}
+
+    #service-area .arum-sns-area, #service-area .arum-join-area {width: 100%;}
+    #service-area .arum-sns-area ul li {width: 50%;}
+    #service-area .arum-sns-area ul li:nth-child(even) {padding-left: 2rem; box-sizing: border-box;}
+    #service-area .arum-join-area br {display: none;}
 
     #organization-area {margin-top: 0; padding: 1rem;}
     #organization-area .organization-chart {margin-top: 2rem;}
