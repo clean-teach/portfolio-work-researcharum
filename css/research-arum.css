@@ -43,7 +43,7 @@ section>h2 {text-transform: uppercase;}
 #service-area .service-list-area .cont .tit span {color: #a1a1a1;}
 #service-area .service-list-area .cont .sub {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.5rem; margin-top: 1.25rem;}
 #service-area .service-list-area .recommender-system .cont {background-color: #f9f8f8; color: #666666; font-weight: 500; text-align: left; padding: 2rem; max-width: 100%;}
-#service-area .service-list-area .recommender-system .cont h4 {color: #333333; font-size: 1rem; margin-bottom: 1rem;}
+#service-area .service-list-area .recommender-system .cont h4 {color: #333333; font-size: 1.25rem; margin-bottom: 1rem;}
 #service-area .service-list-area .recommender-system .cont li {color: #666666; font-size: .938rem; line-height: 1.5rem; margin-top: .25rem; margin-left: 1rem; list-style: decimal outside;}
 #service-area .bottom-box-wrap {display: flex; flex-wrap: wrap;}
 #service-area .arum-sns-area {background-color: #e0f5ff; width: 50%; box-sizing: border-box; padding: 2rem; font-weight: 500; font-size: .938rem; line-height: 1.5rem;}
@@ -52,10 +52,11 @@ section>h2 {text-transform: uppercase;}
 #service-area .arum-sns-area ul li {width: 100%; margin-top: .5rem;}
 #service-area .arum-sns-area a {display: flex; justify-content: start; align-items: center; color: #666666;}
 #service-area .arum-sns-area img {width: 2.5rem; margin-right: .75rem;}
+#service-area .arum-sns-area br {display: none;}
 #service-area .arum-join-area {background-color: #ffdbdb; width: 50%; box-sizing: border-box; padding: 2rem; position: relative;}
 #service-area .arum-join-area>a::after {content: ''; display: block; position: absolute; right: 2rem; top: calc(50% - 1.5rem); width: 3rem; height: 3rem; border-radius: 100%; overflow: hidden; background: url(../img/icon-circle-link-01.svg) no-repeat center; background-size: contain;}
 #service-area .arum-join-area h3 {color: #333333; font-weight: 500; font-size: 1.25rem;}
-#service-area .arum-join-area .tit {color: #333333; font-weight: bold; font-size: 1.875rem; line-height: 2.25rem; margin-top: 1rem;}
+#service-area .arum-join-area .tit {color: #333333; font-weight: bold; font-size: 1.875rem; line-height: 2.25rem; margin-top: 1rem; padding-right: 5rem;}
 #service-area .arum-join-area .sub {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.5rem; margin-top: 1rem;}
 
 #organization-area {max-width: 996px; background-color: #ffffff; margin-top: 6.5rem; margin-bottom: 6.25rem; padding: 3rem 1rem 1rem;}
@@ -161,10 +162,11 @@ section>h2 {text-transform: uppercase;}
     #service-area .service-list-area .cont .tit {font-size: 1rem; line-height: 1.375rem; margin-top: 2.5rem;}
     #service-area .service-list-area .cont .sub {font-size: .875rem; line-height: 1.25rem; margin-top: .5rem;}
     #service-area .service-list-area .recommender-system .cont {margin-top: 5rem; padding: 2rem 1rem;}
+    #service-area .arum-sns-area, #service-area .arum-join-area {padding: 2rem 1rem;}
     #service-area .arum-sns-area ul {flex-direction: column;}
     #service-area .arum-sns-area ul li {width: 100%;}
     #service-area .arum-sns-area ul li:nth-child(even) {padding-left: 0; margin-top: 1rem;}
-    #service-area .arum-join-area .tit {font-size: 1.5rem; line-height: 2rem; box-sizing: border-box; padding-right: 3rem;}
+    #service-area .arum-join-area .tit {font-size: 1.5rem; line-height: 2rem; box-sizing: border-box;}
 
     #organization-area .organization-chart {margin-top: 1rem;}
     #organization-area .organization-chart>ul>li {flex: 100%;}
@@ -180,4 +182,8 @@ section>h2 {text-transform: uppercase;}
     #organization-area .ci-area .color-palette-area .box {padding: 1.5rem 1.25rem;}
     #organization-area .ci-area .color-palette-area .box>ul {flex-direction: column;}
     #organization-area .ci-area .color-palette-area .box>ul>li+li {margin-top: 1.5rem;}
+}
+
+@media screen and (max-width: 360px) {
+    #service-area .arum-sns-area br {display: inline;}
 }
