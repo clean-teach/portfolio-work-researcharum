@@ -329,7 +329,7 @@ header .depth-sub a:hover::before {transition: .2s;}
 .header-search-area .search-bar label {display: none;}
 .header-search-area .search-bar input {color: #333333; font-weight: 400; font-size: 1.5rem; background-color: #f5f5f5; border: 2px solid #dbdbdb; width: 100%; height: 5rem; box-sizing: border-box; padding-left: 2.125rem; padding-right: 5.6rem; border-radius: 2.5rem;}
 .header-search-area .search-bar input::placeholder {color: #888888;}
-.header-search-area .search-bar input:focus {outline-color: #14538d;}
+.header-search-area .search-bar input:focus {outline-color: #666666;}
 .header-search-area .search-bar [type=submit] {position: absolute; top: calc(50% - .85rem); right: 2.125rem; width: 1.75rem; height: 1.75rem;}
 .header-search-area .search-bar [type=submit] circle, .header-search-area .search-bar [type=submit] line {stroke: #666666;}
 .header-search-area .result-area {opacity: 0; padding: 3.625rem 0;}
@@ -480,7 +480,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     header.on .btn-back {display: none;}
     .depth-sub.on h2 {width: auto; height: 5.313rem; position: absolute; top: -5.313rem; left: 1rem; color: #ffffff; font-weight: 500; font-size: 1.25rem; z-index: 99; display: flex; align-items: center;}
     .header-search-area.on h2 {width: auto; height: 5.313rem; position: absolute; top: 0; left: 1rem; color: #ffffff; font-weight: 500; font-size: 1.25rem; z-index: 99; display: flex; align-items: center;}
-    .header-search-area .search-bar input {font-size: 1rem; background-color: #1765ad; height: 3.75rem; padding-left: 1.5rem; padding-right: 3.75rem; border-radius: 1.875rem;}
+    .header-search-area .search-bar input {font-size: 1rem; height: 3.75rem; padding-left: 1.5rem; padding-right: 3.75rem; border-radius: 1.875rem;}
     .header-search-area .search-bar [type=submit] {top: calc(50% - .75rem); right: 1.125rem; width: 1.5rem; height: 1.5rem;}
     .header-search-area .no-result {font-size: 1.125rem; line-height: 1.75rem;}
     .header-search-area.on>.cont-area {height: 100vh; padding: 1.5rem 1rem;}
