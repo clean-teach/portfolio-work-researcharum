@@ -38,13 +38,15 @@ section>h2 {text-transform: uppercase;}
 #service-area .service-list-area h3+.tit {color: #666666; font-weight: 500; font-size: 2.875rem; line-height: 3.25rem; margin-top: 2rem;}
 #service-area .service-list-area h3+.tit span {color: #333333; font-weight: bold;}
 #service-area .service-list-area img {width: 9.875rem; margin-top: 2.5rem;}
-#service-area .service-list-area .cont {max-width: 25.75rem; margin: auto;}
+#service-area .service-list-area .cont {margin: auto;}
 #service-area .service-list-area .cont .tit {color: #333333; font-weight: 500; font-size: 1.25rem; line-height: 1.75rem; margin-top: 2.5rem;}
+#service-area .service-list-area .cont .tit li+li{margin-top: .75rem;}
+#service-area .service-list-area .cont .tit li::before {content: ''; display: inline-block; width: .25rem; height: .25rem; background-color: #999999; margin-right: .5rem; position: relative; top: -.3rem;}
 #service-area .service-list-area .cont .tit span {color: #a1a1a1;}
 #service-area .service-list-area .cont .sub {color: #666666; font-weight: 500; font-size: .938rem; line-height: 1.5rem; margin-top: 1.25rem;}
-#service-area .service-list-area .recommender-system .cont {background-color: #f9f8f8; color: #666666; font-weight: 500; text-align: left; padding: 2rem; max-width: 100%;}
-#service-area .service-list-area .recommender-system .cont h4 {color: #333333; font-size: 1.25rem; margin-bottom: 1rem;}
-#service-area .service-list-area .recommender-system .cont li {color: #666666; font-size: .938rem; line-height: 1.5rem; margin-top: .25rem; margin-left: 1rem; list-style: decimal outside;}
+#service-area .recommender-system-area {background-color: #f9f8f8; color: #666666; font-weight: 500; text-align: left; padding: 2rem; max-width: 100%; margin-top: 7.5rem;}
+#service-area .recommender-system-area h3 {color: #333333; font-size: 1.25rem; margin-bottom: 1rem;}
+#service-area .recommender-system-area li {color: #666666; font-size: .938rem; line-height: 1.5rem; margin-top: .25rem; margin-left: 1rem; list-style: decimal outside;}
 #service-area .bottom-box-wrap {display: flex; flex-wrap: wrap;}
 #service-area .arum-sns-area {background-color: #e0f5ff; width: 50%; box-sizing: border-box; padding: 2rem; font-weight: 500; font-size: .938rem; line-height: 1.5rem;}
 #service-area .arum-sns-area h3 {color: #333333; font-weight: 500; font-size: 1.25rem;}
@@ -63,13 +65,14 @@ section>h2 {text-transform: uppercase;}
 #organization-area .organization-chart {margin-top: 4rem;}
 #organization-area .organization-chart h3 {width: 0; height: 0; padding: 0; overflow: hidden; opacity: 0;}
 #organization-area .organization-chart .ceo {position: relative; background-color: #ff4545; color: #ffffff; text-align: center; font-weight: 500; font-size: 1.125rem; width: 10rem; padding: 1rem 0; margin: auto;}
-#organization-area .organization-chart>ul {display: flex; margin-top: 3.5rem;}
-#organization-area .organization-chart .ceo::after, #organization-area .organization-chart>ul>li::after, #organization-area .organization-chart>ul>li::before {content: ''; display: block; position: absolute; background-color: #d6d6d6;}
+#organization-area .organization-chart>ul {display: flex; margin-top: 0;}
+/* #organization-area .organization-chart>ul {display: flex; margin-top: 3.5rem;} */
+/* #organization-area .organization-chart .ceo::after, #organization-area .organization-chart>ul>li::after, #organization-area .organization-chart>ul>li::before {content: ''; display: block; position: absolute; background-color: #d6d6d6;}
 #organization-area .organization-chart .ceo::after {left: 50%; bottom: -1.75rem; width: 1px; height: 1.75rem;}
 #organization-area .organization-chart>ul>li::after {left: 50%; top: -1.75rem; width: 1px; height: 1.75rem;}
 #organization-area .organization-chart>ul>li::before {left: 0%; top: -1.75rem; width: 100%; height: 1px;}
 #organization-area .organization-chart>ul>li:first-child:before {left: 50%; width: 50%;}
-#organization-area .organization-chart>ul>li:last-child:before {left: 0%; width: 50%;}
+#organization-area .organization-chart>ul>li:last-child:before {left: 0%; width: 50%;} */
 #organization-area .organization-chart>ul>li {flex: 1; text-align: center; border: 1px solid #d6d6d6; position: relative;}
 #organization-area .organization-chart>ul>li+li {border-left: none;}
 #organization-area .organization-chart>ul>li:first-child {border-bottom-left-radius: 1rem; border-top-left-radius: 1rem;}
@@ -116,6 +119,7 @@ section>h2 {text-transform: uppercase;}
 @media screen and (max-width: 1024px) {
     section {margin-top: 0;}
 
+    #service-area .service-list-area .tit br {display: none;}
     #service-area .arum-sns-area, #service-area .arum-join-area {width: 100%;}
     #service-area .arum-sns-area ul li {width: 50%;}
     #service-area .arum-sns-area ul li:nth-child(even) {padding-left: 2rem; box-sizing: border-box;}
@@ -160,8 +164,9 @@ section>h2 {text-transform: uppercase;}
     #service-area .service-list-area img {margin-top: 1.5rem;}
     #service-area .service-list-area .cont {max-width: 100%; margin: auto; padding: 0 1rem;}
     #service-area .service-list-area .cont .tit {font-size: 1rem; line-height: 1.375rem; margin-top: 2.5rem;}
+    #service-area .service-list-area .cont .tit br {display: none;}
     #service-area .service-list-area .cont .sub {font-size: .875rem; line-height: 1.25rem; margin-top: .5rem;}
-    #service-area .service-list-area .recommender-system .cont {margin-top: 5rem; padding: 2rem 1rem;}
+    #service-area .recommender-system-area {margin-top: 5rem; padding: 2rem 1rem;}
     #service-area .arum-sns-area, #service-area .arum-join-area {padding: 2rem 1rem;}
     #service-area .arum-sns-area ul {flex-direction: column;}
     #service-area .arum-sns-area ul li {width: 100%;}

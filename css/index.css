@@ -58,7 +58,7 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 .card-list-area .card-list>li:hover {transform: translateY(-.625rem); transition: .4s;}
 .card-list-area.type-01 .card-cont-area .card-list {flex: 3;}
 .card-list-area.type-01 .card-cont-area .more-area {flex: 1;}
-.card-list-area.type-01 .card-list .bottom-info-wrap {background-color: #222222;}
+.card-list-area.type-01 .card-list .bottom-info-wrap {background-color: #222222; color: #ffffff;}
 .card-list-area.type-01 .more-area {display: flex; justify-content: center; align-items: center;}
 .card-list-area.type-01 .btn-more {min-width: 10.5rem; height: 3rem; border-radius: .5rem; border: 1px solid rgba(255,255,255,.5); color: #ffffff; font-weight: 400; font-size: 1.1235rem; text-transform: uppercase;}
 .card-list-area.type-01 .card-list>li:hover .bottom-info-wrap {background-color: #1765ad;}

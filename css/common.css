@@ -126,7 +126,7 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .card-list .tit a {color: #111111;}
 .card-list .tit.ellipsis {height: 2.6rem;}
 .card-list .tit.multi-line-ellipsis {height: 4.6rem;}
-.card-list .bottom-info-wrap {position: absolute; bottom: 0; left: 0; width: 100%; box-sizing: border-box; padding: 1rem 2rem; background-color: #1765ad; color: #ffffff;}
+.card-list .bottom-info-wrap {position: absolute; bottom: 0; left: 0; width: 100%; box-sizing: border-box; padding: 1rem 2rem; background-color: #def0fe; color: #666666;}
 .card-list .writer {font-weight: 400; font-size: 1.125rem;}
 
 .card-list.type-02>li {width: 49%; height: 21.5rem; margin-right: 2%;}
@@ -137,10 +137,11 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .card-list.type-02 .tit-wrap .tit {padding: 0;}
 .card-list.type-02 .tit-wrap .sub {font-weight: 300; font-size: 1.5rem; line-height: 2rem;}
 .card-list.type-02 .btn-area {position: absolute; left: 0; bottom: 3.1rem; width: 100%; box-sizing: border-box; padding: 1.5rem; display: flex; justify-content: space-between; align-content: center;}
-.card-list.type-02 .btn-area button {height: 2rem; padding: 0 1.125rem; border-radius: .25rem; font-weight: 400; font-size: .875rem;}
+.card-list.type-02 .btn-area button {height: 2rem; padding: 0 1.125rem; border-radius: .25rem; font-weight: 500; font-size: .875rem;}
+.card-list.type-02 .btn-area .btn-color {background-color: #eeeeee; color: #333333;}
 .card-list.type-02 .bottom-info-wrap {padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-content: center;}
-.card-list.type-02 .bottom-info-wrap dt, .card-list.type-02 .bottom-info-wrap dd {display: inline-block; font-weight: 4v00; font-size: 1.125rem;}
-.card-list.type-02 .bottom-info-wrap dt {color: #68aff0;}
+.card-list.type-02 .bottom-info-wrap dt, .card-list.type-02 .bottom-info-wrap dd {display: inline-block; font-weight: 400; font-size: 1.125rem;}
+.card-list.type-02 .bottom-info-wrap dt {color: #333333;}
 .card-list.type-02 .bottom-info-wrap dd {margin-left: .5rem; letter-spacing: .025rem;}
 
 .pagination {display: flex; justify-content: center; margin-top: 2rem;}
@@ -154,7 +155,7 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .pagination li {display: inline-block;}
 .pagination li ~ li {margin-left: .75rem;}
 .pagination .num button {color: #333333; font-weight: 300; font-size: .875rem; display: flex; justify-content: center; align-items: center; border-radius: 100%;}
-.pagination .num button.on {background-color: #ffd5d5;}
+.pagination .num button.on {background-color: #def0fe;}
 
 .accordion-cover {cursor: pointer;}
 .accordion-view {display: none;}
@@ -326,11 +327,11 @@ header .depth-sub a:hover::before {transition: .2s;}
 .header-search-area>.cont-area {height: 0; box-sizing: border-box; background-color: #ffffff; overflow-y: scroll; transition: .4s;}
 .header-search-area .search-bar {position: relative; max-width: 800px; margin: 0 auto; opacity: 0; transition: .4s;}
 .header-search-area .search-bar label {display: none;}
-.header-search-area .search-bar input {color: #ffffff; font-weight: 400; font-size: 1.5rem; background-color: #1765ad; border: none; width: 100%; height: 5rem; box-sizing: border-box; padding-left: 2.125rem; padding-right: 5.6rem; border-radius: 2.5rem;}
-.header-search-area .search-bar input::placeholder {color: #76b3ea;}
+.header-search-area .search-bar input {color: #333333; font-weight: 400; font-size: 1.5rem; background-color: #f5f5f5; border: 2px solid #dbdbdb; width: 100%; height: 5rem; box-sizing: border-box; padding-left: 2.125rem; padding-right: 5.6rem; border-radius: 2.5rem;}
+.header-search-area .search-bar input::placeholder {color: #888888;}
 .header-search-area .search-bar input:focus {outline-color: #14538d;}
 .header-search-area .search-bar [type=submit] {position: absolute; top: calc(50% - .85rem); right: 2.125rem; width: 1.75rem; height: 1.75rem;}
-.header-search-area .search-bar [type=submit] circle, .header-search-area .search-bar [type=submit] line {stroke: #ffffff;}
+.header-search-area .search-bar [type=submit] circle, .header-search-area .search-bar [type=submit] line {stroke: #666666;}
 .header-search-area .result-area {opacity: 0; padding: 3.625rem 0;}
 .header-search-area .no-result {text-align: center; font-weight: 500; font-size: 1.5rem; line-height: 2rem; color: #333333; background: url(../img/icon-loupe-02_86x86.png) no-repeat center 2.625rem; padding-top: 9.5rem;}
 .header-search-area .no-result span {color: #1765ad;}
