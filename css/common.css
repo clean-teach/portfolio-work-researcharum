@@ -532,6 +532,8 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .like-sponsor-area .sponsor-wrap dl {order: 2;}
     .like-sponsor-area .btn-sponsor {order: 1;}
 
+    .join-membership-area {padding: 0 1rem;}
+
     #popup-report-list.popup-box {max-width: 100vw;}
     #popup-report-list .popup-top-area {height: 6.125rem;}
     #popup-report-list.popup-box .cont-area {padding: 0 1.125rem; max-height: calc(100vh - 6.125rem);}

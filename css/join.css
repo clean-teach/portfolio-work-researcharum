@@ -65,8 +65,8 @@ input[type=text], input[type=password], input[type=email], select {border: 1px s
 
 .pay-report-area .report-info-area {background-color: #eaf2f6; padding: 1.75rem 1.5rem; border-radius: .5rem; margin-top: 2.5rem;}
 .pay-report-area .report-info-area .tit {color: #333333; font-weight: 500; font-size: 1.5rem;}
-.pay-report-area .report-info-area .sub {color: #666666; font-weight: 300; font-size: 1rem; line-height: 2rem;}
-.pay-report-area .guide {color: #666666; font-weight: 400; font-size: .938rem; line-height: 1.5rem; margin-top: 1.5rem;}
+.pay-report-area .report-info-area .sub {color: #666666; font-weight: 300; font-size: 1rem; line-height: 1.25rem; margin-top: 1rem;}
+.pay-report-area .guide {color: #666666; font-weight: 400; font-size: .938rem; line-height: 1.25rem; margin-top: 1.5rem;}
 .guide-join-membership {margin-top: 6.25rem;}
 
 @media screen and (max-width: 1024px) {
@@ -92,6 +92,7 @@ input[type=text], input[type=password], input[type=email], select {border: 1px s
     .step-complete-area {padding: 0 1.5rem;}
     .step-complete-area .btn-primary {margin-top: 4.375rem;}
 
+    .pay-report-area h2 {display: none;}
     .payment-info-area th, .payment-info-area td {height: 4.5rem;}
     .payment-info-area th {padding-left: 0; font-size: 1rem;}
     .payment-info-area td {padding-right: 0; font-size: .938rem;}
@@ -104,4 +105,5 @@ input[type=text], input[type=password], input[type=email], select {border: 1px s
     .membership-check-list .price {margin-top: .75rem;}
 
     #join-area {max-width: 100%; margin: 0 auto; padding: 0; padding-bottom: 5rem;}
+    .pay-report-area {padding: 0 1rem;}
 }

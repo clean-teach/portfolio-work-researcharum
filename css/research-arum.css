@@ -125,8 +125,8 @@ section>h2 {text-transform: uppercase;}
     #service-area .arum-sns-area ul li:nth-child(even) {padding-left: 2rem; box-sizing: border-box;}
     #service-area .arum-join-area br {display: none;}
 
-    #organization-area {margin-top: 0; padding: 1rem;}
-    #organization-area .organization-chart {margin-top: 2rem;}
+    #organization-area {margin-top: 0; padding: 0 1rem;}
+    #organization-area .organization-chart {margin-top: 0;}
     #organization-area .organization-chart>ul {display: flex; margin-top: 2rem; flex-wrap: wrap;}
     #organization-area .organization-chart .ceo::after {bottom: -2rem; height: 2rem;}
     #organization-area .organization-chart>ul>li::after, #organization-area .organization-chart>ul>li::before {display: none;}
@@ -173,7 +173,6 @@ section>h2 {text-transform: uppercase;}
     #service-area .arum-sns-area ul li:nth-child(even) {padding-left: 0; margin-top: 1rem;}
     #service-area .arum-join-area .tit {font-size: 1.5rem; line-height: 2rem; box-sizing: border-box;}
 
-    #organization-area .organization-chart {margin-top: 1rem;}
     #organization-area .organization-chart>ul>li {flex: 100%;}
     #organization-area .organization-chart>ul>li+li {border-left: 1px solid #d6d6d6;}
     #organization-area .organization-chart>ul>li:first-child {border-bottom-left-radius: 0; border-top-right-radius: 1rem;}
@@ -182,6 +181,8 @@ section>h2 {text-transform: uppercase;}
     #organization-area .organization-chart>ul>li:nth-child(2) h4 {border-top-right-radius: 0;}
     #organization-area .organization-chart>ul>li:nth-child(3) {border-bottom-left-radius: 0;}
     #organization-area .organization-chart>ul>li:last-child {border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem;}
+    #organization-area .organization-chart .txt-wrap {text-align: center;}
+    #organization-area .organization-chart .txt-wrap li {margin-top: .15rem;}
     #organization-area .ci-area .signature-system-area .box .language-type>li {flex-direction: column;}
     #organization-area .ci-area .signature-system-area .box h5 {margin-bottom: 1.25rem;}
     #organization-area .ci-area .color-palette-area .box {padding: 1.5rem 1.25rem;}
