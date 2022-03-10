@@ -313,7 +313,7 @@ header .depth-sub .user-area .img-wrap svg {width: 1.5rem;}
 header .depth-sub .user-area .img-wrap path, header .depth-sub .user-area .img-wrap circle {stroke: #ffffff;}
 header .depth-sub .user-area .user-name {margin-left: .75rem; color: #333333; font-weight: 300; font-size: 1.125rem;}
 header .depth-sub .user-area .user-name span {color: #1765ad; font-weight: 500;}
-header .depth-sub .user-area .btn-logout {font-size: .938rem; color: #666666; background-color: #f0f0f0; height: 1.75rem;  border-radius: .875rem; padding: 0 .875rem; display: flex; align-items: center; justify-content: center;}
+header .depth-sub .user-area .btn-logout {font-size: .938rem; color: #666666; background-color: #f0f0f0; height: 1.75rem;  border-radius: .875rem; padding: 0 .875rem; display: none; align-items: center; justify-content: center;}
 header .depth-sub .user-area .btn-logout::before {content: ''; display: inline-block; width: 1.2rem; height: 1.125rem; background: url(../img/icon-power-btn-01.svg) no-repeat center; background-size: contain; margin-right: .25rem;}
 header .depth-sub .depth-01 {box-sizing: border-box; padding: 2.875rem 1rem 2.875rem 22rem; display: flex;}
 header .depth-sub h2 {width: 0; height: 0; overflow: hidden;}
@@ -390,6 +390,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     header .depth-sub .depth-02 {margin-top: 1.375rem;}
     header .depth-sub .depth-03>li {list-style: disc inside; margin-left: .75rem;font-size: .875rem;}
     header .depth-sub .depth-03>li>a {font-size: .875rem;}
+    header .depth-sub .user-area .btn-logout {display: flex;}
 
     footer .sitemap {display: none;}
 }
