@@ -270,7 +270,7 @@ header .btn-back svg {width: .875rem;}
 header h1 {position: absolute; top: 0; left: 1.5rem; width: 198px; height: 100%; display: flex; align-items: center; z-index: 13;}
 header h1 a {width: 198px; height: 45px; background-image: url(../img/logo-researcharum-198x45-01.png); background-repeat: no-repeat; background-position: center; background-size: contain;}
 header h1 span {display: block; overflow: hidden; width: 0; height: 0;}
-header .gnb {position: absolute; top: 0; left: 25rem; height: 100%;}
+header .gnb {position: absolute; top: 0; left: 22rem; height: 100%;}
 header .gnb {height: 100%;}
 header .gnb ul {height: 100%; display: flex; justify-content: space-between; align-items: center;}
 header .gnb a {display: block; box-sizing: border-box; color: #666666; font-weight: 500; font-size: 1.125rem; border-bottom: 0 solid rgba(255, 255, 255, 0); position: relative;}
@@ -294,6 +294,10 @@ header .btn-search::after {width: 2px; height: 100%; top: 0; left: calc(50% - 1p
 header .btn-search.close {transform-origin: center; transform: rotate(135deg);}
 header .btn-search.close svg {display: none;}
 header .btn-search.close::before, header .btn-search.close::after {display: block;}
+header .btn-wrap .btn-logout {color: #666666; font-size: .875rem; width: auto; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+header .btn-wrap .btn-logout svg {width: 1.3rem; stroke: none;}
+header .btn-wrap .btn-logout path {stroke: none;}
+header .btn-setting {display: none;}
 #btn-main-menu {width: 1.5rem; height: 1.375rem; display: flex; flex-direction: column; justify-content: space-between;}
 #btn-main-menu i {width: 100%; height: 2px; background-color: #333333; transition: .2s;}
 #btn-main-menu.close i:nth-child(1) {transform-origin: top left; transform: rotate(45deg); width: 120%;}
@@ -302,13 +306,16 @@ header .btn-search.close::before, header .btn-search.close::after {display: bloc
 
 header .depth-sub {z-index: 9; position: absolute; top: 5.313rem; left: 0; width: 100%; height: calc(100vh - 5.313rem); background-color: rgba(0, 0, 0, .6);}
 header .depth-sub>.cont-area {width: 100%; overflow-y: scroll; background-color: #ffffff;}
-header .depth-sub .user-area>a {padding: 1.5rem 1.25rem; display: flex; align-items: center; display: none;}
+header .depth-sub .user-area {display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 1.25rem; }
+header .depth-sub .user-area .btn-user {display: flex; align-items: center; display: none;}
 header .depth-sub .user-area .img-wrap {background-color: #1765ad; background-repeat: no-repeat; background-position: center; background-size: cover; width: 2.5rem; height: 2.5rem; border-radius: 100%; display: flex; justify-content: center; align-items: center;}
 header .depth-sub .user-area .img-wrap svg {width: 1.5rem;}
 header .depth-sub .user-area .img-wrap path, header .depth-sub .user-area .img-wrap circle {stroke: #ffffff;}
 header .depth-sub .user-area .user-name {margin-left: .75rem; color: #333333; font-weight: 300; font-size: 1.125rem;}
 header .depth-sub .user-area .user-name span {color: #1765ad; font-weight: 500;}
-header .depth-sub .depth-01 {box-sizing: border-box; padding: 2.875rem 1rem 2.875rem 25rem; display: flex;}
+header .depth-sub .user-area .btn-logout {font-size: .938rem; color: #666666; background-color: #f0f0f0; height: 1.75rem;  border-radius: .875rem; padding: 0 .875rem; display: flex; align-items: center; justify-content: center;}
+header .depth-sub .user-area .btn-logout::before {content: ''; display: inline-block; width: 1.2rem; height: 1.125rem; background: url(../img/icon-power-btn-01.svg) no-repeat center; background-size: contain; margin-right: .25rem;}
+header .depth-sub .depth-01 {box-sizing: border-box; padding: 2.875rem 1rem 2.875rem 22rem; display: flex;}
 header .depth-sub h2 {width: 0; height: 0; overflow: hidden;}
 header .depth-sub h3 {width: 12rem; height: 0; overflow: hidden;}
 header .depth-sub .depth-02>li+li {margin-top: 1.875rem;}
@@ -367,13 +374,14 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
 @media screen and (max-width: 1680px) {
     header .gnb {display: none;}
     header .btn-search::before, header .btn-search::after {background-color: #ffffff;}
+    header .btn-wrap .btn-logout {display: none;}
     header.on {background-color: #1765ad; border-bottom-color: #1765ad;}
     header.on h1 a {background-image: url(../img/logo-researcharum-198x45-ffffff.png);}
     header.on .btn-wrap button path, header.on .btn-wrap button circle, header.on .btn-wrap button line {stroke: #ffffff;}
-    header.on .btn-user {display: none;}
+    header.on .btn-wrap .btn-user {display: none;}
     header.on #btn-main-menu i {background-color: #ffffff;}
     header .depth-sub>.cont-area {height: 100%;}
-    header .depth-sub .user-area>a {display: flex;}
+    header .depth-sub .user-area .btn-user {display: flex;}
     header .depth-sub .depth-01 {height: 100%; padding: 0 1.25rem 1.55rem; display: block;}
     header .depth-sub h3 {width: auto; height: auto; overflow: auto; font-weight: 500; font-size: 1.125rem; padding: 1.375rem 0; border-bottom: 1px solid #d2d2d2;}
     header .depth-sub h3 a {color: #1765ad}
@@ -472,11 +480,12 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     header h1 {display: none;}
     header .btn-wrap {width: 100%;}
     header .btn-back {display: block;}
-    header .btn-search, header .btn-user {display: none;}
-    header.on h1 {display: flex; left: auto; right: 128px; width: 25px;}
+    header .btn-search, header .btn-wrap .btn-user {display: none;}
+    header.on {z-index: 12;}
+    header.on h1 {display: flex; left: auto; right: 11rem; width: 25px;}
     header.on h1 a {width: 100%; background-image: url(../img/icon-home-01.svg);}
     header.on .btn-wrap {width: auto; justify-content: right;}
-    header.on .btn-search {display: block;}
+    header.on .btn-search, header.on .btn-setting {display: block;}
     header.on .btn-back {display: none;}
     .depth-sub.on h2 {width: auto; height: 5.313rem; position: absolute; top: -5.313rem; left: 1rem; color: #ffffff; font-weight: 500; font-size: 1.25rem; z-index: 99; display: flex; align-items: center;}
     .header-search-area.on h2 {width: auto; height: 5.313rem; position: absolute; top: 0; left: 1rem; color: #ffffff; font-weight: 500; font-size: 1.25rem; z-index: 99; display: flex; align-items: center;}

@@ -2,18 +2,22 @@
 
 body {background-image: url(../img/bg-main-01.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover; padding-top: 0;}
 
-header {background-color: rgba(0,0,0,.6); border-bottom-color: rgba(0,0,0,.6);}
+header {background-color: rgba(0,0,0,.8); border-bottom-color: rgba(0,0,0,.8);}
 header h1 a {background-image: url(../img/logo-researcharum-198x45-ffffff.png);}
 header .gnb a {color: #fffefe;}
 header .gnb a:hover {color: #ffffff;}
 header .gnb a.on {color: #ffffff;}
 header .btn-wrap button path, header .btn-wrap button circle, header .btn-wrap button line {stroke: #ffffff;}
+header .btn-wrap .btn-logout {color: #fffefe;}
+header .btn-wrap .btn-logout path {stroke: none;}
 #btn-main-menu i {background-color: #ffffff;}
 header.on {background-color: #ffffff; border-bottom-color: #ffffff;}
 header.on h1 a {background-image: url(../img/logo-researcharum-198x45-01.png);}
 header.on .gnb a {color: #666666;}
 header.on .gnb a:hover, header.on .gnb a.on {color: #111111;}
 header.on .btn-wrap button path, header.on .btn-wrap button circle, header.on .btn-wrap button line {stroke: #333333;}
+header.on .btn-wrap .btn-logout {color: #666666;}
+header.on .btn-wrap .btn-logout path {stroke: none;}
 header.on #btn-main-menu i {background-color: #333333;}
 
 section {box-sizing: border-box;}
@@ -133,7 +137,7 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
     header .btn-wrap {width: auto;}
     header .btn-back {display: none;}
     header .btn-search {display: block;}
-    header.on h1 {display: flex; left: auto; right: 128px; width: 25px;}
+    /* header.on h1 {display: flex; left: auto; right: 128px; width: 25px;} */
     header.on h1 a {width: 100%; background-image: url(../img/icon-home-01.svg);}
 
     section>h2 {position: static; top: auto; left: auto; width: auto; font-size: inherit; z-index: 11;}
