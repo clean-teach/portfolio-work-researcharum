@@ -6,6 +6,7 @@ body {min-width: 360px; font-size: 16px; letter-spacing: -.05em; background-colo
 body * {font-family: 'Noto Sans KR', Helvetica, Arial, sans-serif;}
 a {text-decoration: none;}
 button {padding: 0; background: none; border: none; cursor: pointer;}
+button:disabled {cursor: default;}
 caption {display: none;}
 label {cursor: pointer;}
 [type=text], [type=password], [type=email], [type=tel], [type=number], select {width: 100%; height: 2.5rem; box-sizing: border-box; border: 1px solid #d6d6d6; padding: 0 1rem; color: #333333; font-weight: 500; font-size: .938rem;}
@@ -297,7 +298,8 @@ header .btn-search.close::before, header .btn-search.close::after {display: bloc
 header .btn-wrap .btn-logout {color: #666666; font-size: .875rem; width: auto; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 header .btn-wrap .btn-logout svg {width: 1.3rem; stroke: none;}
 header .btn-wrap .btn-logout path {stroke: none;}
-header .btn-setting {display: none;}
+header .btn-wrap .btn-setting {display: none;}
+header .btn-wrap .btn-setting svg {stroke: none;}
 #btn-main-menu {width: 1.5rem; height: 1.375rem; display: flex; flex-direction: column; justify-content: space-between;}
 #btn-main-menu i {width: 100%; height: 2px; background-color: #333333; transition: .2s;}
 #btn-main-menu.close i:nth-child(1) {transform-origin: top left; transform: rotate(45deg); width: 120%;}

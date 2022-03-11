@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설정 | 리서치아름</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/setting.css">
+</head>
+<body>
+    <section id="setting-area" class="center-wrap">
+        <h2>설정</h2>
+        <form action="">
+            <fieldset>
+                <legend>로그인 설정</legend>
+                <div class="setList">
+                    <div class="info-area">
+                        <div class="tit">자동 로그인</div>
+                        <div class="data"></div>
+                    </div>
+                    <div class="set-area">
+                        <input type="checkbox" id="check-01" class="switch-01">
+                        <label for="check-01" title="switch on/off"></label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>알림 설정</legend>
+                <div class="setList">
+                    <div class="info-area">
+                        <div class="tit">정보성 알림 수신</div>
+                        <div class="data">정기구독 안내(3일 전, 하루 전), 신규 리포트 업데이트, 1:1 답변</div>
+                    </div>
+                    <div class="set-area">
+                        <input type="checkbox" id="check-02" class="switch-01">
+                        <label for="check-02" title="switch on/off"></label>
+                    </div>
+                </div>
+                <div class="setList">
+                    <div class="info-area">
+                        <div class="tit">마케팅 알림 수신</div>
+                        <div class="data">이벤트/프로모션 알림</div>
+                    </div>
+                    <div class="set-area">
+                        <input type="checkbox" id="check-03" class="switch-01">
+                        <label for="check-03" title="switch on/off"></label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="setList version-area">
+                <div class="info-area">
+                    <div class="tit">버전 정보</div>
+                    <div class="data">v1.1.3</div>
+                </div>
+                <div class="set-area">
+                    <button type="button" title="현재 최신 버전입니다" disabled>최신버전</button>
+                    <!-- <button type="button" title="버전 업데이트 하기">업데이트</button> -->
+                </div>
+            </div>
+        </form>
+    </section>
+
+<script src="../js/common.js"></script>
+</body>
+</html>
