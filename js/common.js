@@ -91,7 +91,6 @@ if(popupArea){
     }
 
     function showDropdownMenu(){
-        hideSearchArea();
         document.body.style.overflowY = "hidden";
         header.classList.add('on');
         mainDropdownMenu.style.display = 'block';

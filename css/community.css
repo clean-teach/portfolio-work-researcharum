@@ -15,12 +15,11 @@ table.bulletin-board th {min-width: 6rem;}
 table.bulletin-board .tit {width: 50%;}
 table.bulletin-board .date {width: 8rem;}
 
+#arum-forum-detail-area .primary-btn-area {display: flex; justify-content: space-between;}
 #arum-forum-detail-area table th {min-width: 6rem;}
 #arum-forum-detail-area table .tit {width: 36rem;}
 #arum-forum-detail-area table .date {width: 8rem;}
 
-.primary-btn-area {display: flex; justify-content: space-between;}
-.primary-btn-area .left, .primary-btn-area .right {position: static;}
 .notice-view-area article {margin-top: 6.25rem;}
 
 .share-idea-board th {min-width: 8rem;}
