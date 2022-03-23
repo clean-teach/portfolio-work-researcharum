@@ -173,8 +173,11 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .notice-view-area .cont-area {margin-top: 4.375rem; color: #333333; font-weight: 300; font-size: 1rem; line-height: 1.75rem;}
 .notice-view-area .cont-area img {margin: 2.25rem 0; width: 100%;}
 .notice-view-area .cont-area p {margin: 2.25rem 0;}
-.notice-view-area .primary-btn-area {margin-top: 3.25rem;}
-.notice-view-area .primary-btn-area button {background-color: #f4f4f4; color: #333333; font-weight: 500; font-size: 1.25rem; min-width: 8rem; height: 3.75rem; border-radius: .5rem;}
+.notice-view-area .primary-btn-area {max-width: 996px; margin: 3.25rem auto 0; padding: 1rem;}
+.notice-view-area .primary-btn-area button {font-weight: 500; font-size: 1.25rem; min-width: 8rem; height: 3.75rem; border-radius: .5rem;}
+.notice-view-area .primary-btn-area button+button {margin-left: .5rem;}
+.notice-view-area .primary-btn-area .btn-gray {background-color: #f4f4f4; color: #333333;}
+.notice-view-area .primary-btn-area .btn-color {background-color: #ff4545; color: #ffffff;}
 
 .like-sponsor-area {background-color: #fff1f1;}
 .like-sponsor-area .center-wrap {max-width: 996px; padding: 0 1rem; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
@@ -231,6 +234,7 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .comments-area .reply-area .btn-close-wrap {text-align: center; padding: 1rem;}
 .comments-area .reply-area .btn-close-wrap button {color: #333333; font-weight: 400; font-size: .938rem;}
 .comments-area .reply-area .btn-close-wrap button svg {width: .75rem;}
+.comments-area .primary-btn-area {display: block;}
 
 #popup-area {position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9999; background-color: rgba(0,0,0,.8); display: flex; justify-content: center; align-items: center; display: none;}
 #popup-area .popup-box {position: relative; background-color: #ffffff; width: 100%; display: none;}
