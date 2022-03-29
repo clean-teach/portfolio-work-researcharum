@@ -85,10 +85,10 @@ section>h2+.sub span {color: inherit; font-size: inherit; line-height: inherit;}
 #earnings-rate-ranking-area .card-list>li {width: 32%; height: 100%;}
 #earnings-rate-ranking-area .card-list>li>.cont-area {padding: 1.875rem 1.375rem 0;}
 #earnings-rate-ranking-area .card-list h3 {color: #ffffff; font-weight: 400; font-size: 3.125rem;}
-#earnings-rate-ranking-area .card-list .cont-area .tit {color: #ffffff; font-weight: 400; font-size: 1.125rem; line-height: 1.75rem; word-break: keep-all; margin-top: 2.375rem; padding: 0; height: 7rem; -webkit-line-clamp: 4;}
+#earnings-rate-ranking-area .card-list .cont-area .tit {color: #ffffff; font-weight: 400; font-size: 1.125rem; line-height: 1.75rem; word-break: keep-all; margin-top: 2.375rem; padding: 0; height: 4rem; -webkit-line-clamp: 2;}
 #earnings-rate-ranking-area .card-list .cont-area .tit a {color: #ffffff;}
-#earnings-rate-ranking-area .card-list .cont-area .earnings-rate {color: #dddddd; font-weight: 300; font-size: .875rem; margin-top: 2.25rem;}
-#earnings-rate-ranking-area .card-list .cont-area .earnings-rate .num {color: #ffffff; font-weight: 400; font-size: 1.5rem; letter-spacing: .025rem; margin-top: 2.25rem;}
+#earnings-rate-ranking-area .card-list .cont-area .earnings-rate {color: #dddddd; font-weight: 300; font-size: 1rem; margin-top: 1rem;}
+#earnings-rate-ranking-area .card-list .cont-area .earnings-rate .num {color: #ffffff; font-weight: 400; font-size: 2rem; letter-spacing: .025rem; margin-top: 2.25rem;}
 #earnings-rate-ranking-area .card-list .graph-area {color: #ffffff; font-weight: 300; font-size: .875rem; text-align: center; margin-top: 2rem;}
 #earnings-rate-ranking-area .card-list .graph-area .graph {height: 11.4rem;}
 #earnings-rate-ranking-area .card-list .graph-area h4 {padding: 1rem;}
