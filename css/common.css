@@ -107,6 +107,10 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .stock-item-summary-area .tit-wrap h3 dt, .stock-item-summary-area .tit-wrap h3 dd {display: inline;}
 .stock-item-summary-area .tit-wrap h3 dt {color: #68aff0;}
 .stock-item-summary-area .tit-wrap .sub {color: #68aff0; font-weight: 500; font-size: 1.25rem; padding-top: .4rem;}
+.stock-item-summary-area .tit-wrap .btn-close {position: absolute; right: 1.75rem; top: calc(50% - 1rem); display: block; width: 2rem; height: 2rem;}
+.stock-item-summary-area .tit-wrap .btn-close::before, .stock-item-summary-area .tit-wrap .btn-close::after {content: ''; display: block; position: absolute; background-color: #ffffff; width: 100%; height: .125rem; transform-origin: center;}
+.stock-item-summary-area .tit-wrap .btn-close::before {transform: rotate(45deg);}
+.stock-item-summary-area .tit-wrap .btn-close::after {transform: rotate(-45deg);}
 .stock-item-summary-area .info-area {border-left: 1px solid #0b4982; width: 12.375rem; height: 100%; padding: 0 1.5rem; display: flex; flex-direction: column; justify-content: space-evenly;}
 .stock-item-summary-area .info-area dt, .stock-item-summary-area .info-area dd {display: inline-block; font-weight: 500; font-size: 1.125rem;}
 .stock-item-summary-area .info-area dt {color: #68aff0;}
@@ -316,6 +320,7 @@ header .depth-sub>.cont-area {width: 100%; overflow-y: scroll; background-color:
 header .depth-sub .user-area {display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 1.25rem; }
 header .depth-sub .user-area .btn-user {display: flex; align-items: center; display: none;}
 header .depth-sub .user-area .img-wrap {background-color: #1765ad; background-repeat: no-repeat; background-position: center; background-size: cover; width: 2.5rem; height: 2.5rem; border-radius: 100%; display: flex; justify-content: center; align-items: center;}
+header .depth-sub .user-area.logout .img-wrap {background-color: #cdd9e5;}
 header .depth-sub .user-area .img-wrap svg {width: 1.5rem;}
 header .depth-sub .user-area .img-wrap path, header .depth-sub .user-area .img-wrap circle {stroke: #ffffff;}
 header .depth-sub .user-area .user-name {margin-left: .75rem; color: #333333; font-weight: 300; font-size: 1.125rem;}

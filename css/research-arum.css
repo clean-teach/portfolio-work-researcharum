@@ -118,6 +118,22 @@ section>h2 {text-transform: uppercase;}
 
 #investor-relationship-area {margin-top: 6.5rem; margin-bottom: 5rem;}
 
+#join-membership-guide-area {max-width: 1248px; box-sizing: content-box; margin-top: 6.5rem; margin-bottom: 6.25rem;}
+#join-membership-guide-area ol {counter-reset: number 0;}
+#join-membership-guide-area ol li {background-color: #f2f2f2; margin-top: 3.75rem; position: relative;}
+#join-membership-guide-area .txt-wrap {position: absolute; top: 0; left: 0; padding: 3.125rem 5.25rem; }
+#join-membership-guide-area h3 {position: relative; color: #333333; font-weight: bold; font-size: 2.5rem; line-height: 2.813rem; margin-bottom: 1.125rem;}
+#join-membership-guide-area h3::before {position: absolute; top: .25rem; left: -3.125rem; counter-increment: number 1; content: counter(number); border: 1px solid #333333; border-radius: 100%; box-sizing: border-box; width: 2.375rem; height: 2.375rem; display: inline-flex; justify-content: center; align-items: center; font-size: 2rem;}
+#join-membership-guide-area p {color: #666666; font-weight: 300; font-size: 1.25rem; line-height: 1.625rem;}
+#join-membership-guide-area p + p {margin-top: 2.375rem;}
+#join-membership-guide-area p strong {color: #ff4545; font-weight: 500;}
+#join-membership-guide-area .sub {font-weight: 400; font-size: 1rem; line-height: 1.375rem; margin-top: 1.125rem;}
+#join-membership-guide-area .white h3, #join-membership-guide-area .white p, #join-membership-guide-area .white p strong {color: #ffffff;}
+#join-membership-guide-area .white h3::before {border-color: #ffffff;}
+#join-membership-guide-area img {width: 100%;}
+
+
+
 @media screen and (max-width: 1024px) {
     section {margin-top: 0;}
 
@@ -151,6 +167,21 @@ section>h2 {text-transform: uppercase;}
     #contactus-area .map-area {margin-top: 0rem;}
     #investor-relationship-area {margin-top: 0;}
     #investor-relationship-area .card-list .top-info-wrap {flex-direction: row; justify-content: space-between;}
+
+    #join-membership-guide-area {margin-top: 0; margin-bottom: 0; padding: 0;}
+    #join-membership-guide-area br {display: none;}
+    #join-membership-guide-area ol {margin-top: 2rem;}
+    #join-membership-guide-area ol li {margin-top: 0; padding: 0 1.25rem;}
+    #join-membership-guide-area ol li:last-child {padding-bottom: 3.125rem;}
+    #join-membership-guide-area .txt-wrap {position: static; width: 100%; padding: 3.125rem 0 1rem; text-align: center;}
+    #join-membership-guide-area h3 {font-size: 1.125rem; line-height: 1.75rem; margin-bottom: .75rem;}
+    #join-membership-guide-area h3::before {position: static; top: auto; left: static; counter-increment: number 1; content: "0" counter(number) ". "; border: none; border-radius: 0; width: auto; height: auto; display: inline; font-size: 1.125rem;}
+    #join-membership-guide-area p {font-weight: 400; font-size: .938rem; line-height: 1.25rem;}
+    #join-membership-guide-area p + p {margin-top: .75rem;}
+    #join-membership-guide-area .sub {font-size: .875rem; line-height: 1.125rem; margin-top: .75rem;}
+    #join-membership-guide-area .white h3 {color: #333333;}
+    #join-membership-guide-area .white p {color: #666666;}
+    #join-membership-guide-area .white p strong {color: #ff4545;}
 }
 
 @media screen and (max-width: 768px) {

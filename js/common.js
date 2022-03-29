@@ -11,7 +11,6 @@ function getScrollDirection(){
 // 종목 선택 버튼 클릭시, 데이터 업데이트
 function setStockItemList(){
     window.event.preventDefault();
-    const researchListArea = document.querySelector('#research-list-area');
     const stockItemSummaryArea = document.querySelector('.stock-item-summary-area');
     const htmlInnerStockItemSummary = `
     <div class="tit-wrap">
@@ -24,11 +23,18 @@ function setStockItemList(){
                 </dl>
             </h3>
         </div>
+        <button type="button" class="btn-close" title="전체목록 보기" onclick="goToStockItemTotalList()"></button>
     </div>
     `;
     stockItemSummaryArea.innerHTML = htmlInnerStockItemSummary;
     stockItemSummaryArea.style.display = 'block';
 }
+function goToStockItemTotalList(){
+    const stockItemSummaryArea = document.querySelector('.stock-item-summary-area');
+    stockItemSummaryArea.style.display = 'none';
+    stockItemSummaryArea.querySelector('.tit-wrap').remove();
+}
+
 
 // Popup js
 const popupArea = document.querySelector('#popup-area');
