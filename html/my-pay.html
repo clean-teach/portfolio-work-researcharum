@@ -105,7 +105,6 @@
                 </table>
             </div>
             <div class="primary-btn-area">
-                <button type="button" title="" class="btn-gray" onclick="confirm('정기구독을 해지 하시겠습니까?')">멤버쉽구독해지하기</button>
                 <div class="pagination">
                     <button type="button" title="처음" class="btn-page-first"></button>
                     <button type="button" title="이전" class="btn-page-prev"></button>
@@ -119,7 +118,11 @@
                     <button type="button" title="다음" class="btn-page-next"></button>
                     <button type="button" title="마지막" class="btn-page-last"></button>
                 </div>
-                <button type="button" title="" class="btn-color" onclick="location.href='my-chang-pay-method.html'">결제수단변경</button>
+                <div class="btn-wrap">
+                    <button type="button" title="" class="primary-btn btn-gray left" onclick="confirm('정기구독을 해지 하시겠습니까?')">멤버쉽구독해지하기</button>
+                    <button type="button" class="primary-btn btn-gray btn-more" title="더보기">더보기</button>
+                    <button type="button" title="" class="primary-btn btn-color right" onclick="location.href='my-chang-pay-method.html'">결제수단변경</button>
+                </div>
             </div>
         </div>
     </section>

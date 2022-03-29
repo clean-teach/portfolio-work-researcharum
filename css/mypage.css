@@ -32,8 +32,7 @@ td a.btn-view:hover {color: #888888;}
 .payment-history-area h3+.guide .date {color: #ff4545; font-weight: 500;}
 .payment-history-area table {margin-top: 1.25rem;}
 .payment-history-area td {width: 25%; min-width: 10rem; word-break: keep-all; font-size: .938rem;}
-.payment-history-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}
-.payment-history-area .primary-btn-area .pagination {margin-top: 0;}
+.payment-history-area .primary-btn-area {margin-top: 2rem;}
 
 .change-payment-method-area {max-width: 672px; padding: 0 1rem; margin: 6.25rem auto;}
 .change-payment-method-area h3 {text-align: center; color: #333333; font-weight: 500; font-size: 1.5rem;}
@@ -146,8 +145,6 @@ td a.btn-view:hover {color: #888888;}
     .member-info-input-area h3, .change-payment-method-area h3, .recommender-view-area h3, .deposit-area h3, .withdraw-area h3 {display: block; color: #333333; font-weight: 500; font-size: 1.063rem; text-align: center; padding: 2rem 0;}
 
     .payment-history-area h3+.guide {font-size: .938rem; line-height: 1.375rem; margin-top: 2rem;}
-    .payment-history-area .primary-btn-area {margin-top: 2rem; display: flex; justify-content: space-between;}
-    .payment-history-area .primary-btn-area .pagination {margin-top: 0;}
 
     .question-history-area table {margin-top: 1.25rem; table-layout: fixed;}
     .question-history-area th {display: none;}

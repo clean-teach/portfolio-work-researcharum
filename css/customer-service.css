@@ -1,11 +1,12 @@
 @charset "utf-8";
 
-#notice-event-area {margin: 6.5rem auto 5rem;}
 .tab {margin: 3.5rem auto 0; width: 18.75rem;}
 .card-list {margin-top: 3rem;}
 .pagination {margin-top: 2rem;}
 .page-info-wrap {margin-top: 3rem; display: flex; justify-content: space-between; color: #666666; font-weight: 500; font-size: .938rem;}
 .page-info-wrap span {color: #ff4545; letter-spacing: .025rem;}
+
+#notice-event-area, #news-list-area, #faq-area, #arum-youtube-area, #write-area {margin-top: 6.5rem; margin-bottom: 5rem;}
 
 #faq-area table {margin-top: 1.25rem;}
 #faq-area th, #faq-area td {color: #666666; font-weight: 300; font-size: .875rem; line-height: 1.5rem; height: 3.25rem; padding: .875rem 1rem;}
@@ -16,11 +17,10 @@
 #faq-area .answer th::before {content: 'A'; background-color: #ff4545;}
 #faq-area .accordion-view {background-color: #f6f6f6;}
 
-#write-area {margin-bottom: 5rem;}
-
 @media screen and (max-width: 1024px) {
-    #notice-event-area {margin-top: 0;}
     .tab {width: 100%; margin-top: 0;}
+
+    #notice-event-area, #news-list-area, #faq-area, #arum-youtube-area, #write-area {margin-top: 0;}
 
     #faq-area th {width: 2.125rem;}
 }

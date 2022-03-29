@@ -30,10 +30,11 @@ section>h2+.sub span {color: #666666; font-size: 1rem; line-height: 1.375rem;}
 
 .primary-btn-area {position: relative; margin-top: 2.375rem; text-align: center;}
 .primary-btn-area .pagination {margin-top: 0; display: inline-flex;}
+.primary-btn-area .btn-more {display: none;}
 .primary-btn-area .right {position: absolute; top: 0; right: 0;}
 .primary-btn-area .left {position: absolute; top: 0; left: 0;}
-.primary-btn-area>button {min-width: 5.5rem; height: 2rem; box-sizing: border-box; padding: 0 1.25rem; border-radius: .25rem; font-weight: 300; font-size: .875rem;}
-.primary-btn-area>button+button {margin-left: 1rem;}
+.primary-btn {min-width: 5.5rem; height: 2rem; box-sizing: border-box; padding: 0 1.25rem; border-radius: .25rem; font-weight: 300; font-size: .875rem;}
+.primary-btn + .primary-btn {margin-left: 1rem;}
 .btn-gray {background-color: #525252; color: #ffffff;}
 .btn-color {background-color: #ff4545; color: #ffffff;}
 .btn-primary {width: 100%; height: 4.375rem; background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 1.25rem; border-radius: .5rem;}
@@ -174,10 +175,10 @@ table.table-type-02 {width: 100%; border-top: 1px solid #999999;}
 .notice-view-area .cont-area img {margin: 2.25rem 0; width: 100%;}
 .notice-view-area .cont-area p {margin: 2.25rem 0;}
 .notice-view-area .primary-btn-area {max-width: 996px; margin: 3.25rem auto 0; padding: 1rem;}
-.notice-view-area .primary-btn-area button {font-weight: 500; font-size: 1.25rem; min-width: 8rem; height: 3.75rem; border-radius: .5rem;}
-.notice-view-area .primary-btn-area button+button {margin-left: .5rem;}
-.notice-view-area .primary-btn-area .btn-gray {background-color: #f4f4f4; color: #333333;}
-.notice-view-area .primary-btn-area .btn-color {background-color: #ff4545; color: #ffffff;}
+.notice-view-area .primary-btn {font-weight: 500; font-size: 1.25rem; min-width: 8rem; height: 3.75rem; border-radius: .5rem;}
+.notice-view-area .primary-btn + .primary-btn {margin-left: .5rem;}
+.notice-view-area .primary-btn.btn-gray {background-color: #f4f4f4; color: #333333;}
+.notice-view-area .primary-btn.btn-color {background-color: #ff4545; color: #ffffff;}
 
 .like-sponsor-area {background-color: #fff1f1;}
 .like-sponsor-area .center-wrap {max-width: 996px; padding: 0 1rem; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
@@ -419,7 +420,8 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     section>h2+.sub {font-size: .938rem; line-height: 1.375rem; padding: 0 1rem;}
     section>h2+.sub span {color: #666666; font-size: .875rem; line-height: 1.375rem;}
 
-    .primary-btn-area .right {position: static; top: 0; right: auto;}
+    .primary-btn-area .btn-more {display: inline-block;}
+    .primary-btn-area .left, .primary-btn-area .right {position: static; top: 0; right: auto; left: auto;}
     .checkbox-type-01+label {font-size: 1rem;}
     .btn-primary {font-size: 1.125rem; height: 3.75rem;}
     .tab {border: none; border-bottom: 1px solid #e5e5e5; border-radius: 0; overflow-x: scroll;}
@@ -462,7 +464,7 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
     .notice-view-area .cont-area img {margin: 2rem 0; width: 100%;}
     .notice-view-area .cont-area p {margin: 2rem 0;}
     .notice-view-area .primary-btn-area {margin-top: 2rem;}
-    .notice-view-area .primary-btn-area button {font-size: 1rem; min-width: 6.25rem; height: 2.875rem;}
+    .notice-view-area .primary-btn {font-size: 1rem; min-width: 6.25rem; height: 2.875rem;}
 
     #write-area .write-area-header {border: none; background: none; border-radius: 0; padding: .5rem 0; margin-top: 1.5rem;}
     #write-area .write-area-header table {border-top: 1px solid #dfdfdf;}
@@ -502,10 +504,10 @@ footer .family-link-wrap button + button {margin-left: 1rem;}
 @media screen and (max-width: 768px) {
     section>h2+.sub br {display: none;}
     
-    .primary-btn-area>button {width: 48%;}
-    .primary-btn-area>button+button {margin-left: 0;}
-    .primary-btn-area>button:nth-child(even) {margin-left: 2%;}
-    .primary-btn-area>button:nth-child(2)~button {margin-top: .75rem;}
+    .primary-btn {width: 48%;}
+    .primary-btn + .primary-btn {margin-left: 0;}
+    .primary-btn:nth-child(even) {margin-left: 2%;}
+    .primary-btn:nth-child(2) ~ .primary-btn {margin-top: .75rem;}
 
     .table-type-02 th, .table-type-02 td {display: block; height: auto; padding: 1.25rem 0;}
     .table-type-02 th {border-bottom: none; padding-bottom: 0;}

@@ -116,6 +116,8 @@ section>h2 {text-transform: uppercase;}
 #contactus-area .cont-area>ul>li>dl>dd {color: #666666; font-weight: 400; font-size: .938rem; line-height: 1.5rem; letter-spacing: .025rem; margin-top: .5rem;}
 #contactus-area .cont-area>ul>li>dl>dd dt {color: #333333; font-weight: 500; font-size: 1rem; margin-top: .5rem;}
 
+#investor-relationship-area {margin-top: 6.5rem; margin-bottom: 5rem;}
+
 @media screen and (max-width: 1024px) {
     section {margin-top: 0;}
 
@@ -147,6 +149,7 @@ section>h2 {text-transform: uppercase;}
     #organization-area h4+.sub br {display: none;}
 
     #contactus-area .map-area {margin-top: 0rem;}
+    #investor-relationship-area {margin-top: 0;}
     #investor-relationship-area .card-list .top-info-wrap {flex-direction: row; justify-content: space-between;}
 }
 

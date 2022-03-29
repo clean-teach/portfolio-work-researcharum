@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
+.primary-btn-area .btn-more {display: none;}
 
 .apply-process-area {margin-top: 6.25rem;}
 .apply-process-area h3 {color: #333333; font-weight: 500; font-size: 2.125rem; text-align: center;}
@@ -118,10 +119,11 @@ section.center-wrap {margin-top: 6.5rem; margin-bottom: 6.5rem;}
 #telegram-service-intro-area .tel-input-area select {width: 9.75rem;}
 #telegram-service-intro-area .tel-input-area input {width: 6.25rem; margin-left: .75rem;}
 #telegram-service-intro-area .primary-btn-area {text-align: center; margin-top: 2.5rem;}
-#telegram-service-intro-area .primary-btn-area .btn-apply {min-width: 12.5rem; height: 3.75rem; border-radius: .5rem; background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 1.25rem;}
+#telegram-service-intro-area .primary-btn-area .btn-apply {min-width: 12.5rem; height: 3.75rem; padding: 0 2rem; border-radius: .5rem; background-color: #ff4545; color: #ffffff; font-weight: 500; font-size: 1.25rem;}
 
 @media screen and (max-width: 1024px) {
     section.center-wrap {margin-top: 0rem; margin-bottom: 5rem;}
+    .primary-btn-area .btn-more {display: inline-block;}
 
     .apply-process-area {margin-top: 5rem; padding: 0 1rem;}
     .apply-process-area h3 {font-size: 1.5rem;}
